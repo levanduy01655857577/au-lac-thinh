@@ -9,7 +9,7 @@
 
 // title category 1
 .titleCategory1 {
-    color: $color2;
+    color: $color15;
     line-height: 46px;
     font-size: 36px;
     text-transform: uppercase;
@@ -70,27 +70,27 @@
 // title category 4
 .titleCategory4 {
     color: $color1;
-    line-height: 46px;
-    font-size: 36px;
+    line-height: 50px;
+    font-size: 40px;
     text-transform: uppercase;
     font-family: $nameFont2;
     position: relative;
     display: table;
     margin: auto;
     text-align: center;
-    padding-bottom: 30px;
+    // padding-bottom: 30px;
 
-    &:after {
-        width: 18px;
-        height: 18px;
-        @include borderRadius(100%);
-        background-color: $color1;
-        position: absolute;
-        bottom: 0;
-        content: '';
-        left: 50%;
-        @include translate(-50%, 0);
-    }
+    // &:after {
+    //     width: 18px;
+    //     height: 18px;
+    //     @include borderRadius(100%);
+    //     background-color: $color1;
+    //     position: absolute;
+    //     bottom: 0;
+    //     content: '';
+    //     left: 50%;
+    //     @include translate(-50%, 0);
+    // }
 }
 // end title category 4
 
