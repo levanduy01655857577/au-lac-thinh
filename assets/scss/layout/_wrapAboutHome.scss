@@ -1,0 +1,104 @@
+@import "../abstracts/variable";
+@import "../abstracts/mixin";
+.wrapImgAboutHome {
+    overflow: hidden;
+    @include borderRadius(10px);
+}
+
+.imgAbouthome {
+    width: 100%;
+    height: auto;
+}
+
+.wrapAboutHome {
+    padding: 60px 0;
+    background-color: $color4;
+}
+
+.colTextAboutHome,
+.colImgAbouthome {
+    margin-top: 30px;
+}
+
+.wrapTitlePostAboutHome {
+    font-size: 28px;
+    color: $color7;
+    line-height: 38px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.wrapTextAboutHome {
+    font-size: 16px;
+    line-height: 26px;
+    color: $color5;
+}
+
+.blockTextSlide,
+.frameSquare {
+    position: relative;
+}
+
+.subTitleSlide {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    color: $color13;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.titleSlide {
+    font-family: $nameFont1;
+    font-size: 53px;
+    line-height: 63px;
+    color: $color1;
+    text-transform: capitalize;
+    margin: 0;
+}
+
+.blocktext {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+.btnInfoWe {
+    border-left: 4px solid $color9;
+    line-height: 40px;
+    &:hover {
+        color: $color12;
+    }
+}
+
+.btnInfoEvent {
+    border-left: 4px solid $color1;
+    line-height: 40px;
+    color: $color1;
+    &:hover {
+        color: $color12;
+    }
+}
+
+@media (max-width: 1024px) {
+    .wrapAboutHome {
+        padding: 30px 0;
+    }
+}
+
+@media (max-width: 567px) {
+    .colTextAboutHome,
+    .colImgAbouthome {
+        margin-top: 15px;
+    }
+    .wrapTitlePostAboutHome {
+        margin-bottom: 15px;
+        font-size: 18px;
+        line-height: 28px;
+    }
+    .btnInfoWe,
+    .btnInfoEvent {
+        line-height: 25px;
+    }
+}

@@ -1,0 +1,110 @@
+@import '../abstracts/variable';
+@import '../abstracts/mixin';
+
+.wrapListProject {
+    padding: 60px 0;
+}
+
+.listProject {
+    margin-top: 15px;
+}
+
+.colItemProject {
+    margin-top: 15px;
+    padding: 0 7.5px;
+}
+
+.rowListProject {
+    margin: 0 -7.5px;
+}
+
+.wrapImgResizeItemProject {
+    @include borderRadius(10px);    
+    background-color: $color9;
+    display: block;
+}
+
+.wrapTextItemProject {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+}
+
+.titleHeaddingItemProject {
+    font-size: 18px;
+    line-height: 24px;
+    font-family: $nameFont2;
+    font-weight: 700;
+    color: $color1;
+    @include splitText(2, 48px);
+    margin: 0;
+    @include transition(0.5s);
+}
+
+.desciptionItemProject {
+    font-size: 14px;
+    line-height: 20px;
+    color: $color1;    
+    @include splitText(3, 72px);
+    margin: 0 0 10px 0;
+    padding: 0 15px;
+}
+
+.linkTitleItemProject {
+    background-color: $color8;
+    display: block;
+    @include translate(0, -100%);
+    padding: 10px 15px;
+    @include borderRadius(0 0 10px 10px);
+    @include transition(0.5s);
+
+    &:hover {
+        text-decoration: none;
+
+        .titleHeaddingItemProject {
+            color: $color2;
+        }
+    }
+}
+
+.btnWatchMoreProject {
+    margin: 0 15px;
+}
+
+.wrapTextItemProject,
+.wrapImgResizeItemProject,
+.imgItemProject {
+    @include transition(0.5s);
+}
+
+.contentItemProject {
+    position: relative;
+    overflow: hidden;
+
+    &:hover {
+        .linkTitleItemProject {
+            background-color: transparent;
+            @include translate(0, 0);
+        }
+
+        .wrapTextItemProject {
+            top: 50%;
+            @include translate(0, -50%);
+        }
+
+        .imgItemProject {
+            @include opacity(0.5);
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .wrapListProject {
+        padding: 30px 0;
+    }
+
+    .listProject {
+        margin-top: 0;
+    }
+}

@@ -1,0 +1,118 @@
+@import '../abstracts/variable';
+@import '../abstracts/mixin';
+
+.wrapStarProduct {
+    font-size: 16px;
+    color: $color12;
+    padding: 0 15px;
+    margin: 0 0 10px 0;
+}
+
+.titleHeaddingItemProject {
+    color: $color2;
+}
+
+.wrapImgResizeItemProject {
+    background-color: $color4;
+}
+
+.linkTitleItemProject {
+    background-color: $color13;
+
+    &:hover {
+        .titleHeaddingItemProject {
+            color: $color3;
+        }
+    }
+}
+
+.contentItemProject{
+    &:hover {
+        .imgItemProject {
+            @include opacity(0.2);
+        }
+    }
+}
+
+.listProject {
+    margin-top: 0;
+}
+
+.wrapListProject {
+    padding-top: 60px;
+}
+
+@media (max-width: 991px) {
+    .wrapListProject {
+        padding-top: 15px;
+    }
+}
+
+// menu tab
+.wrapMenuTabProduct {
+    margin-bottom: 10px;
+}
+
+.navTabMenuProduct {
+    border: none;
+    display: block;
+    padding: 0;
+    -ms-flex-wrap: unset;
+    flex-wrap: unset;
+    -ms-flex-wrap: none;
+    flex-wrap: none;
+    width: 100%;
+    text-align: center;
+}
+
+.nav-tabs {
+    .navItemMenuProduct {
+        display: inline-block;
+        margin: 0 0 5px 0;
+    }
+
+    .navLinkMenuProduct {
+        @include borderRadius(5px);
+        line-height: 28px;
+        padding: 0 10px;
+        border: 2px solid $color2;
+        color: $color2;
+        font-size: 12px;
+        text-transform: capitalize;
+        font-weight: 700;
+        display: inline-block;
+        background-color: $color1;
+        font-family: $nameFont2;
+        text-align: center;
+        @include transition(0.5s);
+
+        &:hover,
+        &.active {            
+            border: 2px solid $color2;
+            background-color: $color2;
+            color: $color1;
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .nav-tabs {
+        .navLinkMenuProduct {
+            line-height: 22px;
+            padding: 0 5px;
+            border: 1px solid $color2;
+            font-size: 12px;
+            font-weight: 400;
+    
+            &:hover,
+            &.active {            
+                border: 2px solid $color2;
+            }
+        }
+    }
+
+    .wrapListProject {
+        padding-top: 30px;
+    }
+}
+// end menu tab

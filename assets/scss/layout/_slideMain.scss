@@ -1,0 +1,368 @@
+@import "../abstracts/variable";
+@import "../abstracts/mixin";
+// slick slder
+@import "../vendor/slick";
+// end slick slider
+$heightTextSlide:40px;
+$bottomTextSlide:48px;
+.wrapImgSlideMain,
+.slick-track,
+.slick-list,
+.showSlideMain,
+.wrapSlideMain,
+.contentSlideMain {
+    height: 100%;
+}
+
+.wrapSlideMain {
+    position: relative;
+}
+
+.contentSlideMain {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 0;
+}
+
+.wrapImgSlideMain {
+    background-color: $color9;
+    img {
+        @include opacity(0.5);
+    }
+}
+
+.wrapTextSlideMain {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    height: 300px;
+    @include translate(-50%, -50%);
+    z-index: 500;
+}
+
+.wrapDescriptionPostSlideMain {
+    color: $color1;
+    font-size: 36px;
+    line-height: 48px;
+    margin: 0 0 30px 0;
+    text-align: center;
+}
+
+.titlePostSlideMain {
+    font-size: 100px;
+    font-family: $nameFont1;
+    line-height: 120px;
+    color: $color1;
+    margin: 0;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.contentTextSlideMain {
+    position: relative;
+    height: 300px;
+    &::after,
+    &::before {
+        position: absolute;
+        content: "";
+        width: $heightTextSlide;
+        height: $heightTextSlide;
+    }
+    &::before {
+        top: $bottomTextSlide;
+        left: 0;
+        border-top: 2px solid $color1;
+        border-left: 2px solid $color1;
+    }
+    &::after {
+        top: $bottomTextSlide;
+        right: 0;
+        border-top: 2px solid $color1;
+        border-right: 2px solid $color1;
+    }
+}
+
+.blockTextSlideMain1 {
+    position: relative;
+    height: 300px;
+    &::before,
+    &::after {
+        position: absolute;
+        content: "";
+        width: $heightTextSlide;
+        height: $heightTextSlide;
+    }
+    &::before {
+        bottom: $bottomTextSlide;
+        left: 0;
+        border-bottom: 2px solid $color1;
+        border-left: 2px solid $color1;
+    }
+    &::after {
+        bottom: $bottomTextSlide;
+        right: 0;
+        border-bottom: 2px solid $color1;
+        border-right: 2px solid $color1;
+    }
+}
+
+.squareTextSlideMain {
+    position: relative;
+    height: 300px;
+    &::before {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 100%;
+        top: 50%;
+        left: 50%;
+        border: 2px solid $color1;
+        transform: translate(-50%, -50%) rotate(-45deg);
+    }
+}
+
+.centerTextSLideMain {
+    display: table;
+    width: 100%;
+    text-align: center;
+    height: 100%;
+    .inTextSLideMain {
+        display: table-cell;
+        vertical-align: middle;
+        padding-bottom: 30px;
+    }
+}
+
+.btnSlideSlickPrevHome {
+    position: absolute;
+    top: 50%;
+    @include translate(0, -50%);
+    color: $color1;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 48px;
+    padding: 0;
+    border: none;
+    background-color: $color7;
+    @include borderRadius(100%);
+    z-index: 100;
+    @include transition(0.5s);
+    &.prev {
+        right: 16.5%;
+    }
+    &.next {
+        right: 13%;
+    }
+    &:hover {
+        background-color: $color14;
+        color: $color1;
+        border-color: $color14;
+    }
+}
+
+.showSlideMain {
+    &:hover {
+        .btnSlideSlickPrevHome {
+            @include opacity(1);
+        }
+    }
+}
+
+.showSlideTestimonials {
+    .btnSlideSlickPrevHome {
+        color: $color8;
+        background-color: transparent;
+        border-radius: 0;
+        &.prev {
+            left: 0;
+        }
+        &.next {
+            right: 0;
+        }
+    }
+    .groupelementlideTestimonials {
+        .descriptItemTitle {
+            font-size: 35px;
+            line-height: 45px;
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .titlePostSlideMain {
+        font-size: 36px;
+        line-height: 46px;
+    }
+    .wrapDescriptionPostSlideMain {
+        font-size: 24px;
+        line-height: 34px;
+    }
+    .btnSlideSlickPrevHome {
+        @include opacity(1);
+    }
+    .showSlideMain {
+        .btnSlideSlickPrevHome {
+            width: 40px;
+            height: 40px;
+            font-size: 13px;
+            line-height: 26px;
+            &.prev {
+                right: 90px;
+            }
+            &.next {
+                right: 45px;
+            }
+        }
+    }
+}
+
+@media(max-width:768px) {
+    .wrapListComment {
+        .groupelementlideTestimonials {
+            .descriptItemTitle {
+                font-size: 30px;
+                line-height: 30px;
+                margin: 5px 0;
+            }
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .wrapSlideMain {
+        height: 40%;
+    }
+    .titlePostSlideMain {
+        font-size: 24px;
+        line-height: 34px;
+    }
+    .wrapDescriptionPostSlideMain {
+        font-size: 14px;
+        line-height: 24px;
+    }
+    .showSlideMain {
+        .btnSlideSlickPrevHome {
+            width: 25px;
+            height: 25px;
+            font-size: 10px;
+            line-height: 25px;
+            &.prev {
+                right: 40px;
+            }
+            &.next {
+                right: 15px;
+            }
+        }
+    }
+    .wrapListComment {
+        .showSlideTestimonials {
+            .groupelementlideTestimonials {
+                padding: 0 30px;
+                br {
+                    display: none;
+                }
+                .descriptItemTitle {
+                    font-size: 25px;
+                    line-height: 25px;
+                    margin: 5px 0;
+                }
+                .descriptItemFieldEvent {
+                    font-size: 13px;
+                    line-height: 19px;
+                    margin: 5px 0;
+                }
+            }
+        }
+    }
+    .wrapTextSlideMain {
+        width: 120px;
+        height: 120px;
+    }
+    .contentTextSlideMain {
+        position: relative;
+        height: 120px;
+        &::after,
+        &::before {
+            position: absolute;
+            content: "";
+            width: 25px;
+            height: 25px;
+        }
+        &::before {
+            top: 10px;
+            left: 0;
+            border-top: 2px solid $color1;
+            border-left: 2px solid $color1;
+        }
+        &::after {
+            top: 10px;
+            right: 0;
+            border-top: 2px solid $color1;
+            border-right: 2px solid $color1;
+        }
+    }
+    .blockTextSlideMain1 {
+        position: relative;
+        height: 120px;
+        &::before,
+        &::after {
+            position: absolute;
+            content: "";
+            width: 25px;
+            height: 25px;
+        }
+        &::before {
+            bottom: 10px;
+            left: 0;
+            border-bottom: 2px solid $color1;
+            border-left: 2px solid $color1;
+        }
+        &::after {
+            bottom: 10px;
+            right: 0;
+            border-bottom: 2px solid $color1;
+            border-right: 2px solid $color1;
+        }
+    }
+    .squareTextSlideMain {
+        position: relative;
+        height: 120px;
+        width: 120px;
+        &::before {
+            position: absolute;
+            content: "";
+            width: 100%;
+            height: 100%;
+            top: 50%;
+            left: 50%;
+            border: 2px solid $color1;
+            transform: translate(-50%, -50%) rotate(-45deg);
+        }
+        .centerTextSLideMain {
+            .inTextSLideMain {
+                padding: 0;
+                .subTitleSlide {
+                    font-size: 8px;
+                    line-height: 10px;
+                    margin: 0;
+                }
+                .titleSlide {
+                    font-size: 22px;
+                    line-height: 32px;
+                }
+            }
+        }
+    }
+    .showSlideMain {
+        .btnSlideSlickPrevHome {
+            width: 20px;
+            height: 20px;
+            font-size: 10px;
+            line-height: 20px;
+        }
+    }
+}

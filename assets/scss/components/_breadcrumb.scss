@@ -1,0 +1,125 @@
+@import '../abstracts/mixin';
+@import '../abstracts/variable';
+
+.wrapImgBreadcrumb {
+    padding-top: 400px;
+    background-color: $color9;
+}
+
+.imgBreadcrumbs {
+    @include opacity(0.5);
+}
+
+.wrapBreadCrumb {
+    position: relative;
+}
+
+.wrapTextBreadcrumb {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    @include translate(0, -50%);
+    top: 50%;
+    margin-top: 30px;
+}
+
+.navListBreadcrumb {
+    background: none;
+    margin: 15px auto auto auto;
+    display: table;
+}
+
+.olListBreqadcrumb {
+    margin: 0;
+    background: none;
+    padding: 0;
+    display: block;
+    text-align: center;
+}
+
+.itemListBreadcrumb.active,
+.linkListBreadcrumb {
+    font-size: 16px;
+    line-height: 24px;
+    color: $color1;
+    text-transform: capitalize;
+}
+
+.linkListBreadcrumb {
+    @include transition(0.5s);
+
+    &:hover {
+        color: $color2;
+        text-decoration: none;
+    }
+}
+
+.itemListBreadcrumb {
+    display: inline;
+    
+    + .itemListBreadcrumb {
+        padding-left: 15px;
+
+        &::before {
+            font-family: "Font Awesome 5 Free";
+            content: "\f061";
+            font-weight: 900;
+            color: $color1;
+            padding-right: 15px;
+            font-size: 10px;
+            line-height: 24px;
+        }
+    }
+}
+
+.wrapVectorTitleBreadcrumb {
+    position: relative;
+    width: 80px;
+    margin: auto;
+
+    &:before,
+    &:after {
+        position: absolute;
+        bottom: 3px;
+        content: '';
+        width: 10px;
+        height: 10px;
+        background-color: $color1;
+        @include borderRadius(100%);
+    }
+
+    &:before {
+        left: 0;
+    }
+
+    &:after {
+        right: 0;
+    }
+}
+
+@media (max-width: 991px) {
+    .navListBreadcrumb {
+        margin-top: 5px;
+    }
+
+    .titlePageCurrentBreadcrumb {
+        padding: 0 0 15px 0;
+        font-size: 24px;
+        line-height: 38px;
+
+        &:before {
+            content: none;
+        }
+
+        &:after {
+            bottom: 0;
+            left: 50%;
+            @include translate(-50%, 0);
+            top: auto;
+        }
+
+        .navListBreadcrumb {
+            margin-top: 15px;
+        }
+    }
+}

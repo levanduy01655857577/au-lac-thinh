@@ -1,0 +1,81 @@
+@import "../abstracts/variable";
+@import "../abstracts/mixin";
+button:focus {
+    outline: unset;
+    outline: none;
+}
+
+.btnType4,
+.btnType3,
+.btnType2,
+.btnType1 {
+    @include borderRadius(5px);
+    line-height: 50px;
+    padding: 0 15px;
+    border: 2px solid $color12;
+    color: $color1;
+    line-height: 40px;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 800;
+    display: inline-block;
+    background-color: $color12;
+    font-family: $nameFont2;
+    min-width: 225px;
+    text-align: center;
+    @include transition(0.5s);
+    &:hover {
+        background-color: $color3;
+        border-color: $color12;
+        text-decoration: none;
+        color: $color1;
+    }
+}
+
+.btnType2 {
+    background-color: $color2;
+    border-color: $color2;
+    color: $color1;
+    min-width: auto;
+    min-width: unset;
+    min-width: none;
+    &:hover {
+        background-color: $color12;
+        color: $color1;
+    }
+}
+
+.btnType3 {
+    font-size: 12px;
+    line-height: 24px;
+    min-width: auto;
+    min-width: unset;
+    min-width: none;
+}
+
+.btnType4 {
+    background-color: $color1;
+    color: $color2;
+    min-width: auto;
+    min-width: none;
+    min-width: unset;
+}
+
+.btnType5,
+.btnType6 {
+    font-weight: 700;
+    height: 50px;
+    width: auto;
+    border-radius: 0;
+    outline: none;
+    border: none;
+    background-color: transparent;
+}
+
+@media(max-width:567px) {
+    .btnType5,
+    .btnType6 {
+        font-size: 15px;
+        height: auto;
+    }
+}

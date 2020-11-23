@@ -1,0 +1,269 @@
+    @import "../abstracts/variable";
+    @import "../abstracts/mixin";
+    .wrapFooter {
+        background-color: $color11;
+        padding: 80px 0 50px 0;
+    }
+    
+    // logo footer
+    .wrapLogoFooter {
+        text-align: center;
+        padding-bottom: 10px;
+        .imgLogoFooter {
+            height: auto;
+            width: 100%;
+        }
+    }
+    
+    .textAboutFooter {
+        margin: 0;
+        font-size: 13px;
+        font-weight: 600;
+        line-height: 24px;
+        color: #888888;
+        text-align: right;
+    }
+    
+    .textFollowFooter {
+        margin: 0;
+        font-size: 13px;
+        font-weight: 600;
+        line-height: 30px;
+        color: $color5;
+        text-align: center;
+        letter-spacing: 3px;
+    }
+    
+    .colItemFooter {
+        padding-left: 50px;
+    }
+    
+    // end logo footer
+    // menu footer
+    .listMenuFooter {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        .itemMenuFooter {
+            padding-bottom: 5px;
+        }
+    }
+    
+    .linkTitleItemMenuFooter {
+        font-size: 12px;
+        color: $color1;
+        line-height: 24px;
+        font-weight: 600;
+        @include transition(0.5s);
+        &:hover {
+            text-decoration: none;
+            color: $color12;
+        }
+    }
+    
+    // end menu footer
+    // cmt footer
+    .nameUserCmtFooter {
+        font-size: 12px;
+        line-height: 22px;
+        color: $color5;
+        font-style: italic;
+        text-transform: capitalize;
+        margin: 0;
+    }
+    
+    .textCmtFooter {
+        font-size: 12px;
+        line-height: 22px;
+        color: $color1;
+        @include splitText(3, 66px);
+        margin: 0;
+    }
+    
+    // end cmt footer
+    // contact footer
+    .listContactFooter {
+        padding-left: 30px;
+        .itemMenuFooter {
+            a {
+                color: $color5;
+                font-size: 13px;
+                line-height: 24px;
+                letter-spacing: 2px;
+            }
+            .address {
+                color: $color5;
+                letter-spacing: 1px;
+                line-height: 40px;
+            }
+            .phone {
+                font-size: 14px;
+                color: $color15;
+                letter-spacing: 2px;
+            }
+            .mail {
+                padding: 10px 0;
+            }
+        }
+    }
+    
+    // end contact footer
+    .containerFooter {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .blockLogoFooter {
+        position: absolute;
+        left: 0;
+    }
+    
+    @media (max-width: 768px) {
+        .wrapFooter {
+            padding: 40px 0 25px 0;
+        }
+        .colItemFooter {
+            padding-left: 0;
+        }
+        .wrapFooter {
+            position: relative;
+            .offset-md-1 {
+                margin: 0;
+            }
+        }
+        .textAboutFooter {
+            font-size: 11px;
+            line-height: 20px;
+            text-align: right;
+            padding-bottom: 5px;
+        }
+        .textFollowFooter {
+            font-size: 11px;
+            letter-spacing: 1px;
+        }
+        .blockLogoFooter {
+            position: absolute;
+            left: 0px;
+            .listMenuFooter {
+                .itemMenuFooter {
+                    padding-bottom: 5px;
+                }
+            }
+        }
+        .contentAddress {
+            .listContactFooter {
+                padding-left: 0;
+                .itemMenuFooter {
+                    display: block;
+                    a {
+                        font-size: 12px;
+                    }
+                    .phone {
+                        color: $color15;
+                        letter-spacing: 1px;
+                    }
+                    .mail {
+                        letter-spacing: 1px;
+                        line-height: 37px;
+                    }
+                    .address {
+                        line-height: 27px;
+                        padding: 0;
+                    }
+                }
+            }
+        }
+        .contentItemFooter {
+            font-size: 11px;
+            .listMenuFooter {
+                .itemMenuFooter {
+                    padding-bottom: 2px;
+                }
+            }
+        }
+    }
+    
+    @media(max-width:576px) {
+        .wrapFooter {
+            padding: 30px 0;
+            .imgLogoFooter {
+                height: auto;
+                width: 200px;
+            }
+            .textAboutFooter {
+                font-size: 13px;
+                line-height: 20px;
+                text-align: center;
+                padding-bottom: 10px;
+            }
+            .blockLogoFooter {
+                font-size: 13px;
+                .textFollowFooter {
+                    letter-spacing: 4px;
+                }
+            }
+            .listMenuFooter {
+                text-align: center;
+                .itemMenuFooter {
+                    display: inline-block;
+                    padding: 0 5px;
+                    a {
+                        font-size: 13px;
+                    }
+                    .phone,
+                    .mail {
+                        letter-spacing: 1px;
+                    }
+                    .mail {
+                        line-height: 20px;
+                        padding: 0;
+                    }
+                    .address {
+                        font-size: 13px;
+                        line-height: 20px;
+                        letter-spacing: 0;
+                        display: inline;
+                        br {
+                            display: none;
+                        }
+                    }
+                }
+            }
+            .blockLogoFooter {
+                position: relative;
+                padding: 10px 0;
+                .wrapLogoFooter {
+                    display: flex;
+                    .linkLogoFooter {
+                        margin: 10px auto;
+                    }
+                }
+            }
+        }
+        .blocklistFanpageFooter {
+            width: 200px;
+            margin: 0 auto;
+        }
+    }
+    
+    @media(max-width:320px) {
+        .wrapFooter {
+            .listMenuFooter {
+                .itemMenuFooter {
+                    a {
+                        font-size: 14px;
+                        line-height: 23px;
+                    }
+                }
+            }
+            .listContactFooter {
+                .itemMenuFooter {
+                    a {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }

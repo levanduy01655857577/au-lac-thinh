@@ -1,0 +1,88 @@
+@import '../abstracts/variable';
+@import '../abstracts/mixin';
+
+// slick slder
+@import '../vendor/slick';
+// end slick slider
+
+.colTextProductDetail {
+    .wrapStarProduct {
+        float: left;
+        padding: 0;
+    }
+
+    .wrapShare {
+        float: right;
+    }
+}
+
+.wrapProductDetail {
+    padding: 60px 0;
+}
+
+.wrapImgResizeProductDetail {
+    background-color: $color4;
+    @include borderRadius(10px);
+}
+
+.wrapTextProductDetail {
+    font-size: 14px;
+    line-height: 24px;
+    color: $color5;
+
+    p {
+        margin-bottom: 5px;
+    }
+}
+
+.wrapStarAndShare {
+    margin: 10px 0;
+}
+
+.colDescriptionProductDetail {
+    margin-top: 30px;
+}
+
+.listProject {
+    margin: 30px -7.5px 0 -7.5px;
+}
+
+.colItemProject {
+    padding: 0 7.5px;
+    margin: 0;
+}
+
+.wrapListProject {
+    padding-top: 0;
+}
+
+@media (max-width: 991px) {
+    .colTextProductDetail {
+        margin-top: 15px;
+    }
+
+    .wrapProductDetail {
+        padding: 30px 0;
+    }
+
+    .colDescriptionProductDetail {
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .colTextProductDetail {
+        .wrapStarProduct,
+        .wrapShare{
+            float: none;
+        }
+    }
+
+    .wrapStarProduct {
+        margin-bottom: 10px;
+    }
+
+    .listProject {
+        margin-top: 15px;
+    }
+}

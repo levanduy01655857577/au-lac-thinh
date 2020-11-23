@@ -1,0 +1,40 @@
+// general
+@import '../base/general';
+// end general
+
+body,
+html {
+    height: 100%;
+}
+
+// slide main
+@import '../layout/slideMain';
+// end slide main
+
+// field
+@import '../layout/wrapFiled';
+// end field
+
+// number info
+@import '../layout/wrapNumberInfo';
+// end number info
+
+// about home
+@import '../layout/wrapAboutHome';
+// end about home
+
+// banner contact
+@import '../layout/wrapBannerContact';
+// end banner contact
+
+// list project
+@import '../layout/wrapListProject';
+// end list project
+
+// list comment
+@import '../layout/wrapListComment';
+// end list comment
+
+// list news
+@import '../layout/wrapListNews';
+// end list news

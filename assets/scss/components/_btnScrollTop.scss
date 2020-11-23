@@ -1,0 +1,28 @@
+@import '../abstracts/variable';
+@import '../abstracts/mixin';
+.btnScrollTop {
+    background-color: $color12;
+    position: fixed;
+    z-index: 990;
+    right: 15px;
+    bottom: -100%;
+    display: block;
+    text-align: center;
+    padding: 5px;
+    @include borderRadius(100%);
+    @include transition(0.5s);
+    border: 2px solid $color1;
+    i {
+        line-height: 30px;
+        width: 30px;
+        text-align: center;
+        font-size: 24px;
+        color: white;
+    }
+    &:hover {
+        background-color: $color9;
+    }
+    &.showBtnScrollTop {
+        bottom: 25px;
+    }
+}

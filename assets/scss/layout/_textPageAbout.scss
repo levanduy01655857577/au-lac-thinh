@@ -1,0 +1,117 @@
+@import '../abstracts/variable';
+@import '../abstracts/mixin';
+
+// text about
+.wrapTextPageAbout {
+    margin: 30px 0;
+
+    &.bottom {
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 991px) {
+    .wrapTextPageAbout {
+        margin: 0 0 30px 0;
+
+        &.bottom {
+            margin-top: 30px;
+        }
+    }
+}
+// end text about
+
+// number info
+.wrapListNumberInfo {
+    padding: 0;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.bgListNumberInfo {
+    padding: 90px 0 60px 0;
+    background-color: $color8;
+}
+
+.titleItemNumberInfo {
+    color: $color1;
+}
+
+@media (max-width: 991px) {
+    .bgListNumberInfo {
+        padding: 30px 0;
+    }
+}
+// end number info
+
+// field
+.wrapField {
+    background-color: $color1;
+}
+
+.descriptItemField {
+    @include splitText(1, 24px);
+    margin: 3px 0;
+}
+
+.contentItemField {
+    cursor: pointer;
+}
+
+.titleheaddingItemField {
+    margin-bottom: 0;
+}
+
+.btnWatchMoreTextField {
+    font-size: 12px;
+    font-weight: 700;
+    color: $color2;
+    text-transform: uppercase;
+    @include transition(0.5s);
+
+    &:hover {
+        color: $color3;
+    }
+}
+
+.wrapTextDetailField {
+    font-size: 14px;
+    line-height: 24px;
+    color: $color7;
+    
+    p {
+        margin-bottom: 5px;
+    }
+}
+
+button.btnCloseModalDetailField {
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    @include borderRadius(100%);
+    width: 30px;
+    height: 30px;
+    border: 2px solid $color7;
+    line-height: 26px;
+    padding: 0;
+    text-align: center;
+    font-size: 28px;
+    color: $color7;
+    background-color: $color1;
+    @include transition(0.5s);
+    @include opacity(1);
+
+    &:hover {
+        border-color: red;
+        color: red;
+    }
+}
+
+@media (max-width: 991px) {
+    .modalDialogDetailField {
+        margin: 15px;
+    }
+}
+// end field

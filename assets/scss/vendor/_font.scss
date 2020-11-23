@@ -1,0 +1,59 @@
+@import "../abstracts/variable";
+@font-face {
+    font-family: $nameFont1;
+    src: url(../fonts/#{$nameFont1}-Bold.ttf);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: $nameFont2;
+    src: url(../fonts/#{$nameFont2}-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: $nameFont2;
+    src: url(../fonts/#{$nameFont2}-Medium.ttf);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: $nameFont2;
+    src: url(../fonts/#{$nameFont2}-Bold.ttf);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: $nameFont3;
+    src: url(../fonts/#{$nameFont3}-Black.ttf);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: $nameFont3;
+    src: url(../fonts/#{$nameFont3}-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: $nameFont4;
+    src: url(../fonts/#{$nameFont4}-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: $nameFont4;
+    src: url(../fonts/#{$nameFont4}-Medium.ttf);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: $nameFont4;
+    src: url(../fonts/#{$nameFont4}-SemiBold.ttf);
+    font-weight: 600;
+}
+
+body {
+    font-family: $nameFont4;
+    font-weight: 400;
+}

@@ -1,0 +1,140 @@
+@import '../abstracts/variable';
+@import '../abstracts/mixin';
+
+.wrapContact {
+    padding: 60px 0 0 0;
+}
+
+.titleTextContact,
+.titleFrmContact {
+    color: $color2;
+}
+
+.wrapTexInfoContact {
+    font-size: 16px;
+    line-height: 26px;
+    color: $color7;
+    margin-top: 15px;
+
+    a {
+        color: $color2;
+        @include transition(0.5s);
+
+        &:hover {
+            color: $color3;
+            text-decoration: none;
+        }
+    }
+}
+
+.listFanpageContatc {
+    margin-top: 15px;
+
+    a {
+        color: $color2;
+        @include transition(0.5s);
+        display: inline-block;
+        font-size: 18px;
+        margin-left: 15px;
+
+        &:first-child {
+            margin-left: 0;
+        }
+
+        &:hover {
+            color: $color3;
+            text-decoration: none;
+        }
+    }
+}
+
+.formControlSendMessageContact  {
+    @include borderRadius(5px);
+}
+
+.wrapFrmSendMessage {
+    margin-top: 15px;
+}
+
+.lblSendMessageContact {
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 700;
+    color: $color7;
+    margin: 0 0 5px 0;
+    width: 100%;
+}
+
+// captcha
+.btnSendMessageContact,
+.imageRefreshCaptchaContact,
+.imageCaptchaContact,
+.formControlCodeCaptchaContact {
+    float: left;
+    margin-left: 15px;
+}
+
+.formControlCodeCaptchaContact {
+    margin-left: 0;
+    width: 150px;
+}
+
+.imageRefreshCaptchaContact,
+.imageCaptchaContact {
+    height: 25px;
+    width: auto;
+    margin-top: 6px;
+}
+
+.btnSendMessageContact {
+    line-height: 34px;
+}
+// end captcha
+
+// map
+.wrapMap {
+    margin-top: 60px;
+    height: 400px;
+}
+// end map
+
+@media (max-width: 991px) {
+    .colFrmContact {
+        margin-top: 30px;
+    }
+
+    .wrapContact {
+        padding-top: 30px;
+    }
+
+    .wrapMap {
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 666px) {
+    .formControlCodeCaptchaContact {
+        float: none;
+        width: 100%;
+        margin: 0 0 15px 0;
+    }
+
+    .btnSendMessageContact {
+        float: none;
+        margin: 15px 0 0 0;
+        clear: both;
+    }
+
+    .imageCaptchaContact {
+        margin-left: 0;
+    }
+
+    .wrapMap {
+        height: 250px;
+    }
+
+    .imageRefreshCaptchaContact,
+    .imageCaptchaContact {
+        margin-top: 0;
+    }
+}

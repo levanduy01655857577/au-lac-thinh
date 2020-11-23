@@ -1,0 +1,94 @@
+@import "../abstracts/variable";
+@import "../abstracts/mixin";
+.wrapListComment {
+    padding: 60px 0;
+}
+
+.wrapSlideTestiomonials {
+    margin: 30px -15px 0 -15px;
+}
+
+.wrapImgUserCmt {
+    width: 100px;
+    height: 100px;
+    @include borderRadius(100%);
+}
+
+.elementlideTestimonials {
+    padding: 0 15px;
+    text-align: center;
+}
+
+.wrapIconTestimonial {
+    font-size: 28px;
+    color: $color2;
+    margin-bottom: 20px;
+}
+
+.textTestimonial {
+    font-size: 14px;
+    line-height: 24px;
+    color: $color5;
+    margin: 15px 0;
+    @include splitText(3, 72px);
+}
+
+.titleNameTestimonial {
+    font-size: 24px;
+    color: $color6;
+    line-height: 34px;
+    font-family: $nameFont2;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.descriptionTestimonial {
+    font-size: 10px;
+    line-height: 20px;
+    color: $color2;
+    font-family: $nameFont2;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+@media (max-width: 1024px) {
+    .wrapListComment {
+        padding: 0;
+        margin: 60px 0;
+    }
+    .wrapSlideTestiomonials {
+        margin-top: 15px;
+    }
+    .textTestimonial {
+        margin: 5px 0;
+    }
+}
+
+@media(max-width:768px) {
+    .wrapListComment {
+        padding: 0;
+        margin: 70px 0;
+    }
+    .wrapLatestNews {
+        .backgroudLastNews::before {
+            position: absolute;
+            content: "";
+            top: 50%;
+            height: 100%;
+        }
+    }
+}
+
+@media(max-width:576px) {
+    .wrapListComment {
+        margin: 40px 0;
+    }
+    .wrapLatestNews {
+        .backgroudLastNews::before {
+            position: absolute;
+            content: "";
+            top: 20%;
+            height: 100%;
+        }
+    }
+}

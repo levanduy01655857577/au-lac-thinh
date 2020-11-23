@@ -1,0 +1,26 @@
+@import '../abstracts/variable';
+@import '../abstracts/mixin';
+
+.titleShare,
+.listBtnSharePost {
+    float: left;
+}
+
+.titleShare {
+    font-size: 14px;
+    line-height: 28px;
+    font-weight: 700;
+    margin-right: 5px;
+    color: $color7;
+}
+
+@media (max-width: 480px) {
+    .titleShare,
+    .listBtnSharePost {
+        float: none;
+    }
+
+    .titleShare {
+        margin: 0;
+    }
+}

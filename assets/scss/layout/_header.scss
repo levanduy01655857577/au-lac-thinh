@@ -1,0 +1,422 @@
+@import "../abstracts/variable";
+@import "../abstracts/mixin";
+.wrapLogoHeaderBottom,
+.wrapBtnBookNowHeaderBottom {
+    position: absolute;
+    top: 5px;
+}
+
+.wrapLogoHeaderBottom {
+    left: 0;
+    top: 0;
+    margin: 0;
+}
+
+.btnBookNowHeaderBottom {
+    width: auto;
+    padding: 5px 25px;
+    text-align: center;
+    border: 1px solid $color14;
+    background-color: $color14;
+    font-size: 13px;
+    border-radius: 0;
+    margin-left: 25px;
+    line-height: 40px;
+    color: $color9;
+}
+
+.btnBookNowHeaderBottom:hover {
+    background-color: $color1;
+    color: $color14;
+}
+
+.wrapBtnBookNowHeaderBottom {
+    right: 0;
+    top: 50%;
+    @include translate(0, -50%);
+    .btnBookNowHeaderBottom {
+        &:first-child {
+            margin-left: 15px;
+        }
+    }
+}
+
+.wrapMenuMainHeaderBottom {
+    float: right;
+    padding-right: 116px;
+    display: table;
+}
+
+.imgLogoHeaderBottom,
+.linkLogoHeaderBottom {
+    display: block;
+}
+
+.linkLogoHeaderBottom {
+    padding: 5px 0;
+}
+
+.imgLogoHeaderBottom {
+    height: 80px;
+    width: auto;
+    @include transition(0.5s);
+}
+
+.listLinkMenuSubHeaderBottom,
+.listLinkMenuMainHeaderBottom {
+    color: white;
+    line-height: 80px;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 0;
+    @include transition(0.5s);
+    display: block;
+}
+
+.listLinkMenuSubHeaderBottom {
+    color: $color5;
+    line-height: 22px;
+    font-weight: 700;
+    padding: 5px 0;
+    &:hover {
+        color: $color14;
+        text-decoration: none;
+    }
+}
+
+.listItemMenuSubHeaderBottom {
+    position: relative;
+    border-top: 1px solid #ddd;
+}
+
+.listMenuMainHeaderBottom,
+.listMenuSubHeaderBottom {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.wrapListMenuSubHeaderBottom {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 990;
+    visibility: hidden;
+    @include opacity(0);
+    @include transition(0.5s);
+    @include translate(0, 15px);
+}
+
+.listMenuSubHeaderBottom {
+    background-color: $color1;
+    @include borderRadius(0 0 5px 5px);
+    @include boxShadow($boxShadow1);
+    padding: 0 15px;
+    white-space: nowrap;
+    .listItemMenuSubHeaderBottom {
+        &:first-child {
+            border-top: none;
+        }
+    }
+}
+
+.contentHeaderBottom {
+    position: relative;
+}
+
+.btnDropdowMenuSubHeaderBottom {
+    color: white;
+    font-size: 12px;
+    @include transition(0.5s);
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    @include translate(0, -50%);
+}
+
+.listItemMenuMainHeaderBottom {
+    float: left;
+    position: relative;
+    margin: 0 20px;
+    &.menuLanguageHeaderBottom {
+        margin-right: 0;
+    }
+    &.active,
+    &:hover {
+        .btnDropdowMenuSubHeaderBottom,
+        .listLinkMenuMainHeaderBottom {
+            color: $color12;
+            text-decoration: none;
+        }
+    }
+    .listLinkMenuMainHeaderBottom {
+        text-align: center;
+        letter-spacing: 0.5px;
+    }
+}
+
+.menuSubHeaderBottom {
+    &:hover> {
+        .wrapListMenuSubHeaderBottom {
+            visibility: visible;
+            @include opacity(1);
+            @include translate(0, 0);
+        }
+    }
+}
+
+.position {
+    position: absolute;
+    top: 0;
+    left: 111%;
+}
+
+.imgLanguageHeaderBottom {
+    @include translate(0, -2px);
+}
+
+.listMenuInfoHoteHeaderlMobile,
+.wrapCloseMenuHeaderMobile,
+.btnShowMenuHeaderMobile {
+    display: none;
+}
+
+.wrapHeader {
+    .wrapHeaderBottom {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 991;
+        @include transition(0.5s);
+    }
+    &.fixedMenu {
+        .wrapHeaderBottom {
+            background-color: $color8;
+        }
+        .wrapLogoHeaderBottom {
+            top: 5px;
+            .imgLogoHeaderBottom {
+                height: 60px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .wrapMenuMainHeaderBottom {
+        padding-right: 95px;
+    }
+    .listLinkMenuSubHeaderBottom,
+    .listLinkMenuMainHeaderBottom {
+        font-size: 14px;
+    }
+    .listLinkMenuSubHeaderBottom {
+        line-height: 20px;
+    }
+    .listItemMenuMainHeaderBottom {
+        margin: 0 13.25px;
+    }
+    .wrapLogoHeaderBottom {
+        .imgLogoHeaderBottom {
+            height: 70px;
+        }
+    }
+    .btnBookNowHeaderBottom {
+        padding: 0px 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .wrapLogoHeaderBottom {
+        .imgLogoHeaderBottom {
+            height: 55px;
+        }
+    }
+    .fixedMenu {
+        .wrapLogoHeaderBottom {
+            .imgLogoHeaderBottom {
+                height: 35px;
+            }
+        }
+    }
+    .listMenuMainHeaderBottom {
+        margin-left: 0;
+    }
+    .wrapMenuMainHeaderBottom {
+        position: fixed;
+        z-index: 990;
+        background-color: $color1;
+        width: 230px;
+        left: -100%;
+        top: 75px;
+        overflow-y: auto;
+        padding: 0;
+        @include calc("height", "100% - 75px");
+        @include transition(0.5s);
+        display: block;
+        .listMenuMainHeaderBottom {
+            padding: 0;
+        }
+    }
+    .wrapCloseMenuHeaderMobile {
+        display: block;
+        position: fixed;
+        z-index: 991;
+        background-color: $color8;
+        right: -100%;
+        top: 75px;
+        @include calc("height", "100% - 75px");
+        @include transition(0.5s);
+        @include calc("width", "100% - 230px");
+    }
+    .listItemMenuMainHeaderBottom {
+        width: 100%;
+        margin: 0;
+        float: none;
+        border-bottom: 1px solid $color9;
+        .listLinkMenuMainHeaderBottom {
+            text-align: left;
+            line-height: 20px;
+            padding: 15px;
+            color: $color9;
+            &:after {
+                content: none;
+            }
+        }
+    }
+    .btnDropdowMenuSubHeaderBottom {
+        top: 0;
+        @include translate(0, 0);
+        width: 100%;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        color: $color3;
+    }
+    .menuSubHeaderBottom {
+        .listLinkMenuMainHeaderBottom {
+            padding-right: 0;
+            @include calc("width", "100% - 40px");
+        }
+    }
+    .wrapLogoHeaderBottom {
+        position: static;
+        display: table;
+    }
+    .imgLogoHeaderBottom {
+        height: 50px;
+    }
+    .btnShowMenuHeaderMobile {
+        display: block;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        @include translate(0, -50%);
+        font-size: 24px;
+        color: $color1;
+        .iconHidden {
+            display: none;
+        }
+        &:hover {
+            color: $color1;
+        }
+    }
+    .wrapHeader {
+        &.showMenu {
+            .wrapMenuMainHeaderBottom {
+                left: 0;
+            }
+            .wrapCloseMenuHeaderMobile {
+                right: 0;
+            }
+            .btnShowMenuHeaderMobile {
+                .iconHidden {
+                    display: block;
+                }
+                .iconShow {
+                    display: none;
+                }
+            }
+        }
+        &.fixedMenu {
+            .imgLogoHeaderBottom {
+                height: 50px;
+            }
+        }
+    }
+    .wrapListMenuSubHeaderBottom {
+        position: static;
+        visibility: visible;
+        @include opacity(1);
+        display: none;
+        @include translate(0, 0);
+        @include transition(unset);
+        @include transition(none);
+    }
+    .listMenuSubHeaderBottom {
+        @include boxShadow(unset);
+        @include boxShadow(none);
+        @include borderRadius(0);
+        background-color: $color4;
+        padding: 0;
+        white-space: normal;
+    }
+    .listLinkMenuSubHeaderBottom {
+        padding: 15px 15px 15px 30px;
+    }
+    .listItemMenuLanguageMobile {
+        display: inline-block;
+    }
+    .listLinkMenuLanguageMobile {
+        display: block;
+        padding: 0 5px;
+    }
+    .listMenuInfoHoteHeaderlMobile {
+        display: block;
+        .listItemHeaderTop {
+            width: 100%;
+        }
+        .listLinkHeaderTop {
+            color: $color3;
+            display: block;
+            padding: 0 15px;
+        }
+    }
+    .wrapBtnBookNowHeaderBottom {
+        right: 30px;
+        .btnBookNowHeaderBottom {
+            padding: 0 10px;
+        }
+    }
+    .wrapBtnBookNowHeaderBottom {
+        .btnBookNowHeaderBottom {
+            padding: 0 5px;
+            font-size: 12px;
+        }
+    }
+    .wrapMenuMainHeaderBottom {
+        width: 210px;
+    }
+    .wrapCloseMenuHeaderMobile {
+        @include calc("width", "100% - 210px");
+    }
+}
+
+@media(max-width:576px) {
+    .fixedMenu {
+        .wrapLogoHeaderBottom {
+            .imgLogoHeaderBottom {
+                height: 30px;
+            }
+        }
+    }
+    .wrapMenuMainHeaderBottom {
+        width: 300px;
+    }
+    .wrapCloseMenuHeaderMobile {
+        @include calc("width", "100% - 300px");
+    }
+}

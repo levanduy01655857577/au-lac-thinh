@@ -1,0 +1,74 @@
+@import '../abstracts/variable';
+@import '../abstracts/mixin';
+
+$widthBorderItem: 120px;
+$widthBgItem: 96px;
+
+.wrapListNumberInfo {
+    padding: 90px 0 60px 0;
+    background-color: $color1;
+}
+
+.wrapItemNumberInfo {
+    border: 2px dashed $color2;
+    padding: 10px;
+    width: $widthBorderItem;
+    height: $widthBorderItem;
+    @include transform(rotate(45deg));
+    margin: auto;
+}
+
+.wrapBgItemNumberInfo {
+    background-color: $color3;
+    width: $widthBgItem;
+    height: $widthBgItem;
+}
+
+.textNumberInfo {
+    font-size: 28px;
+    text-transform: uppercase;
+    font-family: $nameFont2;
+    font-weight: 800;
+    color: $color1;
+    text-align: center;
+    @include transform(rotate(-45deg));  
+    width: $widthBgItem;
+    height: $widthBgItem;
+    line-height: 38px;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.titleItemNumberInfo {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.rowListNumberInfo {
+    margin: 0 -7.5px;
+}
+
+.colItemNumberInfo {
+    padding: 0 7.5px;
+}
+
+@media (max-width: 991px) {
+    .wrapListNumberInfo {
+        padding: 30px 0;
+    }
+
+    .colItemNumberInfo {
+        margin-top: 50px;
+    }
+}
+
+@media (max-width: 767px) {
+    .rowListNumberInfo {
+        .colItemNumberInfo {
+            &:nth-child(1),
+            &:nth-child(2) {
+                margin-top: 30px;
+            }
+        }
+    }
+}

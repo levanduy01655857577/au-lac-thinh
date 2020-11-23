@@ -1,0 +1,77 @@
+@import '../abstracts/mixin';
+.wrapImgResize {
+    overflow: hidden;
+    position: relative;
+    img {
+        object-fit: cover;
+        width: 100%;
+        height: auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        @include translate(-50%, -50%);
+        min-height: 100%;
+        max-height: 100%;
+    }
+    &.img16And9 {
+        padding-top: 56%;
+    }
+    &.imgSquare {
+        padding-top: 100%;
+    }
+}
+
+.slick-dots {
+    position: relative;
+    list-style-type: none;
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    transform: translate(-50%, -50%);
+    li {
+        width: 20px;
+        height: 1px;
+        margin: 20px 0;
+        background-color: $color1;
+        button {
+            visibility: hidden;
+        }
+    }
+    .slick-active {
+        width: 40px;
+        height: 1px;
+        background-color: $color12;
+    }
+}
+
+@media(max-width:1024px) {
+    .slick-dots {
+        left: 5%;
+    }
+}
+
+@media(max-width:768px) {
+    .slick-dots {
+        left: 5%;
+        li {
+            width: 15px;
+            margin: 15px 0;
+        }
+        .slick-active {
+            width: 30px;
+        }
+    }
+}
+
+@media (max-width: 567px) {
+    .slick-dots {
+        left: 2%;
+        li {
+            width: 10px;
+            margin: 10px 0;
+        }
+        .slick-active {
+            width: 20px;
+        }
+    }
+}

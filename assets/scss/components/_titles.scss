@@ -1,0 +1,116 @@
+@import '../abstracts/variable';
+@import '../abstracts/mixin';
+
+// title page
+.titlePageSpecial {
+    display: none;
+}
+// end title page
+
+// title category 1
+.titleCategory1 {
+    color: $color2;
+    line-height: 46px;
+    font-size: 36px;
+    text-transform: uppercase;
+    font-family: $nameFont2;
+    position: relative;
+    margin: 0;
+    padding-left: 80px;
+
+    &:before {
+        width: 10px;
+        height: 10px;
+        @include borderRadius(100%);
+        background-color: $color5;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        @include translate(0, -50%);
+        content: '';
+    }
+
+    &:after {
+        width: 18px;
+        height: 18px;
+        @include borderRadius(100%);
+        background-color: $color6;
+        position: absolute;
+        left: 35px;
+        top: 50%;
+        @include translate(0, -50%);
+        content: '';
+    }
+}
+// end title category 1
+
+// title category 2
+.titleCategory2 {
+    color: $color7;
+    line-height: 34px;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-family: $nameFont2;
+    margin: 0;
+    font-weight: 700;
+}
+// end title category 2
+
+// title category 3
+.titleCategory3 {
+    color: $color1;
+    line-height: 28px;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-family: $nameFont2;
+    margin: 0;
+}
+// end title category 3
+
+// title category 4
+.titleCategory4 {
+    color: $color1;
+    line-height: 46px;
+    font-size: 36px;
+    text-transform: uppercase;
+    font-family: $nameFont2;
+    position: relative;
+    display: table;
+    margin: auto;
+    text-align: center;
+    padding-bottom: 30px;
+
+    &:after {
+        width: 18px;
+        height: 18px;
+        @include borderRadius(100%);
+        background-color: $color1;
+        position: absolute;
+        bottom: 0;
+        content: '';
+        left: 50%;
+        @include translate(-50%, 0);
+    }
+}
+// end title category 4
+
+@media (max-width: 991px) {
+    // title category 1
+    .titleCategory1 {
+        line-height: 34px;
+        font-size: 24px;
+        padding-left: 45px;
+
+        &:before {
+            width: 5px;
+            height: 5px;
+        }
+
+        &:after {
+            width: 10px;
+            height: 10px;
+            left: 20px;
+        }
+    }
+    // end title category 1
+}

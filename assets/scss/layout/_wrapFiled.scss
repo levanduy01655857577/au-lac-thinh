@@ -1,0 +1,321 @@
+@import "../abstracts/variable";
+@import "../abstracts/mixin";
+.wrapField {
+    margin-top: 90px;
+    height: auto;
+    .imgageField {
+        width: 50%;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+}
+
+.wrapImgResizeItemField {
+    width: 52px;
+    height: 52px;
+    display: block;
+}
+
+.descriptItemSubTitle {
+    font-family: $nameFont1;
+    color: $color15;
+    font-size: 50px;
+    line-height: 60px;
+    margin: 0;
+}
+
+.descriptItemTitle {
+    font-weight: 600;
+    color: $color9;
+    font-size: 33px;
+    line-height: 43px;
+}
+
+.descriptItemSologan {
+    font-weight: 600;
+    color: $color7;
+    font-size: 18px;
+    line-height: 30px;
+    margin: 15px 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    max-height: 200px;
+}
+
+.descriptItemField {
+    color: $color5;
+    font-size: 15px;
+    line-height: 28px;
+    font-weight: 500;
+    @include splitText(8, 250px);
+    margin: 25px 0;
+}
+
+.descriptItemFieldEvent {
+    color: $color5;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 30px;
+    margin: 0;
+}
+
+.wrapImgItemField {
+    padding-right: 15px;
+}
+
+.descriptItemQuotes {
+    font-family: $nameFont3;
+    font-size: 50px;
+    line-height: 40px;
+    transform: rotate(180deg);
+    margin: -10px 0 0 0;
+}
+
+.descriptItemField_Author {
+    color: $color5;
+    font-size: 13px;
+    line-height: 24px;
+    font-weight: 600;
+    margin: 0;
+    padding-top: 13px;
+}
+
+.titleheaddingItemField {
+    @include transition(0.5s);
+    font-size: 18px;
+    font-weight: 500;
+    color: $color7;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.linkTitleItemField {
+    &:hover {
+        text-decoration: none;
+        .titleheaddingItemField {
+            color: $color2;
+        }
+    }
+}
+
+.colItemField {
+    padding: 0 7.5px;
+}
+
+.rowListItemField {
+    margin: 0 -7.5px;
+}
+
+.colItemField {
+    position: relative;
+    margin: 30px auto;
+}
+
+.bannerField {
+    width: 100%;
+    height: auto;
+}
+
+.wrapImgField {
+    margin-top: 30px;
+    overflow: hidden;
+    @include borderRadius(10px);
+}
+
+.contentField {
+    position: relative;
+    min-height: 500px;
+}
+
+.rowContentItemField {
+    float: left;
+    width: 50%;
+    padding: 40px 0;
+}
+
+.bgBlack {
+    background-color: $color9;
+}
+
+.colorWhite {
+    color: $color1;
+}
+
+.colorGray {
+    color: $color5;
+}
+
+.padL,
+.padR {
+    width: 50%;
+}
+
+.padL {
+    float: left;
+    padding-right: 10px;
+}
+
+.padR {
+    float: right;
+    padding-left: 10px;
+}
+
+.colItemFieldEvent {
+    position: relative;
+    margin: 30px 0;
+}
+
+.backgroupField {
+    height: 600px;
+}
+
+.divisoncol2 {
+    column-count: 2;
+    column-gap: 34px;
+    padding: 0;
+    margin-right: 130px;
+}
+
+@media (max-width: 1024px) {
+    .descriptItemSubTitle {
+        font-size: 40px;
+        line-height: 45px;
+    }
+    .descriptItemTitle {
+        font-size: 35px;
+        line-height: 40px;
+    }
+    .descriptItemSologan {
+        font-size: 15px;
+        line-height: 24px;
+        margin: 10px 0;
+    }
+    .descriptItemField {
+        font-size: 13px;
+        line-height: 23px;
+        margin: 15px 0;
+        @include splitText(8, 205px);
+    }
+    .descriptItemFieldEvent {
+        font-size: 13px;
+        line-height: 23px;
+        padding: 0;
+    }
+    .backgroupField {
+        height: 600px;
+    }
+    .blockItemLeft {
+        margin: 10px 0;
+    }
+    .colImgField {
+        display: none;
+    }
+    .rowContentItemField {
+        padding: 50px 0;
+    }
+    .itemimgField {
+        img {
+            height: 600px;
+        }
+    }
+    .divisoncol2 {
+        column-gap: 20px;
+        margin-right: 110px;
+    }
+}
+
+@media (max-width: 768px) {
+    .wrapField {
+        position: relative;
+        margin-top: 70px;
+        .backgroupField {
+            height: auto;
+        }
+        .descriptItemSubTitle {
+            font-size: 35px;
+            line-height: 45px;
+            margin: 0;
+        }
+        .descriptItemTitle {
+            font-size: 30px;
+            line-height: 40px;
+            margin: 0;
+        }
+        .descriptItemField {
+            font-size: 14px;
+            line-height: 24px;
+            @include splitText(8, 245px);
+        }
+        .descriptItemFieldEvent {
+            font-size: 14px;
+            line-height: 24px;
+            padding: 0;
+            margin: 10px 0;
+        }
+        .blockItemImg {
+            padding-top: 15px;
+        }
+        .divisoncol2 {
+            margin-right: 10px;
+        }
+        .rowContentItemField {
+            padding: 60.25px 0;
+        }
+    }
+    .colImgField {
+        display: none;
+    }
+}
+
+@media (max-width: 567px) {
+    .wrapField {
+        margin-top: 40px;
+        .wrapImageResize {
+            position: static;
+            width: 100%;
+        }
+        .rowContentItemField {
+            padding: 20px 0;
+            width: 100%;
+        }
+        .divisoncol2 {
+            margin: 0;
+        }
+        .descriptItemSubTitle {
+            font-size: 35px;
+            line-height: 45px;
+            margin: 0;
+        }
+        .descriptItemTitle {
+            font-size: 30px;
+            line-height: 40px;
+            margin: 0;
+        }
+        .descriptItemSologan {
+            font-size: 13px;
+            line-height: 20px;
+            margin: 10px 0;
+        }
+        .descriptItemField {
+            font-size: 12px;
+            line-height: 22px;
+            @include splitText(8, 240px);
+        }
+        .descriptItemFieldEvent {
+            font-size: 12px;
+            line-height: 22px;
+            padding: 0;
+            margin: 10px 0;
+        }
+        .divisoncol2 {
+            column-count: 1;
+        }
+        .blockItemImg {
+            padding-top: 15px;
+        }
+    }
+}

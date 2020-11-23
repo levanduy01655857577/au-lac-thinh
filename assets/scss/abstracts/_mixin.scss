@@ -1,0 +1,86 @@
+@mixin transition($value) {
+  transition: $value;
+  -webkit-transition: $value;
+  -moz-transition: $value;
+  -ms-transition: $value;
+  -o-transition: $value;
+}
+
+@mixin widthCalc($value) {
+  width: calc(#{$value});
+  width: -webkit-calc(#{$value});
+  width: -moz-calc(#{$value});
+  width: -ms-calc(#{$value});
+  width: -o-calc(#{$value});
+}
+
+@mixin opacity($value) {
+  opacity: $value;
+  $opcity-fillter: $value * 100;
+  filter: alpha(opacity= $opcity-fillter);
+}
+
+@mixin borderRadius($value) {
+  border-radius: $value;
+  -webkit-border-radius: $value;
+  -moz-border-radius: $value;
+  -ms-border-radius: $value;
+  -o-border-radius: $value;
+}
+
+@mixin translate($x, $y) {
+  transform: translate($x, $y);
+  -webkit-transform: translate($x, $y);
+  -moz-transform: translate($x, $y);
+  -ms-transform: translate($x, $y);
+  -o-transform: translate($x, $y);
+}
+
+@mixin boxShadow($value) {
+  box-shadow: $value;
+  -webkit-box-shadow: $value;
+  -moz-box-shadow: $value;
+  -ms-box-shadow: $value;
+  -o-box-shadow: $value;
+}
+
+@mixin heightCalc($value) {
+  height: calc(#{$value});
+  height: -webkit-calc(#{$value});
+  height: -moz-calc(#{$value});
+  height: -ms-calc(#{$value});
+  height: -o-calc(#{$value});
+}
+
+@mixin splitText($row, $maxHeight) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: $row;
+  -webkit-box-orient: vertical;
+  max-height: $maxHeight;
+}
+
+@mixin transform($value) {
+  transform: $value;
+  -webkit-transform: $value;
+  -moz-transform: $value;
+  -ms-transform: $value;
+  -o-transform: $value;
+}
+
+@mixin propertyAllCode($property, $value) {
+  #{$property}: $value;
+  -webkit-#{$property}: $value;
+  -moz-#{$property}: $value;
+  -ms-#{$property}: $value;
+  -o-#{$property}: $value;
+}
+
+@mixin calc($type, $value) {
+  #{$type}: calc(#{$value});
+  #{$type}: -webkit-calc(#{$value});
+  #{$type}: -moz-calc(#{$value});
+  #{$type}: -ms-calc(#{$value});
+  #{$type}: -o-calc(#{$value});
+}

@@ -1,0 +1,97 @@
+@import '../abstracts/variable';
+@import '../abstracts/mixin';
+.wrapCopyRightAndDesigned {
+    position: relative;
+    display: flex;
+    background-color: $color11;
+    padding: 30px 0;
+    border-top: 1px solid $color12;
+}
+
+.wrapTextCopyRightAndDesigned {
+    font-size: 14px;
+    display: flex;
+    flex-direction: row;
+    line-height: 24px;
+    font-weight: 500;
+    color: $color5;
+    justify-content: space-between;
+    a {
+        color: $color3;
+        @include transition(0.5s);
+        &:hover {
+            color: $color1;
+            text-decoration: none;
+        }
+    }
+    .textCopyRightFooter {
+        span {
+            color: $color12;
+        }
+    }
+    .texDesignedFooter {
+        padding-right: 15px;
+        span a {
+            color: $color12;
+        }
+    }
+}
+
+.listFanpageFooter {
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    color: $color1;
+    @include transition(0.5s);
+    padding: 5px;
+    &:first-child {
+        margin-left: 0;
+    }
+    &:hover {
+        color: $color3;
+        text-decoration: none;
+    }
+    i {
+        color: $color5;
+    }
+}
+
+@media (max-width: 768px) {
+    .wrapTextCopyRightAndDesigned,
+    .listFanpageFooter {
+        float: none;
+    }
+    .wrapCopyRightAndDesigned {
+        font-size: 14px;
+        line-height: 24px;
+        padding: 10px;
+        .wrapTextCopyRightAndDesigned {
+            display: flex;
+            .textCopyRightFooter {
+                line-height: 20px;
+            }
+            .texDesignedFooter {
+                padding-right: 27px;
+                line-height: 20px;
+            }
+        }
+    }
+}
+
+@media(max-width:567px) {
+    .wrapCopyRightAndDesigned {
+        padding: 10px 0;
+        .wrapTextCopyRightAndDesigned {
+            display: block;
+            text-align: center;
+            line-height: 20px;
+            .textCopyRightFooter {
+                padding-right: 35px;
+                margin: 0;
+            }
+            .texDesignedFooter {
+                margin: 0;
+            }
+        }
+    }
+}
