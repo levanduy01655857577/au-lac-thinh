@@ -1,0 +1,81 @@
+.introduceTitle{
+    h2{
+        font-family: $nameFont2;
+        font-weight: 600;
+    }
+    p{
+        font-weight: 500;
+        color: $color5;
+    }
+}
+
+.titleMenu1{
+    font-family: $nameFont1;
+    color: $color15;
+    font-size: 60px;
+    line-height: 60px;
+    text-align: center;
+}
+
+.titleMenu2{
+    font-family: $nameFont2;
+    font-weight: 500;
+    color: $color9;
+    font-size: 28px;
+    line-height: 43px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.foodDescription1{
+    font-weight: 600;
+    color: $color7;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.foodDescription2{
+    font-weight: 500;
+    color: $color5;
+    font-size: 15px;
+}
+
+.foodPrice{
+    font-family: $nameFont1;
+    color: $color14;
+    text-transform: uppercase;
+}
+
+// dots
+ul.leaders {
+    max-width: 100%;
+    padding: 0;
+    overflow-x: hidden;
+    list-style: none}
+ul.leaders li{
+    margin-top: 2%;
+}
+ul.leaders li:before {
+    float: left;
+    width: 0;
+    white-space: nowrap;
+    content:
+ ". . . . . . . . . . . . . . . . . . . . "
+ ". . . . . . . . . . . . . . . . . . . . "
+ ". . . . . . . . . . . . . . . . . . . . "
+ ". . . . . . . . . . . . . . . . . . . . "
+ ". . . . . . . . . . . . . . . . . . . . "
+ ". . . . . . . . . . . . . . . . . . . . "
+ ". . . . . . . . . . . . . . . . . . . . "
+ ". . . . . . . . . . . . . . . . . . . . "
+ ". . . . . . . . . . . . . . . . . . . . "}
+ul.leaders span:first-child {
+    font-style: bold;
+    padding-right: 0.33em;
+    background: white}
+ul.leaders span + span {
+    float: right;
+    padding-left: 0.33em;
+    background: white}
+
+// end dots
