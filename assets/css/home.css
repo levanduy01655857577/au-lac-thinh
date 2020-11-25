@@ -16810,7 +16810,7 @@ body {
 }
 
 .wrapHeader.fixedMenu .wrapHeaderBottom .listItemMenuMainHeaderBottom {
-  margin: 0 20px;
+  margin: 0 20px 0 0;
 }
 
 .wrapHeader.fixedMenu .wrapLogoHeaderBottom {
@@ -16859,12 +16859,12 @@ body {
     background-color: white;
     width: 230px;
     left: -100%;
-    top: 75px;
+    top: 70px;
     overflow-y: auto;
     padding: 0;
-    height: calc(100% - 75px);
-    height: -ms-calc(100% - 75px);
-    height: -o-calc(100% - 75px);
+    height: calc(100% - 70px);
+    height: -ms-calc(100% - 70px);
+    height: -o-calc(100% - 70px);
     transition: 0.5s;
     -webkit-transition: 0.5s;
     -moz-transition: 0.5s;
@@ -16881,10 +16881,10 @@ body {
     z-index: 991;
     background-color: rgba(0, 0, 0, 0.8);
     right: -100%;
-    top: 75px;
-    height: calc(100% - 75px);
-    height: -ms-calc(100% - 75px);
-    height: -o-calc(100% - 75px);
+    top: 70px;
+    height: calc(100% - 70px);
+    height: -ms-calc(100% - 70px);
+    height: -o-calc(100% - 70px);
     transition: 0.5s;
     -webkit-transition: 0.5s;
     -moz-transition: 0.5s;
@@ -16898,7 +16898,7 @@ body {
     width: 100%;
     margin: 0;
     float: none;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid rgba(243, 243, 243, 0.8);
   }
   .listItemMenuMainHeaderBottom .listLinkMenuMainHeaderBottom {
     text-align: left;
@@ -18128,6 +18128,7 @@ body {
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   max-height: 200px;
+  text-align: justify;
 }
 
 .descriptItemField {
@@ -19077,9 +19078,6 @@ body {
     top: 40% !important;
     height: 60% !important;
   }
-  .descriptionLatestNews {
-    text-align: left;
-  }
   .titleHeadingLatestNews {
     overflow: hidden;
     text-overflow: ellipsis;
@@ -19089,9 +19087,6 @@ body {
     max-height: 56px;
     font-size: 18px;
     line-height: 28px;
-  }
-  .elementSlideLatestNews {
-    margin-top: 15px;
   }
   .wrapLatestNews {
     padding: 0;

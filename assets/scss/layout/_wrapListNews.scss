@@ -100,17 +100,17 @@
         top: 40% !important;
         height: 60% !important;
     }
-    .descriptionLatestNews {
-        text-align: left;
-    }
+    // .descriptionLatestNews {
+    //     text-align: left;
+    // }
     .titleHeadingLatestNews {
         @include splitText(2, 56px);
         font-size: 18px;
         line-height: 28px;
     }
-    .elementSlideLatestNews {
-        margin-top: 15px;
-    }
+    // .elementSlideLatestNews {
+    //     margin-top: 15px;
+    // }
     .wrapLatestNews {
         padding: 0;
     }
