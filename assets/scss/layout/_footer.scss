@@ -31,6 +31,7 @@
     line-height: 30px;
     color: $color5;
     text-align: center;
+    letter-spacing: 5px;
 }
 
 .colItemFooter {
@@ -214,8 +215,7 @@
     .wrapFooter {
         padding: 25px 0 10px 0;
         .imgLogoFooter {
-            height: auto;
-            width: 200px;
+            height: 60px;
         }
         .textAboutFooter {
             font-size: 12px;
@@ -295,6 +295,10 @@
     }
     .colItem3 {
         bottom: 0;
+    }
+
+    .colFooterLeft{
+        order: 2
     }
 }
 
