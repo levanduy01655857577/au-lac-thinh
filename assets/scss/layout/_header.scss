@@ -195,7 +195,7 @@
         .wrapHeaderBottom {
             background-color: $color8;
             .listItemMenuMainHeaderBottom {
-                margin: 0 20px;
+                margin: 0 20px 0 0;
             }
         }
         .wrapLogoHeaderBottom {
@@ -253,10 +253,10 @@
         background-color: $color1;
         width: 230px;
         left: -100%;
-        top: 75px;
+        top: 70px;
         overflow-y: auto;
         padding: 0;
-        @include calc("height", "100% - 75px");
+        @include calc("height", "100% - 70px");
         @include transition(0.5s);
         display: block;
         .listMenuMainHeaderBottom {
@@ -269,8 +269,8 @@
         z-index: 991;
         background-color: $color8;
         right: -100%;
-        top: 75px;
-        @include calc("height", "100% - 75px");
+        top: 70px;
+        @include calc("height", "100% - 70px");
         @include transition(0.5s);
         @include calc("width", "100% - 230px");
     }
@@ -278,7 +278,7 @@
         width: 100%;
         margin: 0;
         float: none;
-        border-bottom: 1px solid $color9;
+        border-bottom: 1px solid $color13;
         .listLinkMenuMainHeaderBottom {
             text-align: left;
             line-height: 20px;

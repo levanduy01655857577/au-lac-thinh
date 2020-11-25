@@ -16810,7 +16810,7 @@ body {
 }
 
 .wrapHeader.fixedMenu .wrapHeaderBottom .listItemMenuMainHeaderBottom {
-  margin: 0 20px;
+  margin: 0 20px 0 0;
 }
 
 .wrapHeader.fixedMenu .wrapLogoHeaderBottom {
@@ -16859,12 +16859,12 @@ body {
     background-color: white;
     width: 230px;
     left: -100%;
-    top: 75px;
+    top: 70px;
     overflow-y: auto;
     padding: 0;
-    height: calc(100% - 75px);
-    height: -ms-calc(100% - 75px);
-    height: -o-calc(100% - 75px);
+    height: calc(100% - 70px);
+    height: -ms-calc(100% - 70px);
+    height: -o-calc(100% - 70px);
     transition: 0.5s;
     -webkit-transition: 0.5s;
     -moz-transition: 0.5s;
@@ -16881,10 +16881,10 @@ body {
     z-index: 991;
     background-color: rgba(0, 0, 0, 0.8);
     right: -100%;
-    top: 75px;
-    height: calc(100% - 75px);
-    height: -ms-calc(100% - 75px);
-    height: -o-calc(100% - 75px);
+    top: 70px;
+    height: calc(100% - 70px);
+    height: -ms-calc(100% - 70px);
+    height: -o-calc(100% - 70px);
     transition: 0.5s;
     -webkit-transition: 0.5s;
     -moz-transition: 0.5s;
@@ -16898,7 +16898,7 @@ body {
     width: 100%;
     margin: 0;
     float: none;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid rgba(243, 243, 243, 0.8);
   }
   .listItemMenuMainHeaderBottom .listLinkMenuMainHeaderBottom {
     text-align: left;
@@ -17755,6 +17755,7 @@ html {
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   max-height: 200px;
+  text-align: justify;
 }
 
 .descriptItemField {
@@ -18275,24 +18276,25 @@ html {
   }
 }
 
+h2 {
+  margin: 0;
+}
+
 .wrapLatestNews {
-  padding: 0;
+  padding: 0 0 60px 0;
 }
 
 .backgroudLastNews {
   position: relative;
-  background-color: #16191e;
-  padding: 40px 0;
-  margin-bottom: 20px;
 }
 
-.backgroudLastNews::before {
+.backgroudLastNews:before {
   position: absolute;
   content: "";
   width: 100%;
-  height: 50%;
-  top: 50%;
-  background-color: white;
+  height: 130px;
+  top: 0 !important;
+  background-color: #0c0d0f;
 }
 
 .wrapImgItemLatestNews {
@@ -18385,20 +18387,20 @@ html {
 }
 
 .updateNews {
+  position: relative;
+  z-index: 1;
   text-align: center;
+  background-color: #0c0d0f;
+  padding: 60px 0 0 0;
+}
+
+@media (max-width: 991px) {
+  .backgroudLastNews::before {
+    height: 90px !important;
+  }
 }
 
 @media (max-width: 768px) {
-  .backgroudLastNews {
-    margin: 0;
-  }
-  .backgroudLastNews::before {
-    top: 40% !important;
-    height: 60% !important;
-  }
-  .descriptionLatestNews {
-    text-align: left;
-  }
   .titleHeadingLatestNews {
     overflow: hidden;
     text-overflow: ellipsis;
@@ -18409,18 +18411,11 @@ html {
     font-size: 18px;
     line-height: 28px;
   }
-  .elementSlideLatestNews {
-    margin-top: 15px;
-  }
-  .wrapLatestNews {
-    padding: 0;
-  }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 575px) {
   .backgroudLastNews::before {
-    top: 20%;
-    height: 80%;
+    height: 130px !important;
   }
 }
 
