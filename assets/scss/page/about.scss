@@ -1,0 +1,26 @@
+// general
+@import '../base/general';
+// end general
+// breadcrumb
+@import '../components/breadcrumb';
+// end breadcrumb
+body,
+html {
+    height: 100%;
+}
+
+// field
+@import '../layout/wrapFiled';
+// end field
+// about home
+@import '../layout/wrapAboutHome';
+// end about home
+// list comment
+@import '../layout/wrapListComment';
+// end list comment
+// list news
+@import '../layout/wrapListNews';
+// end list news
+// field
+@import '../layout/frmAbout';
+// end field

@@ -1,14 +1,23 @@
 @import "../abstracts/variable";
 @import "../abstracts/mixin";
 .wrapField {
-    margin-top: 90px;
-    height: auto;
+    margin-top: 60px;
+    overflow: hidden;
+    .imgageFieldWelcome {
+        width: 100%;
+        height: 100%;
+    }
     .imgageField {
         width: 50%;
+        height: 100%;
         position: absolute;
         top: 0;
         right: 0;
     }
+}
+
+.wrapFieldIntro {
+    padding-top: 30px;
 }
 
 .wrapImgResizeItemField {
@@ -33,7 +42,7 @@
 }
 
 .descriptItemSologan {
-    font-weight: 600;
+    font-weight: 500;
     color: $color7;
     font-size: 18px;
     line-height: 30px;
@@ -50,17 +59,18 @@
     color: $color5;
     font-size: 15px;
     line-height: 28px;
-    font-weight: 500;
+    font-weight: 400;
     @include splitText(8, 250px);
     margin: 25px 0;
+    text-align: justify;
 }
 
 .descriptItemFieldEvent {
     color: $color5;
     font-size: 15px;
-    font-weight: 500;
-    line-height: 30px;
-    margin: 0;
+    font-weight: 400;
+    line-height: 27px;
+    margin: 25px 0;
 }
 
 .wrapImgItemField {
@@ -134,11 +144,15 @@
 .rowContentItemField {
     float: left;
     width: 50%;
-    padding: 40px 0;
+    padding: 100px 60px 60px 0;
 }
 
 .bgBlack {
-    background-color: $color9;
+    background-color: $color20;
+}
+
+.bgWhite {
+    background-color: $color1;
 }
 
 .colorWhite {
@@ -149,38 +163,25 @@
     color: $color5;
 }
 
-.padL,
-.padR {
-    width: 50%;
-}
-
-.padL {
-    float: left;
-    padding-right: 10px;
-}
-
-.padR {
-    float: right;
-    padding-left: 10px;
-}
-
 .colItemFieldEvent {
     position: relative;
     margin: 30px 0;
-}
-
-.backgroupField {
-    height: 600px;
 }
 
 .divisoncol2 {
     column-count: 2;
     column-gap: 34px;
     padding: 0;
-    margin-right: 130px;
+    text-align: justify;
 }
 
 @media (max-width: 1024px) {
+    .wrapFieldIntro {
+        padding-top: 15px;
+    }
+    .contentField {
+        min-height: 450px;
+    }
     .descriptItemSubTitle {
         font-size: 40px;
         line-height: 45px;
@@ -205,26 +206,18 @@
         line-height: 23px;
         padding: 0;
     }
-    .backgroupField {
-        height: 600px;
-    }
     .blockItemLeft {
         margin: 10px 0;
     }
     .colImgField {
         display: none;
     }
-    .rowContentItemField {
-        padding: 50px 0;
-    }
-    .itemimgField {
-        img {
-            height: 600px;
-        }
-    }
     .divisoncol2 {
         column-gap: 20px;
         margin-right: 110px;
+    }
+    .rowContentItemField {
+        padding: 50px 0 30px 0;
     }
 }
 
@@ -232,8 +225,9 @@
     .wrapField {
         position: relative;
         margin-top: 70px;
-        .backgroupField {
-            height: auto;
+        .imgageField {
+            position: static;
+            width: 100%;
         }
         .descriptItemSubTitle {
             font-size: 35px;
@@ -260,10 +254,12 @@
             padding-top: 15px;
         }
         .divisoncol2 {
-            margin-right: 10px;
+            column-count: 1;
+            margin: 0;
         }
         .rowContentItemField {
-            padding: 60.25px 0;
+            width: 100%;
+            padding: 30px 0 30px 0;
         }
     }
     .colImgField {
@@ -274,10 +270,6 @@
 @media (max-width: 567px) {
     .wrapField {
         margin-top: 40px;
-        .wrapImageResize {
-            position: static;
-            width: 100%;
-        }
         .rowContentItemField {
             padding: 20px 0;
             width: 100%;
