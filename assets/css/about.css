@@ -16742,7 +16742,7 @@ body {
 .listItemMenuMainHeaderBottom {
   float: left;
   position: relative;
-  margin: 0 20px;
+  margin: 0 14px;
 }
 
 .listItemMenuMainHeaderBottom.menuLanguageHeaderBottom {
@@ -16810,7 +16810,7 @@ body {
 }
 
 .wrapHeader.fixedMenu .wrapHeaderBottom .listItemMenuMainHeaderBottom {
-  margin: 0 20px;
+  margin: 0 14px;
 }
 
 .wrapHeader.fixedMenu .wrapLogoHeaderBottom {
@@ -16821,29 +16821,7 @@ body {
   height: 60px;
 }
 
-@media (max-width: 1024px) {
-  .wrapMenuMainHeaderBottom {
-    padding-right: 95px;
-  }
-  .listLinkMenuSubHeaderBottom,
-  .listLinkMenuMainHeaderBottom {
-    font-size: 14px;
-  }
-  .listLinkMenuSubHeaderBottom {
-    line-height: 20px;
-  }
-  .listItemMenuMainHeaderBottom {
-    margin: 0 10px;
-  }
-  .wrapLogoHeaderBottom .imgLogoHeaderBottom {
-    height: 70px;
-  }
-  .btnBookNowHeaderBottom {
-    padding: 0px 15px;
-  }
-}
-
-@media (max-width: 768px) {
+@media (max-width: 1199px) {
   .wrapLogoHeaderBottom .imgLogoHeaderBottom {
     height: 55px;
   }
@@ -16896,7 +16874,7 @@ body {
   }
   .listItemMenuMainHeaderBottom {
     width: 100%;
-    margin: 0;
+    margin: 0 !important;
     float: none;
     border-bottom: 1px solid rgba(243, 243, 243, 0.8);
   }
@@ -17045,7 +17023,7 @@ body {
   }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 575px) {
   .fixedMenu .wrapLogoHeaderBottom .imgLogoHeaderBottom {
     height: 30px;
   }
@@ -17090,7 +17068,7 @@ body {
   line-height: 30px;
   color: #888888;
   text-align: center;
-  letter-spacing: 5px;
+  letter-spacing: 2px;
 }
 
 .colItemFooter {
@@ -17174,7 +17152,7 @@ body {
 .listContactFooter .itemMenuFooter .address {
   color: #888888;
   letter-spacing: 1px;
-  line-height: 40px;
+  line-height: 25px;
   transition: 0.5s;
   -webkit-transition: 0.5s;
   -moz-transition: 0.5s;
@@ -17215,17 +17193,24 @@ body {
 }
 
 .blocklistFanpageFooter {
-  margin: 0 auto;
+  margin: 0 10px !important;
   text-align: center;
 }
 
-@media (max-width: 1024px) {
+.listFanpageFooter .linkFanpageFooter {
+  margin: 0 5px !important;
+}
+
+@media (max-width: 1199px) {
   .wrapFooter .listFanpageFooter .linkFanpageFooter {
-    margin: 0 20px;
+    margin: 0 12px;
+  }
+  .textFollowFooter {
+    letter-spacing: 1px;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .wrapFooter {
     padding: 30px 0 20px 0;
   }
@@ -17286,7 +17271,7 @@ body {
   }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 575px) {
   .wrapFooter {
     padding: 25px 0 10px 0;
   }

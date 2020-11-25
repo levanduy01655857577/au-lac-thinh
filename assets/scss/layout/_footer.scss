@@ -31,7 +31,7 @@
     line-height: 30px;
     color: $color5;
     text-align: center;
-    letter-spacing: 5px;
+    letter-spacing: 2px;
 }
 
 .colItemFooter {
@@ -99,7 +99,7 @@
         .address {
             color: $color5;
             letter-spacing: 1px;
-            line-height: 40px;
+            line-height: 25px;
             @include transition(0.5s);
             &:hover {
                 color: $color12;
@@ -128,21 +128,30 @@
 }
 
 .blocklistFanpageFooter {
-    margin: 0 auto;
+    margin: 0 10px !important;
     text-align: center;
 }
 
-@media(max-width:1024px) {
+.listFanpageFooter{ 
+    .linkFanpageFooter{
+        margin: 0 5px !important;
+    }
+
+}
+@media(max-width:1199px) {
     .wrapFooter {
         .listFanpageFooter {
             .linkFanpageFooter {
-                margin: 0 20px;
+                margin: 0 12px;
             }
         }
     }
+    .textFollowFooter{
+        letter-spacing: 1px;
+    }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .wrapFooter {
         padding: 30px 0 20px 0;
         .linkTitleItemMenuFooter {
@@ -211,7 +220,7 @@
     }
 }
 
-@media(max-width:576px) {
+@media(max-width:575px) {
     .wrapFooter {
         padding: 25px 0 10px 0;
         .imgLogoFooter {
