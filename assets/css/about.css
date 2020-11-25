@@ -16655,7 +16655,7 @@ body {
 .listLinkMenuSubHeaderBottom {
   color: #888888;
   line-height: 22px;
-  font-weight: 700;
+  font-weight: 400;
   padding: 10px 0;
 }
 
@@ -16810,7 +16810,7 @@ body {
 }
 
 .wrapHeader.fixedMenu .wrapHeaderBottom .listItemMenuMainHeaderBottom {
-  margin: 0 20px 0 0;
+  margin: 0 20px;
 }
 
 .wrapHeader.fixedMenu .wrapLogoHeaderBottom {
@@ -17090,6 +17090,7 @@ body {
   line-height: 30px;
   color: #888888;
   text-align: center;
+  letter-spacing: 5px;
 }
 
 .colItemFooter {
@@ -17290,8 +17291,7 @@ body {
     padding: 25px 0 10px 0;
   }
   .wrapFooter .imgLogoFooter {
-    height: auto;
-    width: 200px;
+    height: 60px;
   }
   .wrapFooter .textAboutFooter {
     font-size: 12px;
@@ -17370,6 +17370,11 @@ body {
   }
   .colItem3 {
     bottom: 0;
+  }
+  .colFooterLeft {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
   }
 }
 
@@ -18352,6 +18357,7 @@ h2 {
   line-height: 24px;
   color: #888888;
   margin: 10px 0 0 0;
+  text-align: justify;
 }
 
 .descriptionLatestDate {
