@@ -7,27 +7,23 @@
 
 .titleTextContact,
 .titleFrmContact {
-    color: $color15;
+    color: $color2;
 }
 
 .wrapTexInfoContact {
-    font-size: 15px;
-    line-height: 24px;
+    font-size: 16px;
+    line-height: 26px;
     color: $color7;
     margin-top: 15px;
 
     a {
-        color: $color5;
+        color: $color2;
         @include transition(0.5s);
 
         &:hover {
-            color: $color12;
+            color: $color3;
             text-decoration: none;
         }
-    }
-
-    p b i{
-        width: 20px;
     }
 }
 
@@ -35,7 +31,7 @@
     margin-top: 15px;
 
     a {
-        color: $color15;
+        color: $color2;
         @include transition(0.5s);
         display: inline-block;
         font-size: 18px;
@@ -46,15 +42,14 @@
         }
 
         &:hover {
-            color: $color12;
+            color: $color3;
             text-decoration: none;
         }
     }
 }
 
 .formControlSendMessageContact  {
-    border: 1px solid $color4;
-    @include borderRadius(0px);
+    @include borderRadius(5px);
 }
 
 .wrapFrmSendMessage {
@@ -92,22 +87,8 @@
 }
 
 .btnSendMessageContact {
-    padding: 0 15px;
-    text-align: center;
-    border: 1px solid $color14;
-    background-color: $color14;
-    font-size: 13px;
-    border-radius: 0;
-    margin-left: 15px;
-    line-height: 40px;
-    color: black;
-
-    &:hover{
-        background-color: white;
-        color: $color15;
-    }
+    line-height: 34px;
 }
-
 // end captcha
 
 // map
@@ -140,7 +121,7 @@
 
     .btnSendMessageContact {
         float: none;
-        margin: 0 15px;
+        margin: 15px 0 0 0;
         clear: both;
     }
 
@@ -152,8 +133,8 @@
         height: 250px;
     }
 
-    // .imageRefreshCaptchaContact,
-    // .imageCaptchaContact {
-    //     margin-top: 5px;
-    // }
+    .imageRefreshCaptchaContact,
+    .imageCaptchaContact {
+        margin-top: 0;
+    }
 }

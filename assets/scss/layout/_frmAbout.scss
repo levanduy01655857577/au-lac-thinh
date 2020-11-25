@@ -1,0 +1,6 @@
+@import '../abstracts/variable';
+@import '../abstracts/mixin';
+.backgroundAbout {
+    background-color: $color17;
+    padding: 10% 0;
+}

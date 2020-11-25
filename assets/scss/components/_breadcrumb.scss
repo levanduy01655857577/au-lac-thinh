@@ -1,6 +1,5 @@
 @import '../abstracts/mixin';
 @import '../abstracts/variable';
-
 .wrapImgBreadcrumb {
     padding-top: 400px;
     background-color: $color9;
@@ -25,8 +24,7 @@
 
 .navListBreadcrumb {
     background: none;
-    // margin: 15px auto auto auto;
-    margin:auto;
+    margin: 15px auto auto auto;
     display: table;
 }
 
@@ -48,19 +46,16 @@
 
 .linkListBreadcrumb {
     @include transition(0.5s);
-
     &:hover {
-        color: $color15;
+        color: $color2;
         text-decoration: none;
     }
 }
 
 .itemListBreadcrumb {
     display: inline;
-    
-    + .itemListBreadcrumb {
+    +.itemListBreadcrumb {
         padding-left: 15px;
-
         &::before {
             font-family: "Font Awesome 5 Free";
             content: "\f061";
@@ -77,50 +72,43 @@
     position: relative;
     width: 80px;
     margin: auto;
-
-    // &:before,
-    // &:after {
-    //     position: absolute;
-    //     bottom: 3px;
-    //     content: '';
-    //     width: 10px;
-    //     height: 10px;
-    //     background-color: $color1;
-    //     @include borderRadius(100%);
-    // }
-
-    // &:before {
-    //     left: 0;
-    // }
-
-    // &:after {
-    //     right: 0;
-    // }
+    &:before,
+    &:after {
+        position: absolute;
+        bottom: 3px;
+        content: '';
+        width: 10px;
+        height: 10px;
+        background-color: $color1;
+        @include borderRadius(100%);
+    }
+    &:before {
+        left: 0;
+    }
+    &:after {
+        right: 0;
+    }
 }
 
 @media (max-width: 991px) {
-    // .navListBreadcrumb {
-    //     margin-top: 5px;
-    // }
-
+    .navListBreadcrumb {
+        margin-top: 5px;
+    }
     .titlePageCurrentBreadcrumb {
-        // padding: 0 0 15px 0;
+        padding: 0 0 15px 0;
         font-size: 24px;
         line-height: 38px;
-
         &:before {
             content: none;
         }
-
         &:after {
             bottom: 0;
             left: 50%;
             @include translate(-50%, 0);
             top: auto;
         }
-
-        // .navListBreadcrumb {
-        //     margin-top: 15px;
-        // }
+        .navListBreadcrumb {
+            margin-top: 15px;
+        }
     }
 }
