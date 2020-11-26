@@ -18303,6 +18303,12 @@ body {
   }
 }
 
+@media (max-width: 991px) {
+  .wrapField {
+    margin: 30px 0;
+  }
+}
+
 @media (max-width: 767px) {
   .wrapField .imgageField {
     position: static;
@@ -18938,6 +18944,12 @@ h2 {
   margin: 0;
 }
 
+.secondImage {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+
 .wrapLatestNews {
   padding: 0 0 60px 0;
 }
@@ -19056,6 +19068,11 @@ h2 {
 @media (max-width: 991px) {
   .backgroudLastNews::before {
     height: 90px !important;
+  }
+  .secondImage {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
   }
 }
 
