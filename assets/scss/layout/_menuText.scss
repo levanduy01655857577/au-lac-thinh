@@ -27,55 +27,79 @@
     text-align: center;
 }
 
+.orderMenuImage{
+    order: 2;
+}
+
 .foodDescription1{
     font-weight: 600;
     color: $color7;
     font-size: 18px;
     text-transform: uppercase;
+    padding: 0 0 auto auto !important;
 }
 
 .foodDescription2{
     font-weight: 500;
     color: $color5;
     font-size: 15px;
+    text-align: justify;
 }
 
 .foodPrice{
     font-family: $nameFont1;
     color: $color14;
     text-transform: uppercase;
+    background: $color1;
+    padding: 0 0 0 5px;
+    display: inline-block;
+    @include translate(0, 1px);
 }
 
 // dots
-ul.leaders {
-    max-width: 100%;
-    padding: 0;
-    overflow-x: hidden;
-    list-style: none}
-ul.leaders li{
-    margin-top: 2%;
+.dots {
+    display: flex;
+    position: relative;
 }
-ul.leaders li:before {
-    float: left;
-    width: 0;
-    white-space: nowrap;
-    content:
- ". . . . . . . . . . . . . . . . . . . . "
- ". . . . . . . . . . . . . . . . . . . . "
- ". . . . . . . . . . . . . . . . . . . . "
- ". . . . . . . . . . . . . . . . . . . . "
- ". . . . . . . . . . . . . . . . . . . . "
- ". . . . . . . . . . . . . . . . . . . . "
- ". . . . . . . . . . . . . . . . . . . . "
- ". . . . . . . . . . . . . . . . . . . . "
- ". . . . . . . . . . . . . . . . . . . . "}
-ul.leaders span:first-child {
-    font-style: bold;
-    padding-right: 0.33em;
-    background: white}
-ul.leaders span + span {
-    float: right;
-    padding-left: 0.33em;
-    background: white}
 
-// end dots
+.dots span {
+    background: $color1;
+    padding: 0 5px 0 0;
+}
+
+.leaders{
+    &::after{
+        white-space: nowrap;
+        overflow: hidden;
+        direction: rtl;
+        content: "";
+        border-bottom: 3px dotted $color21;
+        position: absolute;
+        bottom: 5px;
+        left: 0; right: 0;
+        z-index: -1;
+    }
+}
+// dots
+
+.rowIntroduce, .rowMenu{
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+@media(max-width:991px){
+    .titleMenu1{
+        font-size:50px;
+    }
+}
+
+@media(max-width:767px){
+    .orderMenuImage{
+        order: 0;
+    }
+    
+    .rowIntroduce, .rowMenu{
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+}

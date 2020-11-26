@@ -17210,6 +17210,15 @@ body {
   }
 }
 
+@media (max-width: 991px) {
+  .wrapFooter .listFanpageFooter .linkFanpageFooter {
+    margin: 0 12px;
+  }
+  .textFollowFooter {
+    letter-spacing: 1px;
+  }
+}
+
 @media (max-width: 767px) {
   .wrapFooter {
     padding: 30px 0 20px 0;
@@ -17356,7 +17365,7 @@ body {
   .colItem3 {
     bottom: 0;
   }
-  .colFooterLeft {
+  .colFooterCenter {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
