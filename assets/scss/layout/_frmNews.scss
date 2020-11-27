@@ -1,0 +1,21 @@
+.wrapLatestNews{
+    padding: 0;
+}
+
+.updateNews{
+    background-color: $color1;
+}
+
+.backgroudLastNews{
+    &::before{
+        background-color: $color1;
+    }
+}
+
+.elementSlideLatestNews{
+    margin-top: 60px;
+}
+
+.wrapPaging{
+    margin: 60px 0 !important;
+}
