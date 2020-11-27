@@ -16249,10 +16249,10 @@ button:focus {
 .btnType3:hover,
 .btnType2:hover,
 .btnType1:hover {
-  background-color: #1b9633;
-  border-color: #fcc922;
+  background-color: white;
+  border-color: #cd9933;
   text-decoration: none;
-  color: white;
+  color: #cd9933;
 }
 
 .btnType2 {

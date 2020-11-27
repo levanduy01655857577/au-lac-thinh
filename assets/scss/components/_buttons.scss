@@ -25,10 +25,10 @@ button:focus {
     text-align: center;
     @include transition(0.5s);
     &:hover {
-        background-color: $color3;
-        border-color: $color12;
+        background-color: $color1;
+        border-color: $color14;
         text-decoration: none;
-        color: $color1;
+        color: $color14;
     }
 }
 

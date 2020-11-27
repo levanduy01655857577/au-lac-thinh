@@ -16249,10 +16249,10 @@ button:focus {
 .btnType3:hover,
 .btnType2:hover,
 .btnType1:hover {
-  background-color: #1b9633;
-  border-color: #fcc922;
+  background-color: white;
+  border-color: #cd9933;
   text-decoration: none;
-  color: white;
+  color: #cd9933;
 }
 
 .btnType2 {
@@ -17731,7 +17731,6 @@ body {
   font-weight: 600;
   color: #333;
   font-size: 18px;
-  text-transform: uppercase;
   padding: 0 0 auto auto !important;
 }
 
@@ -17746,7 +17745,6 @@ body {
 .foodPrice {
   font-family: "DancingScript";
   color: #cd9933;
-  text-transform: uppercase;
   background: white;
   padding: 0 0 0 5px;
   display: inline-block;
@@ -17783,9 +17781,12 @@ body {
   z-index: -1;
 }
 
+.hideLeaders .leaders::after {
+  border-bottom: none;
+}
+
 .rowIntroduce, .rowMenu {
   margin-top: 60px;
-  margin-bottom: 60px;
 }
 
 @media (max-width: 991px) {
@@ -17804,7 +17805,25 @@ body {
             order: 0;
   }
   .rowIntroduce, .rowMenu {
-    margin: 30px 0;
+    margin-top: 30px 0;
   }
+}
+
+.wrapPaging {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.btnPaging {
+  color: black;
+  border-radius: 0%;
+  border: 1px solid #cd9933;
+  background-color: #cd9933;
+  padding: 0 15px;
+}
+
+.btnPaging.active {
+  background-color: white !important;
+  color: #cd9933 !important;
 }
 /*# sourceMappingURL=menu.css.map */
