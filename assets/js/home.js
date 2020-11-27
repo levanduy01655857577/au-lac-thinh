@@ -3608,6 +3608,7 @@ function fixedMenu() {
 // show  menu
 function closeMenuHeaderMobile() {
     $('.wrapHeader').removeClass('showMenu');
+    $('.wrapListMenuSubHeaderBottom .position').removeClass('smallListMenuSubHeader');
 }
 
 $('.btnShowMenuHeaderMobile').click(function() {
@@ -3628,6 +3629,9 @@ $('.wrapCloseMenuHeaderMobile').click(function() {
 
 $('.btnDropdowMenuSubHeaderBottom').click(function() {
     $(this).next('.wrapListMenuSubHeaderBottom').slideToggle();
+    if ($('.wrapListMenuSubHeaderBottom .position').hasClass('smallListMenuSubHeader') == false) {
+        $('.wrapListMenuSubHeaderBottom .position').addClass('smallListMenuSubHeader');
+    }
     return false;
 });
 // end menu

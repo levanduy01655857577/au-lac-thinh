@@ -16696,6 +16696,12 @@ body {
   -o-transform: translate(0, 15px);
 }
 
+.smallListMenuSubHeader {
+  display: block !important;
+  padding-left: 30px;
+  border-top: 1px solid #ddd;
+}
+
 .listMenuSubHeaderBottom {
   background-color: white;
   border-radius: 0 0 5px 5px;
@@ -16721,17 +16727,9 @@ body {
 }
 
 .btnDropdowMenuSubHeaderBottom {
-  color: white;
   font-size: 12px;
-  transition: 0.5s;
-  -webkit-transition: 0.5s;
-  -moz-transition: 0.5s;
-  -ms-transition: 0.5s;
-  -o-transition: 0.5s;
-  display: block;
   position: absolute;
-  right: 0;
-  top: 50%;
+  display: none;
   transform: translate(0, -50%);
   -webkit-transform: translate(0, -50%);
   -moz-transform: translate(0, -50%);
@@ -16888,17 +16886,19 @@ body {
     content: none;
   }
   .btnDropdowMenuSubHeaderBottom {
+    display: block;
     top: 0;
+    right: 0;
     transform: translate(0, 0);
     -webkit-transform: translate(0, 0);
     -moz-transform: translate(0, 0);
     -ms-transform: translate(0, 0);
     -o-transform: translate(0, 0);
-    width: 100%;
+    width: 50px;
     height: 50px;
     line-height: 50px;
     text-align: center;
-    color: #1b9633;
+    color: black;
   }
   .menuSubHeaderBottom .listLinkMenuMainHeaderBottom {
     padding-right: 0;
@@ -16981,7 +16981,7 @@ body {
     -moz-border-radius: 0;
     -ms-border-radius: 0;
     -o-border-radius: 0;
-    background-color: #b8b8b8ab;
+    background-color: #f9f9f9;
     padding: 0;
     white-space: normal;
   }
