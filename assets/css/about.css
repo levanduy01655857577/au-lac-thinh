@@ -16981,7 +16981,7 @@ body {
     -moz-border-radius: 0;
     -ms-border-radius: 0;
     -o-border-radius: 0;
-    background-color: #f3f3f3;
+    background-color: #b8b8b8ab;
     padding: 0;
     white-space: normal;
   }
@@ -17211,11 +17211,98 @@ body {
 }
 
 @media (max-width: 991px) {
-  .wrapFooter .listFanpageFooter .linkFanpageFooter {
-    margin: 0 12px;
+  .colFooterLeft {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
   }
   .textFollowFooter {
     letter-spacing: 1px;
+  }
+  .wrapFooter {
+    padding: 25px 0 10px 0;
+  }
+  .wrapFooter .imgLogoFooter {
+    height: 60px;
+  }
+  .wrapFooter .textAboutFooter {
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+  }
+  .wrapFooter .blockLogoFooter {
+    font-size: 13px;
+    margin: 0 auto;
+  }
+  .wrapFooter .listFanpageFooter .linkFanpageFooter {
+    margin: 0 12px;
+  }
+  .wrapFooter .listMenuFooter {
+    text-align: center;
+  }
+  .wrapFooter .listMenuFooter .itemMenuFooter {
+    display: inline-block;
+    padding: 0 5px;
+  }
+  .wrapFooter .listMenuFooter .itemMenuFooter a {
+    font-size: 13px;
+  }
+  .wrapFooter .listMenuFooter .itemMenuFooter .phone,
+  .wrapFooter .listMenuFooter .itemMenuFooter .mail {
+    letter-spacing: 1px;
+  }
+  .wrapFooter .listMenuFooter .itemMenuFooter .mail {
+    line-height: 20px;
+    padding: 0;
+  }
+  .wrapFooter .listMenuFooter .itemMenuFooter .address {
+    font-size: 13px;
+    line-height: 20px;
+    letter-spacing: 0;
+    display: inline-block;
+  }
+  .wrapFooter .listMenuFooter .itemMenuFooter .address br {
+    display: none;
+  }
+  .wrapFooter .blockLogoFooter {
+    width: 200px;
+    position: relative;
+  }
+  .wrapFooter .blockLogoFooter .wrapLogoFooter {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .wrapFooter .blockLogoFooter .wrapLogoFooter .linkLogoFooter {
+    margin: 10px auto;
+  }
+  .blocklistFanpageFooter {
+    margin: 0 auto;
+  }
+  .colItem {
+    padding: 0 15px;
+    margin: 15px 0;
+  }
+  .rowFooter {
+    position: relative;
+    min-height: 350px;
+  }
+  .colMenuItem {
+    position: relative;
+  }
+  .colItem1,
+  .colItem2,
+  .colItem3 {
+    position: absolute;
+  }
+  .colItem1 {
+    top: 0;
+  }
+  .colItem2 {
+    top: 55%;
+  }
+  .colItem3 {
+    bottom: 0;
   }
 }
 
@@ -17277,98 +17364,6 @@ body {
   }
   .colItem {
     padding-right: 0;
-  }
-}
-
-@media (max-width: 575px) {
-  .wrapFooter {
-    padding: 25px 0 10px 0;
-  }
-  .wrapFooter .imgLogoFooter {
-    height: 60px;
-  }
-  .wrapFooter .textAboutFooter {
-    font-size: 12px;
-    line-height: 18px;
-    text-align: center;
-  }
-  .wrapFooter .blockLogoFooter {
-    font-size: 13px;
-    margin: 0 auto;
-  }
-  .wrapFooter .listFanpageFooter .linkFanpageFooter {
-    margin: 0 10px;
-  }
-  .wrapFooter .listMenuFooter {
-    text-align: center;
-  }
-  .wrapFooter .listMenuFooter .itemMenuFooter {
-    display: inline-block;
-    padding: 0 5px;
-  }
-  .wrapFooter .listMenuFooter .itemMenuFooter a {
-    font-size: 13px;
-  }
-  .wrapFooter .listMenuFooter .itemMenuFooter .phone,
-  .wrapFooter .listMenuFooter .itemMenuFooter .mail {
-    letter-spacing: 1px;
-  }
-  .wrapFooter .listMenuFooter .itemMenuFooter .mail {
-    line-height: 20px;
-    padding: 0;
-  }
-  .wrapFooter .listMenuFooter .itemMenuFooter .address {
-    font-size: 13px;
-    line-height: 20px;
-    letter-spacing: 0;
-    display: inline-block;
-  }
-  .wrapFooter .listMenuFooter .itemMenuFooter .address br {
-    display: none;
-  }
-  .wrapFooter .blockLogoFooter {
-    width: 200px;
-    position: relative;
-  }
-  .wrapFooter .blockLogoFooter .wrapLogoFooter {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  .wrapFooter .blockLogoFooter .wrapLogoFooter .linkLogoFooter {
-    margin: 10px auto;
-  }
-  .blocklistFanpageFooter {
-    margin: 0 auto;
-  }
-  .colItem {
-    padding: 0 15px;
-  }
-  .rowFooter {
-    position: relative;
-    min-height: 350px;
-  }
-  .colMenuItem {
-    position: relative;
-  }
-  .colItem1,
-  .colItem2,
-  .colItem3 {
-    position: absolute;
-  }
-  .colItem1 {
-    top: 0;
-  }
-  .colItem2 {
-    top: 55%;
-  }
-  .colItem3 {
-    bottom: 0;
-  }
-  .colFooterCenter {
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
   }
 }
 
@@ -18062,7 +18057,7 @@ html {
 
 .wrapAboutHome {
   padding: 60px 0;
-  background-color: #f3f3f3;
+  background-color: #b8b8b8ab;
 }
 
 .colTextAboutHome,

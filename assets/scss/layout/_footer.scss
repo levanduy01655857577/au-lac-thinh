@@ -152,15 +152,97 @@
 }
 
 @media(max-width:991px) {
+
+    .colFooterLeft{
+        order: 2;
+    }
+    .textFollowFooter{
+        letter-spacing: 1px;
+    }
     .wrapFooter {
+        padding: 25px 0 10px 0;
+        .imgLogoFooter {
+            height: 60px;
+        }
+        .textAboutFooter {
+            font-size: 12px;
+            line-height: 18px;
+            text-align: center;
+        }
+        .blockLogoFooter {
+            font-size: 13px;
+            margin: 0 auto;
+        }
         .listFanpageFooter {
             .linkFanpageFooter {
                 margin: 0 12px;
             }
         }
+        .listMenuFooter {
+            text-align: center;
+            .itemMenuFooter {
+                display: inline-block;
+                padding: 0 5px;
+                a {
+                    font-size: 13px;
+                }
+                .phone,
+                .mail {
+                    letter-spacing: 1px;
+                }
+                .mail {
+                    line-height: 20px;
+                    padding: 0;
+                }
+                .address {
+                    font-size: 13px;
+                    line-height: 20px;
+                    letter-spacing: 0;
+                    display: inline-block;
+                    br {
+                        display: none;
+                    }
+                }
+            }
+        }
+        .blockLogoFooter {
+            width: 200px;
+            position: relative;
+            .wrapLogoFooter {
+                display: flex;
+                .linkLogoFooter {
+                    margin: 10px auto;
+                }
+            }
+        }
     }
-    .textFollowFooter{
-        letter-spacing: 1px;
+    .blocklistFanpageFooter {
+        margin: 0 auto;
+    }
+    .colItem {
+        padding: 0 15px;
+        margin: 15px 0;
+    }
+    .rowFooter {
+        position: relative;
+        min-height: 350px;
+    }
+    .colMenuItem {
+        position: relative;
+    }
+    .colItem1,
+    .colItem2,
+    .colItem3 {
+        position: absolute;
+    }
+    .colItem1 {
+        top: 0;
+    }
+    .colItem2 {
+        top: 55%;
+    }
+    .colItem3 {
+        bottom: 0;
     }
 }
 
@@ -230,97 +312,6 @@
     }
     .colItem {
         padding-right: 0;
-    }
-}
-
-@media(max-width:575px) {
-    .wrapFooter {
-        padding: 25px 0 10px 0;
-        .imgLogoFooter {
-            height: 60px;
-        }
-        .textAboutFooter {
-            font-size: 12px;
-            line-height: 18px;
-            text-align: center;
-        }
-        .blockLogoFooter {
-            font-size: 13px;
-            margin: 0 auto;
-        }
-        .listFanpageFooter {
-            .linkFanpageFooter {
-                margin: 0 10px;
-            }
-        }
-        .listMenuFooter {
-            text-align: center;
-            .itemMenuFooter {
-                display: inline-block;
-                padding: 0 5px;
-                a {
-                    font-size: 13px;
-                }
-                .phone,
-                .mail {
-                    letter-spacing: 1px;
-                }
-                .mail {
-                    line-height: 20px;
-                    padding: 0;
-                }
-                .address {
-                    font-size: 13px;
-                    line-height: 20px;
-                    letter-spacing: 0;
-                    display: inline-block;
-                    br {
-                        display: none;
-                    }
-                }
-            }
-        }
-        .blockLogoFooter {
-            width: 200px;
-            position: relative;
-            .wrapLogoFooter {
-                display: flex;
-                .linkLogoFooter {
-                    margin: 10px auto;
-                }
-            }
-        }
-    }
-    .blocklistFanpageFooter {
-        margin: 0 auto;
-    }
-    .colItem {
-        padding: 0 15px;
-    }
-    .rowFooter {
-        position: relative;
-        min-height: 350px;
-    }
-    .colMenuItem {
-        position: relative;
-    }
-    .colItem1,
-    .colItem2,
-    .colItem3 {
-        position: absolute;
-    }
-    .colItem1 {
-        top: 0;
-    }
-    .colItem2 {
-        top: 55%;
-    }
-    .colItem3 {
-        bottom: 0;
-    }
-
-    .colFooterCenter{
-        order: 2
     }
 }
 
