@@ -31,7 +31,7 @@
 }
 
 .olListBreqadcrumb {
-    margin: 0;
+    margin: 10px 0 0 0;
     background: none;
     padding: 0;
     display: block;
@@ -40,7 +40,7 @@
 
 .itemListBreadcrumb.active,
 .linkListBreadcrumb {
-    font-size: 16px;
+    font-size: 15px;
     line-height: 24px;
     color: $color1;
     text-transform: capitalize;

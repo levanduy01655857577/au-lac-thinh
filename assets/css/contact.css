@@ -17617,7 +17617,7 @@ body {
 }
 
 .olListBreqadcrumb {
-  margin: 0;
+  margin: 10px 0 0 0;
   background: none;
   padding: 0;
   display: block;
@@ -17626,7 +17626,7 @@ body {
 
 .itemListBreadcrumb.active,
 .linkListBreadcrumb {
-  font-size: 16px;
+  font-size: 15px;
   line-height: 24px;
   color: white;
   text-transform: capitalize;
@@ -17791,7 +17791,7 @@ body {
 }
 
 .btnSendMessageContact {
-  padding: 0 15px;
+  padding: 0 25px;
   text-align: center;
   border: 1px solid #cd9933;
   background-color: #cd9933;
@@ -17832,7 +17832,6 @@ body {
   }
   .btnSendMessageContact {
     float: none;
-    margin: 0 15px;
     clear: both;
   }
   .imageCaptchaContact {
