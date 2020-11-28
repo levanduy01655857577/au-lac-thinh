@@ -3773,9 +3773,37 @@ window.addEventListener("load", function(event) {
         });
     }
     // end start slide cmt
+    
+
+    // new active header (support for UU DAI, TIEC CUOI, CATERING, SU KIEN)
+    var title = sessionStorage.getItem("title");
+    if(title != 'null'){
+        $.each($('.listLinkMenuMainHeaderBottom'), function(){
+            if($(this).parent().hasClass('active')){
+                $(this).parent().removeClass('active');
+            }
+            if($(this).attr('title') == title){
+                $(this).parent().addClass('active');
+                if(title == 'ƯU ĐÃI' || title == 'TIỆC CƯỚI' || title == 'CATERING' || title == 'SỰ KIỆN'){
+                    $('.titlePageCurrentBreadcrumb').html(title);
+                    $('.breadcrumb-item.itemListBreadcrumb.active').html(title.toLowerCase());
+                }
+            }
+        });
+    }
+    $('.listLinkMenuMainHeaderBottom').on('click', function() {
+        sessionStorage.setItem("title", $(this).attr('title'));
+    });
+    $('.listLinkMenuSubHeaderBottom').on('click', function(){
+        var menuItemTitle = $(this).closest('.listItemMenuMainHeaderBottom').find('.listLinkMenuMainHeaderBottom').attr('title');
+        sessionStorage.setItem("title", menuItemTitle);
+    })
+    // end new active header
+
 });
 
 $(window).scroll(function() {
     fixedMenu();
     showBtnScrollTop();
 });
+
