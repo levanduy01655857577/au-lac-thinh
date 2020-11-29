@@ -3777,20 +3777,41 @@ window.addEventListener("load", function(event) {
 
     // new active header (support for UU DAI, TIEC CUOI, CATERING, SU KIEN)
     var title = sessionStorage.getItem("title");
-    if(title != 'null'){
-        $.each($('.listLinkMenuMainHeaderBottom'), function(){
-            if($(this).parent().hasClass('active')){
-                $(this).parent().removeClass('active');
-            }
-            if($(this).attr('title') == title){
-                $(this).parent().addClass('active');
-                if(title == 'ƯU ĐÃI' || title == 'TIỆC CƯỚI' || title == 'CATERING' || title == 'SỰ KIỆN'){
-                    $('.titlePageCurrentBreadcrumb').html(title);
-                    $('.breadcrumb-item.itemListBreadcrumb.active').html(title.toLowerCase());
-                }
+    var activatedTitle = $('.listItemMenuMainHeaderBottom.active').children('.listLinkMenuMainHeaderBottom').attr('title');
+    var menuLinks = ['ƯU ĐÃI', 'TIỆC CƯỚI', 'CATERING', 'SỰ KIỆN'];
+    var activated = 0;
+    $.each(menuLinks, function(key, val){
+        if(activatedTitle == val){
+            activated = 1;
+            return;
+        }
+    });
+    if((title !== null) && activated){        
+        // check if title not in menuLinks and activatedTitle in menuLinks
+        activated = 0;
+        $.each(menuLinks, function(key, val){
+            if(title == val){
+                activated = 1;
+                return;
             }
         });
+
+        if(activated){
+            $('.listLinkMenuMainHeaderBottom.active').removeClass('active');
+            $('.menuSubHeaderBottom.active').removeClass('active');
+            
+            $.each($('.listLinkMenuMainHeaderBottom'), function(){
+
+                if($(this).attr('title') == title){
+                    $(this).parent().addClass('active');
+                    $('.titlePageCurrentBreadcrumb').html(title);
+                    $('.breadcrumb-item.itemListBreadcrumb.active').html(title.toLowerCase());
+                    return;
+                }
+            });
+        }        
     }
+
     $('.listLinkMenuMainHeaderBottom').on('click', function() {
         sessionStorage.setItem("title", $(this).attr('title'));
     });
