@@ -3,7 +3,7 @@
 
 .wrapPaging {
     text-align: center;
-    margin: 0 0 30px 0;
+    margin: 0 0 60px 0;
 }
 
 .btnPaging{
@@ -16,4 +16,10 @@
 .btnPaging.active{
     background-color: $color14 !important;
     color: $color9 !important;
+}
+
+@media (max-width: 767px){
+    .wrapPaging {
+        margin: 0 0 30px 0;
+    }
 }
