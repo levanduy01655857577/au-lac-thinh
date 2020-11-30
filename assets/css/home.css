@@ -16249,10 +16249,10 @@ button:focus {
 .btnType3:hover,
 .btnType2:hover,
 .btnType1:hover {
-  background-color: white;
+  background-color: #cd9933;
   border-color: #cd9933;
   text-decoration: none;
-  color: #cd9933;
+  color: white;
 }
 
 .btnType2 {
@@ -17546,7 +17546,7 @@ body {
 }
 
 .btnScrollTop {
-  background-color: #fcc922;
+  background-color: #cd9933;
   position: fixed;
   z-index: 990;
   right: 15px;
@@ -17850,7 +17850,7 @@ body {
   -ms-transform: translate(0, -50%);
   -o-transform: translate(0, -50%);
   color: white;
-  width: 40px;
+  width: auto;
   height: 40px;
   font-size: 14px;
   text-align: center;
@@ -19041,10 +19041,6 @@ h2 {
 
 .descriptionLatestDate span {
   font-weight: 400;
-}
-
-.rowLatestNews {
-  margin: 0 -7.5px;
 }
 
 .elementSlideLatestNews {
