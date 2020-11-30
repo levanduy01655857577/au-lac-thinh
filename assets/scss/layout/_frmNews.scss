@@ -1,5 +1,5 @@
 .wrapLatestNews{
-    padding: 0;
+    padding: 60px 0 0 0;
 }
 
 .updateNews{
@@ -13,9 +13,19 @@
 }
 
 .elementSlideLatestNews{
-    margin-top: 60px;
+    margin: 0 0 30px 0;
 }
 
-.wrapPaging{
-    margin: 60px 0 !important;
+.wrapFooter{
+    margin: 30px 0 0 0;
+}
+
+@media (max-width: 767px){
+    .wrapLatestNews{
+        padding: 30px 0 0 0;
+    }
+
+    .wrapFooter{
+        margin: 0;
+    }
 }
