@@ -9,7 +9,7 @@
 }
 
 .titleNewsDetailContent{
-    font-size: 34px;
+    font-size: 33px;
     font-weight: 600;
     color: $color9;
 }
@@ -20,6 +20,13 @@
     span{
         font-weight: 400;
     }
+}
+
+.wrapShare{
+    border-bottom: 1px solid $color24;
+    border-top: 1px solid $color24;
+    padding: 5px 0 0px;
+    margin-bottom: 15px;
 }
 
 .titleShare{
@@ -33,14 +40,14 @@
     float: left;
 }
 
-.newsDetailContent{
-    font-weight: 500;
-}
-
 @media (max-width:991px){
 
     .wrapNewsDetailLeft{
         margin-bottom: 30px;
+    }
+
+    .wrapNewsDetailContent{
+        padding: 15px;
     }
 
 }

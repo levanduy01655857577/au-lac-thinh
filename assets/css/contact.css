@@ -17669,6 +17669,10 @@ body {
   margin: auto;
 }
 
+.titlePageCurrentBreadcrumb {
+  font-size: 33px !important;
+}
+
 @media (max-width: 991px) {
   .titlePageCurrentBreadcrumb {
     font-size: 24px;
