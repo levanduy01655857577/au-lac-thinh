@@ -1,3 +1,12 @@
+.wrapMenu{
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+
+.wrapFooter{
+    margin-top: 60px;
+}
+
 .introduceTitle{
     h2{
         font-family: $nameFont2;
@@ -99,6 +108,10 @@
     margin-top: 60px;
 }
 
+.rowIntroduce p{
+    margin: 0;
+}
+
 @media(max-width:991px){
     .titleMenu1{
         font-size: 48px;
@@ -115,7 +128,14 @@
     }
     
     .rowIntroduce, .rowMenu{
-        margin-top: 30px 0;
+        margin-top: 30px;
     }
 
+    .wrapMenu{
+        margin-top: 30px;
+    }
+    
+    .wrapFooter{
+        margin-top: 30px;
+    }
 }

@@ -17304,6 +17304,12 @@ body {
   .colItem3 {
     bottom: 0;
   }
+  .listContactFooter {
+    padding: 0;
+  }
+  .itemFooterContact {
+    display: block !important;
+  }
 }
 
 @media (max-width: 767px) {
@@ -17332,9 +17338,6 @@ body {
   }
   .blockLogoFooter .listMenuFooter .itemMenuFooter {
     padding-bottom: 5px;
-  }
-  .listContactFooter {
-    padding: 0;
   }
   .listContactFooter .itemMenuFooter {
     display: block;

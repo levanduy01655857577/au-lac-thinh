@@ -244,6 +244,13 @@
     .colItem3 {
         bottom: 0;
     }
+    
+    .listContactFooter {
+        padding: 0;
+    }
+    .itemFooterContact{
+        display: block !important;
+    }
 }
 
 @media (max-width: 767px) {
@@ -280,7 +287,6 @@
         }
     }
     .listContactFooter {
-        padding: 0;
         .itemMenuFooter {
             display: block;
             a {

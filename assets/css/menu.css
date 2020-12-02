@@ -17304,6 +17304,12 @@ body {
   .colItem3 {
     bottom: 0;
   }
+  .listContactFooter {
+    padding: 0;
+  }
+  .itemFooterContact {
+    display: block !important;
+  }
 }
 
 @media (max-width: 767px) {
@@ -17332,9 +17338,6 @@ body {
   }
   .blockLogoFooter .listMenuFooter .itemMenuFooter {
     padding-bottom: 5px;
-  }
-  .listContactFooter {
-    padding: 0;
   }
   .listContactFooter .itemMenuFooter {
     display: block;
@@ -17693,6 +17696,15 @@ body {
   }
 }
 
+.wrapMenu {
+  margin-top: 60px;
+  margin-bottom: 30px;
+}
+
+.wrapFooter {
+  margin-top: 60px;
+}
+
 .introduceTitle h2 {
   font-family: "Roboto";
   font-weight: 600;
@@ -17793,6 +17805,10 @@ body {
   margin-top: 60px;
 }
 
+.rowIntroduce p {
+  margin: 0;
+}
+
 @media (max-width: 991px) {
   .titleMenu1 {
     font-size: 48px;
@@ -17809,7 +17825,13 @@ body {
             order: 0;
   }
   .rowIntroduce, .rowMenu {
-    margin-top: 30px 0;
+    margin-top: 30px;
+  }
+  .wrapMenu {
+    margin-top: 30px;
+  }
+  .wrapFooter {
+    margin-top: 30px;
   }
 }
 
