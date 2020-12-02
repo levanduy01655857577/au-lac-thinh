@@ -1,0 +1,38 @@
+.wrapNewsDetailLeft{
+    background-color: $color1;
+    padding: 0;
+}
+
+.wrapNewsDetailContent{
+    padding: 30px;
+    color: $color5;
+}
+
+.titleNewsDetailContent{
+    font-size: 34px;
+    font-weight: 600;
+    color: $color9;
+}
+
+.authorNewsDetailContent{
+    font-size: 10px;
+    font-weight: 600;
+    span{
+        font-weight: 400;
+    }
+}
+
+.titleShare{
+    font-size: 14px;
+    line-height: 28px;
+    font-weight: 700;
+    margin: 0 10px 0 0;
+}
+
+.titleShare, .listBtnSharePost{
+    float: left;
+}
+
+.newsDetailContent{
+    font-weight: 500;
+}
