@@ -68,3 +68,15 @@
 .wrapImgItemLatestNews {
     display: block;
 }
+
+@media (max-width:991px){
+
+    .wrapNewsDetailRight{
+        padding: 0;
+    }
+
+    .wrapRecommendNews{
+        padding: 15px 10px;
+    }
+
+}

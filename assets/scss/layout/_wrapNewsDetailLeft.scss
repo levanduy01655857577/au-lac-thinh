@@ -36,3 +36,11 @@
 .newsDetailContent{
     font-weight: 500;
 }
+
+@media (max-width:991px){
+
+    .wrapNewsDetailLeft{
+        margin-bottom: 30px;
+    }
+
+}

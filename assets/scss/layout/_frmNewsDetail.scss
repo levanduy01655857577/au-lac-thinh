@@ -6,3 +6,15 @@ body{
     margin-top: 60px;
     margin-bottom: 60px;
 }
+
+@media (max-width:991px){
+
+    .wrapNewsDetail{
+        margin-top: 30px;
+        margin-bottom: 30px;
+        .row{
+            padding: 0 15px;
+        }
+    }
+    
+}

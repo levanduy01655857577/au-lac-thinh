@@ -17698,6 +17698,16 @@ body {
   margin-bottom: 60px;
 }
 
+@media (max-width: 991px) {
+  .wrapNewsDetail {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .wrapNewsDetail .row {
+    padding: 0 15px;
+  }
+}
+
 .wrapNewsDetailLeft {
   background-color: white;
   padding: 0;
@@ -17736,6 +17746,12 @@ body {
 
 .newsDetailContent {
   font-weight: 500;
+}
+
+@media (max-width: 991px) {
+  .wrapNewsDetailLeft {
+    margin-bottom: 30px;
+  }
 }
 
 .wrapNewsDetailRight {
@@ -17829,6 +17845,15 @@ body {
 
 .wrapImgItemLatestNews {
   display: block;
+}
+
+@media (max-width: 991px) {
+  .wrapNewsDetailRight {
+    padding: 0;
+  }
+  .wrapRecommendNews {
+    padding: 15px 10px;
+  }
 }
 
 .wrapPaging {
