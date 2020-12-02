@@ -17673,7 +17673,7 @@ body {
 }
 
 .titlePageCurrentBreadcrumb {
-  font-size: 33px !important;
+  font-size: 33px;
 }
 
 @media (max-width: 991px) {
