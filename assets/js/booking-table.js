@@ -75,80 +75,80 @@ $('.btnDropdowMenuSubHeaderBottom').click(function() {
 
 window.addEventListener("load", function(event) {
     // active menu main
-    // if($('.listItemMenuMainHeaderBottom').length) {
-    //     var check = 0;
-    //     var link = window.location.href;
-    //     $('.listMenuMainHeaderBottom .listItemMenuMainHeaderBottom').each(function() {
-    //         var linkItemMenu = $(this).find('.listLinkMenuMainHeaderBottom').attr('href');
-    //         var checkLink = link.indexOf(linkItemMenu);
+    if($('.listItemMenuMainHeaderBottom').length) {
+        var check = 0;
+        var link = window.location.href;
+        $('.listMenuMainHeaderBottom .listItemMenuMainHeaderBottom').each(function() {
+            var linkItemMenu = $(this).find('.listLinkMenuMainHeaderBottom').attr('href');
+            var checkLink = link.indexOf(linkItemMenu);
 
-    //         if(checkLink > 0) {
-    //             $(this).addClass('active');
-    //             check = 1;
-    //             return false;
-    //         }
-    //     });
+            if(checkLink > 0) {
+                $(this).addClass('active');
+                check = 1;
+                return false;
+            }
+        });
 
-    //     if(check === 0) {
-    //         $('.listMenuMainHeaderBottom .listItemMenuSubHeaderBottom').each(function() {
-    //             var linkItemMenuSub = $(this).find('.listLinkMenuSubHeaderBottom').attr('href');
-    //             var checkLinkMenuSub = link.indexOf(linkItemMenuSub);
+        if(check === 0) {
+            $('.listMenuMainHeaderBottom .listItemMenuSubHeaderBottom').each(function() {
+                var linkItemMenuSub = $(this).find('.listLinkMenuSubHeaderBottom').attr('href');
+                var checkLinkMenuSub = link.indexOf(linkItemMenuSub);
 
-    //             if(checkLinkMenuSub > 0) {
-    //                 $(this).parents('.listItemMenuMainHeaderBottom').addClass('active');
-    //                 check = 1;
-    //                 return false;
-    //             }
-    //         });
-    //     }
+                if(checkLinkMenuSub > 0) {
+                    $(this).parents('.listItemMenuMainHeaderBottom').addClass('active');
+                    check = 1;
+                    return false;
+                }
+            });
+        }
 
-    //     if(check === 0) {
-    //         if($('.olListBreqadcrumb .itemListBreadcrumb:nth-child(2) .linkListBreadcrumb').length) {
-    //             var linkBreadcrumb = $('.olListBreqadcrumb .itemListBreadcrumb:nth-child(2) .linkListBreadcrumb').attr('href');
+        if(check === 0) {
+            if($('.olListBreqadcrumb .itemListBreadcrumb:nth-child(2) .linkListBreadcrumb').length) {
+                var linkBreadcrumb = $('.olListBreqadcrumb .itemListBreadcrumb:nth-child(2) .linkListBreadcrumb').attr('href');
 
-    //             $('.listMenuMainHeaderBottom .listItemMenuMainHeaderBottom').each(function() {
-    //                 var linkItemMenu = $(this).find('.listLinkMenuMainHeaderBottom').attr('href');
+                $('.listMenuMainHeaderBottom .listItemMenuMainHeaderBottom').each(function() {
+                    var linkItemMenu = $(this).find('.listLinkMenuMainHeaderBottom').attr('href');
                     
-    //                 if(linkBreadcrumb === linkItemMenu) {
-    //                     $(this).addClass('active');
-    //                     check = 1;
-    //                     return false;
-    //                 }
-    //             });
-    //         }
-    //     }
+                    if(linkBreadcrumb === linkItemMenu) {
+                        $(this).addClass('active');
+                        check = 1;
+                        return false;
+                    }
+                });
+            }
+        }
 
-    //     if(check === 0) {
-    //         if($('.olListBreqadcrumb .itemListBreadcrumb:nth-child(2) .linkListBreadcrumb').length) {
-    //             var linkBreadcrumb = $('.olListBreqadcrumb .itemListBreadcrumb:nth-child(2) .linkListBreadcrumb').attr('href');
+        if(check === 0) {
+            if($('.olListBreqadcrumb .itemListBreadcrumb:nth-child(2) .linkListBreadcrumb').length) {
+                var linkBreadcrumb = $('.olListBreqadcrumb .itemListBreadcrumb:nth-child(2) .linkListBreadcrumb').attr('href');
                 
-    //             $('.listMenuMainHeaderBottom .listItemMenuSubHeaderBottom').each(function() {
-    //                 var linkItemMenu = $(this).find('.listLinkMenuSubHeaderBottom').attr('href');
+                $('.listMenuMainHeaderBottom .listItemMenuSubHeaderBottom').each(function() {
+                    var linkItemMenu = $(this).find('.listLinkMenuSubHeaderBottom').attr('href');
 
-    //                 if(linkBreadcrumb === linkItemMenu) {
-    //                     $(this).parents('.listItemMenuMainHeaderBottom').addClass('active');
-    //                     check = 1;
-    //                     return false;
-    //                 }
-    //             });
-    //         }
-    //     }
+                    if(linkBreadcrumb === linkItemMenu) {
+                        $(this).parents('.listItemMenuMainHeaderBottom').addClass('active');
+                        check = 1;
+                        return false;
+                    }
+                });
+            }
+        }
 
-    //     if(check === 0) {
-    //         if($('.wrapSlideMain').length) {
-    //             var linkHome = $('.linkLogoHeaderBottom').attr('href');
+        if(check === 0) {
+            if($('.wrapSlideMain').length) {
+                var linkHome = $('.linkLogoHeaderBottom').attr('href');
                 
-    //             $('.listMenuMainHeaderBottom .listItemMenuMainHeaderBottom').each(function() {
-    //                 var linkItemMenu = $(this).find('.listLinkMenuMainHeaderBottom').attr('href');
+                $('.listMenuMainHeaderBottom .listItemMenuMainHeaderBottom').each(function() {
+                    var linkItemMenu = $(this).find('.listLinkMenuMainHeaderBottom').attr('href');
                     
-    //                 if(linkHome === linkItemMenu) {
-    //                     $(this).addClass('active');
-    //                     return false;
-    //                 }
-    //             });
-    //         }
-    //     }
-    // }
+                    if(linkHome === linkItemMenu) {
+                        $(this).addClass('active');
+                        return false;
+                    }
+                });
+            }
+        }
+    }
     // end active menu main
     
     showBtnScrollTop();
@@ -166,6 +166,56 @@ window.addEventListener("load", function(event) {
     });
 
     // end date booking table
+
+    // new active header (support for UU DAI, TIEC CUOI, CATERING, SU KIEN)
+    var title = sessionStorage.getItem("title");
+    var activatedTitle = $('.listItemMenuMainHeaderBottom.active').children('.listLinkMenuMainHeaderBottom').attr('title');
+    var menuLinks = ['ƯU ĐÃI', 'TIỆC CƯỚI', 'CATERING', 'SỰ KIỆN'];
+    var activated = 0;
+    $.each(menuLinks, function(key, val){
+        if(activatedTitle == val){
+            activated = 1;
+            return;
+        }
+    });
+    if((title !== null) && activated){        
+        // check if title not in menuLinks and activatedTitle in menuLinks
+        activated = 0;
+        $.each(menuLinks, function(key, val){
+            if(title == val){
+                activated = 1;
+                return;
+            }
+        });
+
+        if(activated){
+            $('.listLinkMenuMainHeaderBottom.active').removeClass('active');
+            $('.menuSubHeaderBottom.active').removeClass('active');
+            
+            $.each($('.listLinkMenuMainHeaderBottom'), function(){
+
+                if($(this).attr('title') == title){
+                    $(this).parent().addClass('active');
+                    $('.titlePageCurrentBreadcrumb').html(title);
+                    $('.breadcrumb-item.itemListBreadcrumb.active').html(title.toLowerCase());
+                    return;
+                }
+            });
+        }        
+    }
+
+    $('.listLinkMenuMainHeaderBottom').on('click', function() {
+        sessionStorage.setItem("title", $(this).attr('title'));
+    });
+    $('.listLinkMenuSubHeaderBottom').on('click', function(){
+        var menuItemTitle = $(this).closest('.listItemMenuMainHeaderBottom').find('.listLinkMenuMainHeaderBottom').attr('title');
+        sessionStorage.setItem("title", menuItemTitle);
+    })
+    // end new active header
+
+    // select picker
+    $('.selectPciker').selectpicker();
+    // end select picker
 });
 
 $(window).scroll(function() {

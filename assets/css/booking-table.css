@@ -18579,11 +18579,26 @@ body {
 
 .formInputBookingTable {
   border: 1px solid #b8b8b8ab;
+  background-color: white !important;
   border-radius: 0px;
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
   -ms-border-radius: 0px;
   -o-border-radius: 0px;
+}
+
+.dropdown button {
+  border: 1px solid #b8b8b8ab;
+  background-color: white !important;
+  border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  -o-border-radius: 0px;
+}
+
+.dropdown-item.active {
+  background-color: #d2b00f;
 }
 
 .btnBookingTable {

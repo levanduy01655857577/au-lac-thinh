@@ -67,85 +67,86 @@ $('.btnDropdowMenuSubHeaderBottom').click(function() {
 
 window.addEventListener("load", function(event) {
     // active menu main
-    // if($('.listItemMenuMainHeaderBottom').length) {
-    //     var check = 0;
-    //     var link = window.location.href;
-    //     $('.listMenuMainHeaderBottom .listItemMenuMainHeaderBottom').each(function() {
-    //         var linkItemMenu = $(this).find('.listLinkMenuMainHeaderBottom').attr('href');
-    //         var checkLink = link.indexOf(linkItemMenu);
+    if($('.listItemMenuMainHeaderBottom').length) {
+        var check = 0;
+        var link = window.location.href;
+        $('.listMenuMainHeaderBottom .listItemMenuMainHeaderBottom').each(function() {
+            var linkItemMenu = $(this).find('.listLinkMenuMainHeaderBottom').attr('href');
+            var checkLink = link.indexOf(linkItemMenu);
 
-    //         if(checkLink > 0) {
-    //             $(this).addClass('active');
-    //             check = 1;
-    //             return false;
-    //         }
-    //     });
+            if(checkLink > 0) {
+                $(this).addClass('active');
+                check = 1;
+                return false;
+            }
+        });
 
-    //     if(check === 0) {
-    //         $('.listMenuMainHeaderBottom .listItemMenuSubHeaderBottom').each(function() {
-    //             var linkItemMenuSub = $(this).find('.listLinkMenuSubHeaderBottom').attr('href');
-    //             var checkLinkMenuSub = link.indexOf(linkItemMenuSub);
+        if(check === 0) {
+            $('.listMenuMainHeaderBottom .listItemMenuSubHeaderBottom').each(function() {
+                var linkItemMenuSub = $(this).find('.listLinkMenuSubHeaderBottom').attr('href');
+                var checkLinkMenuSub = link.indexOf(linkItemMenuSub);
 
-    //             if(checkLinkMenuSub > 0) {
-    //                 $(this).parents('.listItemMenuMainHeaderBottom').addClass('active');
-    //                 check = 1;
-    //                 return false;
-    //             }
-    //         });
-    //     }
+                if(checkLinkMenuSub > 0) {
+                    $(this).parents('.listItemMenuMainHeaderBottom').addClass('active');
+                    check = 1;
+                    return false;
+                }
+            });
+        }
 
-    //     if(check === 0) {
-    //         if($('.olListBreqadcrumb .itemListBreadcrumb:nth-child(2) .linkListBreadcrumb').length) {
-    //             var linkBreadcrumb = $('.olListBreqadcrumb .itemListBreadcrumb:nth-child(2) .linkListBreadcrumb').attr('href');
+        if(check === 0) {
+            if($('.olListBreqadcrumb .itemListBreadcrumb:nth-child(2) .linkListBreadcrumb').length) {
+                var linkBreadcrumb = $('.olListBreqadcrumb .itemListBreadcrumb:nth-child(2) .linkListBreadcrumb').attr('href');
 
-    //             $('.listMenuMainHeaderBottom .listItemMenuMainHeaderBottom').each(function() {
-    //                 var linkItemMenu = $(this).find('.listLinkMenuMainHeaderBottom').attr('href');
+                $('.listMenuMainHeaderBottom .listItemMenuMainHeaderBottom').each(function() {
+                    var linkItemMenu = $(this).find('.listLinkMenuMainHeaderBottom').attr('href');
                     
-    //                 if(linkBreadcrumb === linkItemMenu) {
-    //                     $(this).addClass('active');
-    //                     check = 1;
-    //                     return false;
-    //                 }
-    //             });
-    //         }
-    //     }
+                    if(linkBreadcrumb === linkItemMenu) {
+                        $(this).addClass('active');
+                        check = 1;
+                        return false;
+                    }
+                });
+            }
+        }
 
-    //     if(check === 0) {
-    //         if($('.olListBreqadcrumb .itemListBreadcrumb:nth-child(2) .linkListBreadcrumb').length) {
-    //             var linkBreadcrumb = $('.olListBreqadcrumb .itemListBreadcrumb:nth-child(2) .linkListBreadcrumb').attr('href');
+        if(check === 0) {
+            if($('.olListBreqadcrumb .itemListBreadcrumb:nth-child(2) .linkListBreadcrumb').length) {
+                var linkBreadcrumb = $('.olListBreqadcrumb .itemListBreadcrumb:nth-child(2) .linkListBreadcrumb').attr('href');
                 
-    //             $('.listMenuMainHeaderBottom .listItemMenuSubHeaderBottom').each(function() {
-    //                 var linkItemMenu = $(this).find('.listLinkMenuSubHeaderBottom').attr('href');
+                $('.listMenuMainHeaderBottom .listItemMenuSubHeaderBottom').each(function() {
+                    var linkItemMenu = $(this).find('.listLinkMenuSubHeaderBottom').attr('href');
 
-    //                 if(linkBreadcrumb === linkItemMenu) {
-    //                     $(this).parents('.listItemMenuMainHeaderBottom').addClass('active');
-    //                     check = 1;
-    //                     return false;
-    //                 }
-    //             });
-    //         }
-    //     }
+                    if(linkBreadcrumb === linkItemMenu) {
+                        $(this).parents('.listItemMenuMainHeaderBottom').addClass('active');
+                        check = 1;
+                        return false;
+                    }
+                });
+            }
+        }
 
-    //     if(check === 0) {
-    //         if($('.wrapSlideMain').length) {
-    //             var linkHome = $('.linkLogoHeaderBottom').attr('href');
+        if(check === 0) {
+            if($('.wrapSlideMain').length) {
+                var linkHome = $('.linkLogoHeaderBottom').attr('href');
                 
-    //             $('.listMenuMainHeaderBottom .listItemMenuMainHeaderBottom').each(function() {
-    //                 var linkItemMenu = $(this).find('.listLinkMenuMainHeaderBottom').attr('href');
+                $('.listMenuMainHeaderBottom .listItemMenuMainHeaderBottom').each(function() {
+                    var linkItemMenu = $(this).find('.listLinkMenuMainHeaderBottom').attr('href');
                     
-    //                 if(linkHome === linkItemMenu) {
-    //                     $(this).addClass('active');
-    //                     return false;
-    //                 }
-    //             });
-    //         }
-    //     }
-    // }
+                    if(linkHome === linkItemMenu) {
+                        $(this).addClass('active');
+                        return false;
+                    }
+                });
+            }
+        }
+    }
     // end active menu main
     
     showBtnScrollTop();
 
     fixedMenu();
+
 });
 
 $(window).scroll(function() {

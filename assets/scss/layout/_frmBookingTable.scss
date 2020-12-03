@@ -60,8 +60,21 @@
 
 .formInputBookingTable{
     border: 1px solid $color4;
+    background-color: $color1 !important;
     @include borderRadius(0px);
 }
+
+// select picker
+.dropdown button{
+    border: 1px solid $color4;
+    background-color: $color1 !important;
+    @include borderRadius(0px);
+}
+
+.dropdown-item.active{
+    background-color: $color15;
+}
+// end select picker
 
 .btnBookingTable{
     padding: 0 25px;
