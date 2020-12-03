@@ -17696,219 +17696,108 @@ body {
   }
 }
 
-body {
-  background-color: rgba(243, 243, 243, 0.8);
-}
-
-.wrapNewsDetail {
+.wrapBookingTable {
   margin-top: 60px;
   margin-bottom: 60px;
 }
 
-@media (max-width: 991px) {
-  .wrapNewsDetail {
-    margin-top: 30px;
-    margin-bottom: 30px;
-  }
-  .wrapNewsDetail .row {
-    padding: 0 15px;
-  }
+.titleBookingTable {
+  font-family: "DancingScript";
+  color: #d2b00f;
+  font-size: 50px;
+  line-height: 60px;
 }
 
-.wrapNewsDetailLeft {
-  background-color: white;
-  padding: 0;
+.descriptionDateTime {
+  text-align: right;
 }
 
-.wrapNewsDetailContent {
-  padding: 30px;
+.descriptionPhone {
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.descriptionBookingTable1 {
+  color: #888888;
+  font-size: 15px;
+}
+
+.descriptionBookingTable2 {
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
+}
+
+.descriptionBookingTable3 {
+  margin: 0;
+  font-size: 15px;
   color: #888888;
 }
 
-.titleNewsDetailContent {
-  font-size: 33px;
-  font-weight: 600;
+.formBookingTable {
+  margin: 60px 0 0 0;
+}
+
+.formBookingTableGroup {
+  margin: 0 0 15px 0;
+}
+
+.formLabelBookingTable {
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #333;
+  margin: 0 0 5px 0;
+  width: 100%;
+}
+
+.formInputBookingTable {
+  border: 1px solid #b8b8b8ab;
+  border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  -o-border-radius: 0px;
+}
+
+.btnBookingTable {
+  padding: 0 25px;
+  text-align: center;
+  border: 1px solid #cd9933;
+  background-color: #cd9933;
+  font-size: 13px;
+  border-radius: 0;
+  margin: 15px 0 0 0;
+  line-height: 40px;
   color: black;
 }
 
-.authorNewsDetailContent {
-  font-size: 10px;
-  font-weight: 600;
+.btnBookingTable:hover {
+  background-color: white;
+  color: #d2b00f;
 }
 
-.authorNewsDetailContent span {
-  font-weight: 400;
-}
-
-.wrapShare {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
-  padding: 5px 0 0px;
-  margin-bottom: 15px;
-}
-
-.titleShare {
-  font-size: 14px;
-  line-height: 28px;
-  font-weight: 700;
-  margin: 0 10px 0 0;
-}
-
-.titleShare, .listBtnSharePost {
-  float: left;
-}
-
-@media (max-width: 991px) {
-  .wrapNewsDetailLeft {
+@media (max-width: 767px) {
+  .wrapBookingTable {
+    margin-top: 30px;
     margin-bottom: 30px;
   }
-  .wrapNewsDetailContent {
-    padding: 15px;
+  .formBookingTable {
+    margin: 30px 0 0 0;
   }
-}
-
-.wrapNewsDetailRight {
-  padding-left: 30px;
-}
-
-.wrapRecommendNews {
-  padding: 0px;
-}
-
-.titleRecommendNews {
-  font-weight: 600;
-  font-size: 21px;
-  color: #888888;
-  margin: 0;
-}
-
-.firstSlideNews {
-  margin: 15px 0 0 0 !important;
-}
-
-.elementSlideLatestNews {
-  margin: 30px 0 0 0;
-}
-
-.titleHeadingLatestNews {
-  font-weight: 700;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-  max-height: 56px;
-  font-size: 21px;
-  line-height: 28px;
-  color: #222;
-  transition: 0.5s;
-  -webkit-transition: 0.5s;
-  -moz-transition: 0.5s;
-  -ms-transition: 0.5s;
-  -o-transition: 0.5s;
-  font-family: "Montserrat";
-  margin: 0;
-}
-
-.linkTitleLatestNews {
-  display: block;
-  margin-top: 15px;
-}
-
-.linkTitleLatestNews:hover {
-  text-decoration: none;
-}
-
-.linkTitleLatestNews:hover .titleHeadingLatestNews {
-  color: #fcc922;
-}
-
-.descriptionLatestDate {
-  position: relative;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
-  max-height: 76px;
-  font-size: 10px;
-  font-weight: 500;
-  line-height: 15px;
-  color: #888888;
-  font-family: "Montserrat";
-  margin: 10px 0 0 0;
-}
-
-.descriptionLatestDate span {
-  font-weight: 400;
-}
-
-.descriptionLatestNews {
-  position: relative;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
-  max-height: 76px;
-  font-family: "Montserrat";
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 22px;
-  color: #888888;
-  margin: 10px 0 0 0;
-  text-align: justify;
-}
-
-.wrapImgItemLatestNews {
-  display: block;
-}
-
-@media (max-width: 991px) {
-  .wrapNewsDetail .row {
-    padding: 0;
+  .descriptionDateTime {
+    text-align: center;
   }
-  .wrapNewsDetailRight {
-    padding: 0;
-  }
-  .wrapRecommendNews {
-    padding: 0;
-  }
-  .elementSlideLatestNews {
+  .descriptionPhone {
+    text-align: center;
+    border-left: none;
     margin: 15px 0 0 0;
   }
-}
-
-@media (max-width: 767px) {
-  .wrapNewsDetail .row {
-    padding: 0 15px;
+  .descriptionBookingTable2 {
+    margin: 0 0 0 5px;
   }
-  .elementSlideLatestNews {
+  .formBookingTableGroup {
     padding: 0;
   }
 }
-
-.wrapPaging {
-  text-align: center;
-  margin: 0 0 60px 0;
-}
-
-.btnPaging {
-  background-color: white;
-  color: #cd9933;
-  border-radius: 0%;
-  border: 1px solid #cd9933;
-  padding: 0 15px;
-}
-
-.btnPaging.active {
-  background-color: #cd9933 !important;
-  color: black !important;
-}
-
-@media (max-width: 767px) {
-  .wrapPaging {
-    margin: 0 0 30px 0;
-  }
-}
-/*# sourceMappingURL=news-detail.css.map */
+/*# sourceMappingURL=booking-table.css.map */
