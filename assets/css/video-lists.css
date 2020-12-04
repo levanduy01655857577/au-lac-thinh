@@ -16583,7 +16583,6 @@ body {
   background-color: #cd9933;
   font-size: 12px;
   border-radius: 0;
-  margin-left: 25px;
   line-height: 35px;
   color: black;
   transition: 0.5s;
@@ -16609,7 +16608,7 @@ body {
 }
 
 .wrapBtnBookNowHeaderBottom .btnBookNowHeaderBottom:first-child {
-  margin-left: 14px;
+  margin-left: 13px;
 }
 
 .wrapMenuMainHeaderBottom {
@@ -16740,7 +16739,7 @@ body {
 .listItemMenuMainHeaderBottom {
   float: left;
   position: relative;
-  margin: 0 14px;
+  margin: 0 13px;
 }
 
 .listItemMenuMainHeaderBottom.menuLanguageHeaderBottom {
@@ -17791,6 +17790,12 @@ body {
   left: 0;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.6);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  max-height: 52px;
   transform: translate(0, -100%);
   -webkit-transform: translate(0, -100%);
   -moz-transform: translate(0, -100%);
@@ -17801,7 +17806,7 @@ body {
 .titleImg h3 {
   margin: 0;
   font-size: 21px;
-  line-height: 28px;
+  line-height: 30px;
 }
 
 .wrapImg {

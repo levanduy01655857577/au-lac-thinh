@@ -46,10 +46,11 @@
     left: 0;
     width: 100%;
     background-color: $color16;
+    @include splitText(1, 52px);
     h3{
         margin: 0;
         font-size: 21px;
-        line-height: 28px;
+        line-height: 30px;
     }
     @include translate(0, -100%);
 }

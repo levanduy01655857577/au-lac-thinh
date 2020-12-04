@@ -16583,7 +16583,6 @@ body {
   background-color: #cd9933;
   font-size: 12px;
   border-radius: 0;
-  margin-left: 25px;
   line-height: 35px;
   color: black;
   transition: 0.5s;
@@ -16609,7 +16608,7 @@ body {
 }
 
 .wrapBtnBookNowHeaderBottom .btnBookNowHeaderBottom:first-child {
-  margin-left: 14px;
+  margin-left: 13px;
 }
 
 .wrapMenuMainHeaderBottom {
@@ -16740,7 +16739,7 @@ body {
 .listItemMenuMainHeaderBottom {
   float: left;
   position: relative;
-  margin: 0 14px;
+  margin: 0 13px;
 }
 
 .listItemMenuMainHeaderBottom.menuLanguageHeaderBottom {
