@@ -16613,7 +16613,7 @@ body {
 
 .wrapMenuMainHeaderBottom {
   float: right;
-  padding-right: 130px;
+  padding-right: 124px;
   display: table;
 }
 
@@ -16807,7 +16807,7 @@ body {
 }
 
 .wrapHeader.fixedMenu .wrapHeaderBottom .listItemMenuMainHeaderBottom {
-  margin: 0 14px;
+  margin: 0 13px;
 }
 
 .wrapHeader.fixedMenu .wrapLogoHeaderBottom {
