@@ -1,0 +1,96 @@
+.wrapImageLists{
+    margin-top: 60px;
+}
+
+.elementImg{
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 30px;
+    &:hover{
+        .wrapImg{
+            background-color: $color9;
+            img{
+                opacity: 0.5;
+            }
+        }
+
+        .wrapTextElementImg{
+            @include transition(0.5s);
+            @include translate(0, -100%);
+        }
+
+        .titleImg{
+            @include transition(0.5s);
+            @include translate(0, 0);
+            background-color: transparent;
+        }
+
+    }
+}
+
+.wrapTextElementImg{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    @include transition(0.5s);
+}
+
+.titleImg{
+    display: block;
+    padding: 15px;
+    @include transition(0.5s);
+    font-weight: 500;
+    color: $color7;
+    font-family: $nameFont4;
+    left: 0;
+    width: 100%;
+    background-color: $color16;
+    h3{
+        margin: 0;
+        font-size: 21px;
+        line-height: 28px;
+    }
+    @include translate(0, -100%);
+}
+
+.wrapImg{
+    display: block;
+}
+
+.btnSeeMore{
+    margin: 0px 15px 15px;
+    padding: 5px 25px;
+    border-radius: 0;
+    text-align: center;
+    border: 1px solid $color14;
+    background-color: $color14;
+    font-size: 13px;
+    color: $color9;
+    &:hover{
+        color: $color14;
+        background-color: $color1;
+    }
+}
+
+.wrapFooter{
+    margin: 30px 0 0 0;
+}
+
+@media (max-width: 991px){
+    .titleImg{
+        h3{
+            font-size: 18px;
+        }
+    }
+}
+
+@media (max-width: 767px){
+    .wrapImageLists{
+        margin-top: 30px;
+    }
+    
+    .wrapFooter{
+        margin: 0;
+    }
+}
