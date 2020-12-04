@@ -16581,7 +16581,7 @@ body {
   text-align: center;
   border: 1px solid #cd9933;
   background-color: #cd9933;
-  font-size: 14px;
+  font-size: 12px;
   border-radius: 0;
   margin-left: 25px;
   line-height: 35px;
@@ -16609,7 +16609,7 @@ body {
 }
 
 .wrapBtnBookNowHeaderBottom .btnBookNowHeaderBottom:first-child {
-  margin-left: 15px;
+  margin-left: 14px;
 }
 
 .wrapMenuMainHeaderBottom {
@@ -16641,7 +16641,7 @@ body {
 .listLinkMenuMainHeaderBottom {
   color: white;
   line-height: 80px;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 700;
   padding: 0;
   transition: 0.5s;
@@ -17730,6 +17730,14 @@ body {
   margin-bottom: 30px;
 }
 
+.elementImg:hover .wrapImg {
+  background-color: black;
+}
+
+.elementImg:hover .wrapImg img {
+  opacity: 0.5;
+}
+
 .elementImg:hover .wrapTextElementImg {
   transition: 0.5s;
   -webkit-transition: 0.5s;
@@ -17744,7 +17752,6 @@ body {
 }
 
 .elementImg:hover .titleImg {
-  background-color: transparent;
   transition: 0.5s;
   -webkit-transition: 0.5s;
   -moz-transition: 0.5s;
@@ -17755,6 +17762,7 @@ body {
   -moz-transform: translate(0, 0);
   -ms-transform: translate(0, 0);
   -o-transform: translate(0, 0);
+  background-color: transparent;
 }
 
 .wrapTextElementImg {
@@ -17767,12 +17775,11 @@ body {
   -moz-transition: 0.5s;
   -ms-transition: 0.5s;
   -o-transition: 0.5s;
-  background-color: rgba(0, 0, 0, 0.6);
 }
 
 .titleImg {
   display: block;
-  padding: 10px;
+  padding: 15px;
   transition: 0.5s;
   -webkit-transition: 0.5s;
   -moz-transition: 0.5s;
@@ -17802,7 +17809,7 @@ body {
 }
 
 .btnSeeMore {
-  margin: 0px 10px 10px;
+  margin: 0px 15px 15px;
   padding: 5px 25px;
   border-radius: 0;
   text-align: center;

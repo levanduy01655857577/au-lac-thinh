@@ -18,7 +18,7 @@
     text-align: center;
     border: 1px solid $color14;
     background-color: $color14;
-    font-size: 14px;
+    font-size: 12px;
     border-radius: 0;
     margin-left: 25px;
     line-height: 35px;
@@ -36,7 +36,7 @@
     @include translate(0, -50%);
     .btnBookNowHeaderBottom {
         &:first-child {
-            margin-left: 15px;
+            margin-left: 14px;
         }
     }
 }
@@ -66,7 +66,7 @@
 .listLinkMenuMainHeaderBottom {
     color: white;
     line-height: 80px;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 700;
     padding: 0;
     @include transition(0.5s);
