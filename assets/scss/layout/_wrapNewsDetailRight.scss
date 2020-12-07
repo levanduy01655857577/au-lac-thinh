@@ -42,9 +42,9 @@
 .descriptionLatestDate {
     position: relative;
     @include splitText(3, 76px);
-    font-size: 10px;
+    font-size: 14px;
     font-weight: 500;
-    line-height: 15px;
+    line-height: 24px;
     color: $color5;
     font-family: $nameFont4;
     margin: 10px 0 0 0;
@@ -58,8 +58,8 @@
     @include splitText(3, 76px);
     font-family: $nameFont4;
     font-weight: 400;
-    font-size: 12px;
-    line-height: 22px;
+    font-size: 14px;
+    line-height: 24px;
     color: $color5;
     margin: 10px 0 0 0;
     text-align: justify;

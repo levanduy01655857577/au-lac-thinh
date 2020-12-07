@@ -17730,7 +17730,7 @@ body {
 }
 
 .authorNewsDetailContent {
-  font-size: 10px;
+  font-size: 14px;
   font-weight: 600;
 }
 
@@ -17825,9 +17825,9 @@ body {
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   max-height: 76px;
-  font-size: 10px;
+  font-size: 14px;
   font-weight: 500;
-  line-height: 15px;
+  line-height: 24px;
   color: #888888;
   font-family: "Montserrat";
   margin: 10px 0 0 0;
@@ -17847,8 +17847,8 @@ body {
   max-height: 76px;
   font-family: "Montserrat";
   font-weight: 400;
-  font-size: 12px;
-  line-height: 22px;
+  font-size: 14px;
+  line-height: 24px;
   color: #888888;
   margin: 10px 0 0 0;
   text-align: justify;

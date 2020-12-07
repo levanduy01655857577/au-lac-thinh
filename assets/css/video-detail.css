@@ -19615,7 +19615,7 @@ body.vjs-full-window {
   margin: 30px 0 0 0;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   .wrapVideoDetail {
     margin-top: 30px;
   }
