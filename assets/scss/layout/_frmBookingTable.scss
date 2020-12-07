@@ -93,7 +93,7 @@
     }
 }
 
-@media (max-width: 767px){
+@media (max-width: 991px){
 
     .wrapBookingTable{
         margin-top: 30px;
@@ -102,8 +102,11 @@
 
     .formBookingTable{
         margin: 30px 0 0 0;
-    }
+    }    
+}
 
+@media (max-width: 767px){
+    
     .descriptionDateTime{
         text-align: center;
     }
