@@ -8,14 +8,12 @@
 }
 
 .introduceTitle{
-    h2{
-        font-family: $nameFont2;
-        font-weight: 600;
-    }
-    p{
-        font-weight: 500;
-        color: $color5;
-    }
+    font-family: $nameFont2;
+    font-weight: 600;
+}
+
+.introduceDescription{
+    color: $color5;
 }
 
 .titleMenu1{
@@ -52,7 +50,6 @@
 }
 
 .foodDescription2{
-    font-weight: 500;
     color: $color5;
     font-size: 15px;
     text-align: justify;
@@ -116,11 +113,9 @@
     .titleMenu1{
         font-size: 48px;
     }
-}
 
-@media(max-width:767px){
-    .menuBlock{
-        margin: 30px 0 0 0;
+    .food{
+        margin: 30px 0 0;
     }
 
     .orderMenuImage{
@@ -137,5 +132,16 @@
     
     .wrapFooter{
         margin-top: 30px;
+    }
+}
+
+@media(max-width:767px){
+    
+    .menuBlock{
+        margin: 30px 0 0 0;
+    }
+
+    .foodDescription2{
+        margin: 5px 0 0;
     }
 }

@@ -17713,7 +17713,7 @@ body {
   color: black !important;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   .wrapPaging {
     margin: 0 0 30px 0;
   }
@@ -17847,4 +17847,3 @@ body {
     margin: 0;
   }
 }
-/*# sourceMappingURL=video-lists.css.map */

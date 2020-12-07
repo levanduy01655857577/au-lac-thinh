@@ -97,11 +97,21 @@ h2{
     padding: 60px 0 0 0;
 }
 
-
-
 @media (max-width: 991px) {
     .backgroudLastNews::before {
         height: 90px !important;
+    }
+    .wrapLatestNews{
+        padding: 0 0 30px 0;
+    }
+    .updateNews{
+        padding: 30px 0 0;
+    }
+    .blockItemImg{
+        padding: 15px 0 0;
+    }
+    .wrapInfoItemLatestNews{
+        margin-top: 15px;
     }
 }
 
@@ -120,10 +130,6 @@ h2{
     // .wrapLatestNews {
     //     padding: 0;
     // }
-}
-
-@media (max-width: 767px) {
-
 }
 
 @media (max-width: 575px) {

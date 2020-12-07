@@ -17713,7 +17713,7 @@ body {
   color: black !important;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   .wrapPaging {
     margin: 0 0 30px 0;
   }
@@ -18799,4 +18799,3 @@ body:not(.lg-from-hash)
     margin: 0;
   }
 }
-/*# sourceMappingURL=image-detail.css.map */

@@ -17713,7 +17713,7 @@ body {
   color: black !important;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   .wrapPaging {
     margin: 0 0 30px 0;
   }
@@ -19623,4 +19623,3 @@ body.vjs-full-window {
     margin: 0;
   }
 }
-/*# sourceMappingURL=video-detail.css.map */

@@ -1,7 +1,7 @@
 @import "../abstracts/variable";
 @import "../abstracts/mixin";
 .wrapField {
-    margin: 60px 0;
+    margin: 60px 0 0;
     overflow: hidden;
     .imgageFieldWelcome {
         width: 100%;
@@ -14,10 +14,6 @@
         top: 0;
         right: 0;
     }
-}
-
-.wrapFieldIntro {
-    padding-top: 30px;
 }
 
 .wrapImgResizeItemField {
@@ -145,7 +141,7 @@
 .rowContentItemField {
     float: left;
     width: 50%;
-    padding: 100px 60px 60px 0;
+    padding: 60px 60px 60px 0;
 }
 
 .bgBlack {
@@ -177,9 +173,6 @@
 }
 
 @media (max-width: 1199px) {
-    .wrapFieldIntro {
-        padding-top: 15px;
-    }
     .contentField {
         min-height: 450px;
     }
@@ -207,9 +200,6 @@
         line-height: 23px;
         padding: 0;
     }
-    .blockItemLeft {
-        margin: 10px 0;
-    }
     .colImgField {
         display: none;
     }
@@ -218,15 +208,17 @@
         margin-right: 110px;
     }
     .rowContentItemField {
-        padding: 50px 0 30px 0;
+        padding: 30px 0;
     }
 }
 
 @media (max-width: 991px){
     .wrapField {
-        margin: 30px 0;
+        margin: 30px 0 0;
     }
-    
+    .wrapListComment{
+        padding: 30px 0;
+    }
 }
 
 @media (max-width: 767px) {
@@ -257,7 +249,7 @@
             margin: 10px 0;
         }
         .blockItemImg {
-            padding-top: 15px;
+            padding-top: 30px;
         }
         .divisoncol2 {
             column-count: 1;
@@ -265,7 +257,6 @@
         }
         .rowContentItemField {
             width: 100%;
-            padding: 30px 0 30px 0;
         }
     }
     .colImgField {
@@ -275,10 +266,6 @@
 
 @media (max-width: 567px) {
     .wrapField {
-        .rowContentItemField {
-            padding: 20px 0;
-            width: 100%;
-        }
         .divisoncol2 {
             margin: 0;
         }
@@ -310,9 +297,6 @@
         }
         .divisoncol2 {
             column-count: 1;
-        }
-        .blockItemImg {
-            padding-top: 15px;
         }
     }
 }
