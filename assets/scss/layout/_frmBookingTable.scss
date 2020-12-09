@@ -77,12 +77,9 @@
 // end select picker
 
 // captcha
-.frmCaptcha{
-    margin: auto;
-}
 
 .inputCaptcha{
-    width: 150px;
+    width: 50%;
     display: inline-block;
 }
 
@@ -112,12 +109,6 @@
     }
 }
 
-@media (max-width: 1199px){
-    .inputCaptcha{
-        width: 120px;
-    }
-}
-
 @media (max-width: 991px){
 
     .wrapBookingTable{
@@ -127,7 +118,11 @@
 
     .formBookingTable{
         margin: 30px 0 0 0;
-    }   
+    }
+    
+    .btnBookingTable{
+        margin: 0;
+    }
 }
 
 @media (max-width: 767px){
@@ -152,5 +147,9 @@
 
     .frmCaptcha{
         padding: 0;
+    }
+
+    .btnBookingTable{
+        margin: 15px 0 0 0;
     }
 }

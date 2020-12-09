@@ -71,10 +71,6 @@
 
 @media (max-width: 991px){
 
-    .wrapNewsDetail .row{
-        padding: 0;
-    }
-
     .wrapNewsDetailRight{
         padding: 0;
     }
@@ -87,14 +83,4 @@
         margin: 15px 0 0 0;
     }
 
-}
-
-@media (max-width: 767px){
-    .wrapNewsDetail .row{
-        padding: 0 15px;
-    }
-
-    .elementSlideLatestNews{
-        padding: 0;
-    }
 }

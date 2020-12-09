@@ -18599,12 +18599,8 @@ body {
   background-color: #d2b00f;
 }
 
-.frmCaptcha {
-  margin: auto;
-}
-
 .inputCaptcha {
-  width: 150px;
+  width: 50%;
   display: inline-block;
 }
 
@@ -18632,12 +18628,6 @@ body {
   color: #d2b00f;
 }
 
-@media (max-width: 1199px) {
-  .inputCaptcha {
-    width: 120px;
-  }
-}
-
 @media (max-width: 991px) {
   .wrapBookingTable {
     margin-top: 30px;
@@ -18645,6 +18635,9 @@ body {
   }
   .formBookingTable {
     margin: 30px 0 0 0;
+  }
+  .btnBookingTable {
+    margin: 0;
   }
 }
 
@@ -18665,5 +18658,8 @@ body {
   }
   .frmCaptcha {
     padding: 0;
+  }
+  .btnBookingTable {
+    margin: 15px 0 0 0;
   }
 }
