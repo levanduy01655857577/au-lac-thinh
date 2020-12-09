@@ -141,21 +141,22 @@ $bottomTextSlide:48px;
     top: 50%;
     @include translate(0, -50%);
     color: $color1;
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
+    font-size: 14px;
     text-align: center;
-    line-height: 48px;
+    line-height: 40px;
     padding: 0;
     border: none;
-    background-color: $color7;
+    background-color: $color16;
     @include borderRadius(100%);
     z-index: 100;
     @include transition(0.5s);
     &.prev {
-        right: 16.5%;
+        right: 75px;
     }
     &.next {
-        right: 13%;
+        right: 30px;
     }
     &:hover {
         background-color: $color14;
@@ -177,6 +178,7 @@ $bottomTextSlide:48px;
         color: $color8;
         background-color: transparent;
         border-radius: 0;
+        width: auto;
         &.prev {
             left: 0;
         }
@@ -210,12 +212,6 @@ $bottomTextSlide:48px;
             height: 40px;
             font-size: 13px;
             line-height: 26px;
-            &.prev {
-                right: 90px;
-            }
-            &.next {
-                right: 45px;
-            }
         }
     }
 }
@@ -251,7 +247,7 @@ $bottomTextSlide:48px;
             font-size: 10px;
             line-height: 25px;
             &.prev {
-                right: 40px;
+                right: 37px;
             }
             &.next {
                 right: 15px;

@@ -3,5 +3,23 @@
 
 .wrapPaging {
     text-align: center;
-    margin-top: 30px;
+    margin: 0 0 60px 0;
+}
+
+.btnPaging{
+    background-color: $color1;
+    color: $color14;
+    border-radius: 0%;
+    border: 1px solid $color14;
+    padding: 0 15px;
+}
+.btnPaging.active{
+    background-color: $color14 !important;
+    color: $color9 !important;
+}
+
+@media (max-width: 991px){
+    .wrapPaging {
+        margin: 0 0 30px 0;
+    }
 }

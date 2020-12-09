@@ -18,21 +18,30 @@
     }
     &.imgSquare {
         padding-top: 100%;
+        height: 100%;
+    }
+    &.img4And3 {
+        padding-top: 75%;
+    }
+    &.img8And5 {
+        padding-top: 62.5%;
     }
 }
 
 .slick-dots {
-    position: relative;
-    list-style-type: none;
     position: absolute;
+    list-style-type: none;
     top: 50%;
-    left: 15%;
-    transform: translate(-50%, -50%);
+    left: 30px;
+    transform: translate(0, -50%);
+    margin: 0;
+    padding: 0;
     li {
         width: 20px;
         height: 1px;
         margin: 20px 0;
         background-color: $color1;
+        transition: 0.5s;
         button {
             visibility: hidden;
         }
@@ -44,15 +53,8 @@
     }
 }
 
-@media(max-width:1024px) {
-    .slick-dots {
-        left: 5%;
-    }
-}
-
 @media(max-width:768px) {
     .slick-dots {
-        left: 5%;
         li {
             width: 15px;
             margin: 15px 0;
@@ -65,7 +67,7 @@
 
 @media (max-width: 567px) {
     .slick-dots {
-        left: 2%;
+        left: 15px;
         li {
             width: 10px;
             margin: 10px 0;

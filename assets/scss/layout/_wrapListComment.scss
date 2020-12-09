@@ -51,24 +51,17 @@
     text-transform: uppercase;
 }
 
-@media (max-width: 1024px) {
-    .wrapListComment {
-        padding: 0;
-        margin: 60px 0;
-    }
-    .wrapSlideTestiomonials {
-        margin-top: 15px;
-    }
-    .textTestimonial {
-        margin: 5px 0;
+.contentListComment {
+    text-align: center;
+}
+
+@media(max-width:991px) {
+    .wrapListComment{
+        padding: 30px 0;
     }
 }
 
-@media(max-width:768px) {
-    .wrapListComment {
-        padding: 0;
-        margin: 70px 0;
-    }
+@media(max-width:767px) {
     .wrapLatestNews {
         .backgroudLastNews::before {
             position: absolute;
@@ -79,10 +72,7 @@
     }
 }
 
-@media(max-width:576px) {
-    .wrapListComment {
-        margin: 40px 0;
-    }
+@media(max-width:575px) {
     .wrapLatestNews {
         .backgroudLastNews::before {
             position: absolute;

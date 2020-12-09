@@ -3,9 +3,7 @@
 .wrapCopyRightAndDesigned {
     position: relative;
     display: flex;
-    background-color: $color11;
-    padding: 30px 0;
-    border-top: 1px solid $color12;
+    background-color: $color18;
 }
 
 .wrapTextCopyRightAndDesigned {
@@ -16,6 +14,7 @@
     font-weight: 500;
     color: $color5;
     justify-content: space-between;
+    padding: 15px 0;
     a {
         color: $color3;
         @include transition(0.5s);
@@ -33,13 +32,14 @@
         padding-right: 15px;
         span a {
             color: $color12;
+            &:hover {
+                color: $color1;
+            }
         }
     }
 }
 
 .listFanpageFooter {
-    display: flex;
-    justify-content: space-between;
     font-size: 15px;
     color: $color1;
     @include transition(0.5s);
@@ -47,13 +47,23 @@
     &:first-child {
         margin-left: 0;
     }
-    &:hover {
-        color: $color3;
-        text-decoration: none;
+    .linkFanpageFooter {
+        display: inline-block;
+        margin: 0 25px;
+        padding: 8px 5px;
+        i {
+            @include transition(0.5s);
+            color: $color5;
+            &:hover {
+                color: $color12;
+                text-decoration: none;
+            }
+        }
     }
-    i {
-        color: $color5;
-    }
+}
+
+.containerCopyRightAndDesigned {
+    border-top: 1px solid $color19;
 }
 
 @media (max-width: 768px) {
@@ -64,7 +74,6 @@
     .wrapCopyRightAndDesigned {
         font-size: 14px;
         line-height: 24px;
-        padding: 10px;
         .wrapTextCopyRightAndDesigned {
             display: flex;
             .textCopyRightFooter {
@@ -92,6 +101,15 @@
             .texDesignedFooter {
                 margin: 0;
             }
+        }
+    }
+}
+
+@media(max-width:320px) {
+    .wrapTextCopyRightAndDesigned {
+        padding-right: 7px;
+        .textCopyRightFooter {
+            padding: 0;
         }
     }
 }

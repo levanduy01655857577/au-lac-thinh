@@ -25,12 +25,13 @@
 
 .navListBreadcrumb {
     background: none;
-    margin: 15px auto auto auto;
+    // margin: 15px auto auto auto;
+    margin:auto;
     display: table;
 }
 
 .olListBreqadcrumb {
-    margin: 0;
+    margin: 10px 0 0 0;
     background: none;
     padding: 0;
     display: block;
@@ -39,7 +40,7 @@
 
 .itemListBreadcrumb.active,
 .linkListBreadcrumb {
-    font-size: 16px;
+    font-size: 12px;
     line-height: 24px;
     color: $color1;
     text-transform: capitalize;
@@ -49,7 +50,7 @@
     @include transition(0.5s);
 
     &:hover {
-        color: $color2;
+        color: $color15;
         text-decoration: none;
     }
 }
@@ -77,33 +78,37 @@
     width: 80px;
     margin: auto;
 
-    &:before,
-    &:after {
-        position: absolute;
-        bottom: 3px;
-        content: '';
-        width: 10px;
-        height: 10px;
-        background-color: $color1;
-        @include borderRadius(100%);
-    }
+    // &:before,
+    // &:after {
+    //     position: absolute;
+    //     bottom: 3px;
+    //     content: '';
+    //     width: 10px;
+    //     height: 10px;
+    //     background-color: $color1;
+    //     @include borderRadius(100%);
+    // }
 
-    &:before {
-        left: 0;
-    }
+    // &:before {
+    //     left: 0;
+    // }
 
-    &:after {
-        right: 0;
-    }
+    // &:after {
+    //     right: 0;
+    // }
+}
+
+.titlePageCurrentBreadcrumb{
+    font-size: 33px;
 }
 
 @media (max-width: 991px) {
-    .navListBreadcrumb {
-        margin-top: 5px;
-    }
+    // .navListBreadcrumb {
+    //     margin-top: 5px;
+    // }
 
     .titlePageCurrentBreadcrumb {
-        padding: 0 0 15px 0;
+        // padding: 0 0 15px 0;
         font-size: 24px;
         line-height: 38px;
 
@@ -118,8 +123,8 @@
             top: auto;
         }
 
-        .navListBreadcrumb {
-            margin-top: 15px;
-        }
+        // .navListBreadcrumb {
+        //     margin-top: 15px;
+        // }
     }
 }

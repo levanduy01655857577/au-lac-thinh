@@ -41,7 +41,7 @@
 }
 
 .subTitleSlide {
-    font-weight: 500;
+    font-weight: 400;
     font-size: 16px;
     line-height: 26px;
     color: $color13;
@@ -67,7 +67,9 @@
 .btnInfoWe {
     border-left: 4px solid $color9;
     line-height: 40px;
+    @include transition(0.5s);
     &:hover {
+        border-left: 4px solid $color12;
         color: $color12;
     }
 }
@@ -76,7 +78,9 @@
     border-left: 4px solid $color1;
     line-height: 40px;
     color: $color1;
+    @include transition(0.5s);
     &:hover {
+        border-left: 4px solid $color12;
         color: $color12;
     }
 }

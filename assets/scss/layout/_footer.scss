@@ -1,269 +1,357 @@
-    @import "../abstracts/variable";
-    @import "../abstracts/mixin";
-    .wrapFooter {
-        background-color: $color11;
-        padding: 80px 0 50px 0;
+@import "../abstracts/variable";
+@import "../abstracts/mixin";
+.wrapFooter {
+    background-color: $color18;
+    padding: 60px 0 40px 0;
+}
+
+// logo footer
+.wrapLogoFooter {
+    text-align: center;
+    padding-bottom: 10px;
+    .imgLogoFooter {
+        height: 60px;
+        width: auto;
     }
-    
-    // logo footer
-    .wrapLogoFooter {
-        text-align: center;
-        padding-bottom: 10px;
-        .imgLogoFooter {
-            height: auto;
-            width: 100%;
-        }
+}
+
+.textAboutFooter {
+    margin: 0;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #888888;
+    text-align: right;
+}
+
+.textFollowFooter {
+    margin: 0;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 30px;
+    color: $color5;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.colItemFooter {
+    padding-left: 50px;
+}
+
+// end logo footer
+// menu footer
+.listMenuFooter {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    @include transition(0.5s);
+    .itemMenuFooter {
+        padding-bottom: 5px;
     }
-    
-    .textAboutFooter {
-        margin: 0;
-        font-size: 13px;
-        font-weight: 600;
-        line-height: 24px;
-        color: #888888;
-        text-align: right;
+}
+
+.linkTitleItemMenuFooter {
+    font-size: 12px;
+    color: $color1;
+    line-height: 24px;
+    font-weight: 600;
+    @include transition(0.5s);
+    &:hover {
+        text-decoration: none;
+        color: $color12;
     }
-    
-    .textFollowFooter {
-        margin: 0;
-        font-size: 13px;
-        font-weight: 600;
-        line-height: 30px;
-        color: $color5;
-        text-align: center;
-        letter-spacing: 3px;
-    }
-    
-    .colItemFooter {
-        padding-left: 50px;
-    }
-    
-    // end logo footer
-    // menu footer
-    .listMenuFooter {
-        padding: 0;
-        margin: 0;
-        list-style: none;
-        .itemMenuFooter {
-            padding-bottom: 5px;
-        }
-    }
-    
-    .linkTitleItemMenuFooter {
-        font-size: 12px;
-        color: $color1;
-        line-height: 24px;
-        font-weight: 600;
-        @include transition(0.5s);
-        &:hover {
-            text-decoration: none;
-            color: $color12;
-        }
-    }
-    
-    // end menu footer
-    // cmt footer
-    .nameUserCmtFooter {
-        font-size: 12px;
-        line-height: 22px;
-        color: $color5;
-        font-style: italic;
-        text-transform: capitalize;
-        margin: 0;
-    }
-    
-    .textCmtFooter {
-        font-size: 12px;
-        line-height: 22px;
-        color: $color1;
-        @include splitText(3, 66px);
-        margin: 0;
-    }
-    
-    // end cmt footer
-    // contact footer
-    .listContactFooter {
-        padding-left: 30px;
-        .itemMenuFooter {
-            a {
-                color: $color5;
-                font-size: 13px;
-                line-height: 24px;
-                letter-spacing: 2px;
+}
+
+// end menu footer
+// cmt footer
+.nameUserCmtFooter {
+    font-size: 12px;
+    line-height: 22px;
+    color: $color5;
+    font-style: italic;
+    text-transform: capitalize;
+    margin: 0;
+}
+
+.textCmtFooter {
+    font-size: 12px;
+    line-height: 22px;
+    color: $color1;
+    @include splitText(3, 66px);
+    margin: 0;
+}
+
+// end cmt footer
+// contact footer
+.listContactFooter {
+    padding-left: 30px;
+    .itemMenuFooter {
+        .linkTitleItemMenuFooter {
+            color: $color5;
+            font-size: 13px;
+            line-height: 24px;
+            letter-spacing: 2px;
+            @include transition(0.5s);
+            &:hover {
+                color: $color12;
             }
-            .address {
-                color: $color5;
-                letter-spacing: 1px;
-                line-height: 40px;
+        }
+        .address {
+            color: $color5;
+            letter-spacing: 1px;
+            line-height: 25px;
+            @include transition(0.5s);
+            &:hover {
+                color: $color12;
+            }
+        }
+        .phone {
+            font-size: 14px;
+            color: $color15;
+            letter-spacing: 2px;
+            &:hover {
+                color: $color1;
+            }
+        }
+        .mail {
+            padding: 10px 0;
+        }
+    }
+}
+
+// end contact footer
+.containerFooter {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.blocklistFanpageFooter {
+    margin: 0 10px !important;
+    text-align: center;
+}
+
+.listFanpageFooter{ 
+    .linkFanpageFooter{
+        margin: 0 5px !important;
+    }
+
+}
+@media(max-width:1199px) {
+    .wrapFooter {
+        .listFanpageFooter {
+            .linkFanpageFooter {
+                margin: 0 12px;
+            }
+        }
+    }
+    .textFollowFooter{
+        letter-spacing: 1px;
+    }
+}
+
+@media(max-width:991px) {
+
+    .colFooterLeft{
+        order: 2;
+    }
+    .textFollowFooter{
+        letter-spacing: 1px;
+    }
+    .wrapFooter {
+        padding: 25px 0 10px 0;
+        .imgLogoFooter {
+            height: 60px;
+        }
+        .textAboutFooter {
+            font-size: 12px;
+            line-height: 18px;
+            text-align: center;
+        }
+        .blockLogoFooter {
+            font-size: 13px;
+            margin: 0 auto;
+        }
+        .listFanpageFooter {
+            .linkFanpageFooter {
+                margin: 0 12px;
+            }
+        }
+        .listMenuFooter {
+            text-align: center;
+            .itemMenuFooter {
+                display: inline-block;
+                padding: 0 5px;
+                a {
+                    font-size: 13px;
+                }
+                .phone,
+                .mail {
+                    letter-spacing: 1px;
+                }
+                .mail {
+                    line-height: 20px;
+                    padding: 0;
+                }
+                .address {
+                    font-size: 13px;
+                    line-height: 20px;
+                    letter-spacing: 0;
+                    display: inline-block;
+                    br {
+                        display: none;
+                    }
+                }
+            }
+        }
+        .blockLogoFooter {
+            width: 200px;
+            position: relative;
+            .wrapLogoFooter {
+                display: flex;
+                .linkLogoFooter {
+                    margin: 10px auto;
+                }
+            }
+        }
+    }
+    .blocklistFanpageFooter {
+        margin: 0 auto;
+    }
+    .colItem {
+        padding: 0 15px;
+        margin: 15px 0;
+    }
+    .rowFooter {
+        position: relative;
+        min-height: 350px;
+    }
+    .colMenuItem {
+        position: relative;
+    }
+    .colItem1,
+    .colItem2,
+    .colItem3 {
+        position: absolute;
+    }
+    .colItem1 {
+        top: 0;
+    }
+    .colItem2 {
+        top: 55%;
+    }
+    .colItem3 {
+        bottom: 0;
+    }
+    
+    .listContactFooter {
+        padding: 0;
+    }
+    .itemFooterContact{
+        display: block !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .wrapFooter {
+        padding: 30px 0 20px 0;
+        .linkTitleItemMenuFooter {
+            font-size: 11px;
+            line-height: 20px;
+        }
+        .listFanpageFooter {
+            .linkFanpageFooter {
+                margin: 0 12px;
+            }
+        }
+    }
+    .colItemFooter {
+        padding-left: 0;
+    }
+    .textAboutFooter {
+        font-size: 12px;
+        line-height: 18px;
+        text-align: right;
+        padding-bottom: 5px;
+    }
+    .textFollowFooter {
+        font-size: 12px;
+        letter-spacing: 1px;
+    }
+    .blockLogoFooter {
+        .listMenuFooter {
+            .itemMenuFooter {
+                padding-bottom: 5px;
+            }
+        }
+    }
+    .listContactFooter {
+        .itemMenuFooter {
+            display: block;
+            a {
+                font-size: 13px;
             }
             .phone {
-                font-size: 14px;
                 color: $color15;
-                letter-spacing: 2px;
+                letter-spacing: 1px;
             }
             .mail {
-                padding: 10px 0;
+                letter-spacing: 0;
+                line-height: 37px;
             }
-        }
-    }
-    
-    // end contact footer
-    .containerFooter {
-        height: auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-    
-    .blockLogoFooter {
-        position: absolute;
-        left: 0;
-    }
-    
-    @media (max-width: 768px) {
-        .wrapFooter {
-            padding: 40px 0 25px 0;
-        }
-        .colItemFooter {
-            padding-left: 0;
-        }
-        .wrapFooter {
-            position: relative;
-            .offset-md-1 {
+            .address {
+                line-height: 30px;
                 margin: 0;
             }
         }
+    }
+    .contentItemFooter {
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 22px;
+        .listMenuFooter {
+            .itemMenuFooter {
+                padding-bottom: 6px;
+            }
+        }
+    }
+    .colItem {
+        padding-right: 0;
+    }
+}
+
+@media(max-width:425px) {
+    .wrapFooter {
+        padding: 20px 0 10px 0;
+        height: auto;
+        .wrapLogoFooter {
+            padding: 0;
+        }
         .textAboutFooter {
-            font-size: 11px;
-            line-height: 20px;
-            text-align: right;
-            padding-bottom: 5px;
-        }
-        .textFollowFooter {
-            font-size: 11px;
-            letter-spacing: 1px;
-        }
-        .blockLogoFooter {
-            position: absolute;
-            left: 0px;
-            .listMenuFooter {
-                .itemMenuFooter {
-                    padding-bottom: 5px;
-                }
-            }
-        }
-        .contentAddress {
-            .listContactFooter {
-                padding-left: 0;
-                .itemMenuFooter {
-                    display: block;
-                    a {
-                        font-size: 12px;
-                    }
-                    .phone {
-                        color: $color15;
-                        letter-spacing: 1px;
-                    }
-                    .mail {
-                        letter-spacing: 1px;
-                        line-height: 37px;
-                    }
-                    .address {
-                        line-height: 27px;
-                        padding: 0;
-                    }
-                }
-            }
+            font-size: 12px;
+            line-height: 17px;
         }
         .contentItemFooter {
             font-size: 11px;
-            .listMenuFooter {
-                .itemMenuFooter {
-                    padding-bottom: 2px;
-                }
-            }
+            line-height: 15px;
         }
-    }
-    
-    @media(max-width:576px) {
-        .wrapFooter {
-            padding: 30px 0;
-            .imgLogoFooter {
-                height: auto;
-                width: 200px;
-            }
-            .textAboutFooter {
-                font-size: 13px;
-                line-height: 20px;
-                text-align: center;
-                padding-bottom: 10px;
-            }
-            .blockLogoFooter {
-                font-size: 13px;
-                .textFollowFooter {
-                    letter-spacing: 4px;
-                }
-            }
-            .listMenuFooter {
-                text-align: center;
-                .itemMenuFooter {
+        .listMenuFooter {
+            text-align: center;
+            .itemMenuFooter {
+                .address {
+                    font-size: 12px;
+                    line-height: 18px;
                     display: inline-block;
-                    padding: 0 5px;
-                    a {
-                        font-size: 13px;
-                    }
-                    .phone,
-                    .mail {
-                        letter-spacing: 1px;
-                    }
-                    .mail {
-                        line-height: 20px;
-                        padding: 0;
-                    }
-                    .address {
-                        font-size: 13px;
-                        line-height: 20px;
-                        letter-spacing: 0;
-                        display: inline;
-                        br {
-                            display: none;
-                        }
-                    }
-                }
-            }
-            .blockLogoFooter {
-                position: relative;
-                padding: 10px 0;
-                .wrapLogoFooter {
-                    display: flex;
-                    .linkLogoFooter {
-                        margin: 10px auto;
-                    }
                 }
             }
         }
-        .blocklistFanpageFooter {
-            width: 200px;
-            margin: 0 auto;
-        }
-    }
-    
-    @media(max-width:320px) {
-        .wrapFooter {
-            .listMenuFooter {
-                .itemMenuFooter {
-                    a {
-                        font-size: 14px;
-                        line-height: 23px;
-                    }
-                }
-            }
-            .listContactFooter {
-                .itemMenuFooter {
-                    a {
-                        font-size: 14px;
-                    }
-                }
+        .rowFooter {
+            position: relative;
+            min-height: 320px;
+            .colItem2 {
+                top: 55%;
             }
         }
     }
+}

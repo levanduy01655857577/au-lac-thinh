@@ -8,26 +8,25 @@
 
 .wrapLogoHeaderBottom {
     left: 0;
-    top: 0;
+    top: 5px;
     margin: 0;
 }
 
 .btnBookNowHeaderBottom {
     width: auto;
-    padding: 5px 25px;
+    padding: 5px 30px;
     text-align: center;
     border: 1px solid $color14;
     background-color: $color14;
-    font-size: 13px;
+    font-size: 12px;
     border-radius: 0;
-    margin-left: 25px;
-    line-height: 40px;
+    line-height: 35px;
     color: $color9;
-}
-
-.btnBookNowHeaderBottom:hover {
-    background-color: $color1;
-    color: $color14;
+    @include transition(0.5s);
+    &:hover {
+        background-color: $color1;
+        color: $color14;
+    }
 }
 
 .wrapBtnBookNowHeaderBottom {
@@ -36,14 +35,14 @@
     @include translate(0, -50%);
     .btnBookNowHeaderBottom {
         &:first-child {
-            margin-left: 15px;
+            margin-left: 13px;
         }
     }
 }
 
 .wrapMenuMainHeaderBottom {
     float: right;
-    padding-right: 116px;
+    padding-right: 124px;
     display: table;
 }
 
@@ -57,7 +56,7 @@
 }
 
 .imgLogoHeaderBottom {
-    height: 80px;
+    height: 60px;
     width: auto;
     @include transition(0.5s);
 }
@@ -66,8 +65,7 @@
 .listLinkMenuMainHeaderBottom {
     color: white;
     line-height: 80px;
-    font-size: 14px;
-    text-transform: uppercase;
+    font-size: 12px;
     font-weight: 700;
     padding: 0;
     @include transition(0.5s);
@@ -77,8 +75,8 @@
 .listLinkMenuSubHeaderBottom {
     color: $color5;
     line-height: 22px;
-    font-weight: 700;
-    padding: 5px 0;
+    font-weight: 400;
+    padding: 10px 0;
     &:hover {
         color: $color14;
         text-decoration: none;
@@ -87,7 +85,7 @@
 
 .listItemMenuSubHeaderBottom {
     position: relative;
-    border-top: 1px solid #ddd;
+    border-top: 1px solid $color23;
 }
 
 .listMenuMainHeaderBottom,
@@ -108,6 +106,12 @@
     @include translate(0, 15px);
 }
 
+.smallListMenuSubHeader{
+    display: block !important;
+    padding-left: 15px;
+    border-top: 1px solid $color23;
+}
+
 .listMenuSubHeaderBottom {
     background-color: $color1;
     @include borderRadius(0 0 5px 5px);
@@ -125,21 +129,27 @@
     position: relative;
 }
 
-.btnDropdowMenuSubHeaderBottom {
-    color: white;
+// .btnDropdowMenuSubHeaderBottom {
+//     color: white;
+//     font-size: 12px;
+//     @include transition(0.5s);
+//     display: block;
+//     position: absolute;
+//     right: 0;
+//     top: 50%;
+//     @include translate(0, -50%);
+// }
+.btnDropdowMenuSubHeaderBottom{
     font-size: 12px;
-    @include transition(0.5s);
-    display: block;
     position: absolute;
-    right: 0;
-    top: 50%;
+    display: none;
     @include translate(0, -50%);
 }
 
 .listItemMenuMainHeaderBottom {
     float: left;
     position: relative;
-    margin: 0 20px;
+    margin: 0 13px;
     &.menuLanguageHeaderBottom {
         margin-right: 0;
     }
@@ -167,8 +177,7 @@
     }
 }
 
-.position {
-    position: absolute;
+.wrapListMenuSubHeaderBottom .wrapListMenuSubHeaderBottom {
     top: 0;
     left: 111%;
 }
@@ -195,6 +204,9 @@
     &.fixedMenu {
         .wrapHeaderBottom {
             background-color: $color8;
+            .listItemMenuMainHeaderBottom {
+                margin: 0 13px;
+            }
         }
         .wrapLogoHeaderBottom {
             top: 5px;
@@ -205,31 +217,7 @@
     }
 }
 
-@media (max-width: 1024px) {
-    .wrapMenuMainHeaderBottom {
-        padding-right: 95px;
-    }
-    .listLinkMenuSubHeaderBottom,
-    .listLinkMenuMainHeaderBottom {
-        font-size: 14px;
-    }
-    .listLinkMenuSubHeaderBottom {
-        line-height: 20px;
-    }
-    .listItemMenuMainHeaderBottom {
-        margin: 0 13.25px;
-    }
-    .wrapLogoHeaderBottom {
-        .imgLogoHeaderBottom {
-            height: 70px;
-        }
-    }
-    .btnBookNowHeaderBottom {
-        padding: 0px 15px;
-    }
-}
-
-@media (max-width: 768px) {
+@media (max-width: 1199px) {
     .wrapLogoHeaderBottom {
         .imgLogoHeaderBottom {
             height: 55px;
@@ -251,10 +239,10 @@
         background-color: $color1;
         width: 230px;
         left: -100%;
-        top: 75px;
+        top: 70px;
         overflow-y: auto;
         padding: 0;
-        @include calc("height", "100% - 75px");
+        @include calc("height", "100% - 70px");
         @include transition(0.5s);
         display: block;
         .listMenuMainHeaderBottom {
@@ -267,16 +255,16 @@
         z-index: 991;
         background-color: $color8;
         right: -100%;
-        top: 75px;
-        @include calc("height", "100% - 75px");
+        top: 70px;
+        @include calc("height", "100% - 70px");
         @include transition(0.5s);
         @include calc("width", "100% - 230px");
     }
     .listItemMenuMainHeaderBottom {
         width: 100%;
-        margin: 0;
+        margin: 0 !important;
         float: none;
-        border-bottom: 1px solid $color9;
+        border-bottom: 1px solid $color13;
         .listLinkMenuMainHeaderBottom {
             text-align: left;
             line-height: 20px;
@@ -288,13 +276,15 @@
         }
     }
     .btnDropdowMenuSubHeaderBottom {
+        display: block;
         top: 0;
+        right: 0;
         @include translate(0, 0);
-        width: 100%;
+        width: 50px;
         height: 50px;
         line-height: 50px;
         text-align: center;
-        color: $color3;
+        color: $color9;
     }
     .menuSubHeaderBottom {
         .listLinkMenuMainHeaderBottom {
@@ -360,7 +350,7 @@
         @include boxShadow(unset);
         @include boxShadow(none);
         @include borderRadius(0);
-        background-color: $color4;
+        background-color: $color22;
         padding: 0;
         white-space: normal;
     }
@@ -388,12 +378,7 @@
     .wrapBtnBookNowHeaderBottom {
         right: 30px;
         .btnBookNowHeaderBottom {
-            padding: 0 10px;
-        }
-    }
-    .wrapBtnBookNowHeaderBottom {
-        .btnBookNowHeaderBottom {
-            padding: 0 5px;
+            padding: 0 20px;
             font-size: 12px;
         }
     }
@@ -405,7 +390,7 @@
     }
 }
 
-@media(max-width:576px) {
+@media(max-width:575px) {
     .fixedMenu {
         .wrapLogoHeaderBottom {
             .imgLogoHeaderBottom {

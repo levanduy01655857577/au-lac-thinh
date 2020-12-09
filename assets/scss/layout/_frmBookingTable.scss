@@ -1,0 +1,155 @@
+.wrapBookingTable{
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.wrapIconBookingTable{
+    color: $color15;
+    font-size: 60px;
+}
+
+.titleBookingTable{
+    font-family: $nameFont1;
+    color: $color15;
+    font-size: 50px;
+    line-height: 60px;
+}
+
+.descriptionDateTime{
+    text-align: right;
+}
+
+.descriptionPhone{
+    border-left: 1px solid $color24;
+    text-align: left;
+}
+
+.descriptionBookingTable1{
+    color: $color5;
+    font-size: 15px;
+}
+
+.descriptionBookingTable2{
+    font-size: 18px;
+    font-weight: 500;
+    color: $color7;
+}
+
+.descriptionBookingTable3{
+    margin: 0;
+    font-size: 15px;
+    color: $color5;
+}
+
+.formBookingTable{
+    margin: 60px 0 0 0;
+}
+
+.formBookingTableGroup{
+    margin: 0 0 15px 0;
+}
+
+.formLabelBookingTable{
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 700;
+    color: $color7;
+    margin: 0 0 5px 0;
+    width: 100%;
+}
+
+.formInputBookingTable{
+    border: 1px solid $color4;
+    background-color: $color1 !important;
+    @include borderRadius(0px);
+}
+
+// select picker
+.dropdown button{
+    border: 1px solid $color4;
+    background-color: $color1 !important;
+    @include borderRadius(0px);
+}
+
+.dropdown-item.active{
+    background-color: $color15;
+}
+// end select picker
+
+// captcha
+
+.inputCaptcha{
+    width: 50%;
+    display: inline-block;
+}
+
+.imageRefreshCaptchaContact,
+.imageCaptchaContact {
+    height: 25px;
+    width: auto;
+    margin: 0 0 0 15px;
+}
+
+// end captcha
+
+.btnBookingTable{
+    padding: 0 25px;
+    text-align: center;
+    border: 1px solid $color14;
+    background-color: $color14;
+    font-size: 13px;
+    border-radius: 0;
+    margin: 15px 0 0 0;
+    line-height: 40px;
+    color: $color9;
+    
+    &:hover{
+        background-color: $color1;
+        color: $color15;
+    }
+}
+
+@media (max-width: 991px){
+
+    .wrapBookingTable{
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .formBookingTable{
+        margin: 30px 0 0 0;
+    }
+    
+    .btnBookingTable{
+        margin: 0;
+    }
+}
+
+@media (max-width: 767px){
+    
+    .descriptionDateTime{
+        text-align: center;
+    }
+
+    .descriptionPhone{
+        text-align: center;
+        border-left: none;
+        margin: 15px 0 0 0;
+    }
+
+    .descriptionBookingTable2{
+        margin: 6px 0 0 5px;
+    }
+
+    .formBookingTableGroup{
+        padding: 0;
+    }
+
+    .frmCaptcha{
+        padding: 0;
+    }
+
+    .btnBookingTable{
+        margin: 15px 0 0 0;
+    }
+}

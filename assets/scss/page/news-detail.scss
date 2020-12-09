@@ -1,0 +1,23 @@
+// general
+@import '../base/general';
+// end general
+
+// breadcrumb
+@import '../components/breadcrumb';
+// end breadcrumb
+
+// news detail
+@import '../layout/frmNewsDetail';
+// end news detail
+
+// news detail left
+@import '../layout/wrapNewsDetailLeft';
+// end news detail left
+
+// news detail right
+@import '../layout/wrapNewsDetailRight';
+// end news detail right
+
+// pagination
+@import '../components/paging';
+// end pagination

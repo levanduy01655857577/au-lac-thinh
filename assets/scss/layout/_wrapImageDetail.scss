@@ -1,0 +1,25 @@
+.wrapImageDetail{
+    margin-top: 60px;
+}
+
+.wrapImg{
+    display: block;
+}
+
+.elementImg{
+    margin-bottom: 30px;
+}
+
+.wrapFooter{
+    margin: 30px 0 0 0;
+}
+
+@media (max-width: 991px){
+    .wrapImageDetail{
+        margin-top: 30px;
+    }
+    
+    .wrapFooter{
+        margin: 0;
+    }
+}

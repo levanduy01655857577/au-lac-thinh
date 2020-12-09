@@ -7,23 +7,27 @@
 
 .titleTextContact,
 .titleFrmContact {
-    color: $color2;
+    color: $color15;
 }
 
 .wrapTexInfoContact {
-    font-size: 16px;
-    line-height: 26px;
+    font-size: 15px;
+    line-height: 24px;
     color: $color7;
     margin-top: 15px;
 
     a {
-        color: $color2;
+        color: $color5;
         @include transition(0.5s);
 
         &:hover {
-            color: $color3;
+            color: $color12;
             text-decoration: none;
         }
+    }
+
+    p b i{
+        width: 20px;
     }
 }
 
@@ -31,7 +35,7 @@
     margin-top: 15px;
 
     a {
-        color: $color2;
+        color: $color15;
         @include transition(0.5s);
         display: inline-block;
         font-size: 18px;
@@ -42,14 +46,15 @@
         }
 
         &:hover {
-            color: $color3;
+            color: $color12;
             text-decoration: none;
         }
     }
 }
 
 .formControlSendMessageContact  {
-    @include borderRadius(5px);
+    border: 1px solid $color4;
+    @include borderRadius(0px);
 }
 
 .wrapFrmSendMessage {
@@ -87,8 +92,22 @@
 }
 
 .btnSendMessageContact {
-    line-height: 34px;
+    padding: 0 25px;
+    text-align: center;
+    border: 1px solid $color14;
+    background-color: $color14;
+    font-size: 13px;
+    border-radius: 0;
+    margin-left: 15px;
+    line-height: 40px;
+    color: black;
+
+    &:hover{
+        background-color: $color1;
+        color: $color15;
+    }
 }
+
 // end captcha
 
 // map
@@ -99,7 +118,11 @@
 // end map
 
 @media (max-width: 991px) {
-    .colFrmContact {
+    // .colFrmContact {
+    //     margin-top: 30px;
+    // }
+    
+    .colTextContact{
         margin-top: 30px;
     }
 
@@ -121,7 +144,6 @@
 
     .btnSendMessageContact {
         float: none;
-        margin: 15px 0 0 0;
         clear: both;
     }
 
@@ -133,8 +155,8 @@
         height: 250px;
     }
 
-    .imageRefreshCaptchaContact,
-    .imageCaptchaContact {
-        margin-top: 0;
-    }
+    // .imageRefreshCaptchaContact,
+    // .imageCaptchaContact {
+    //     margin-top: 5px;
+    // }
 }

@@ -1,0 +1,28 @@
+@import '../abstracts/variable';
+@import '../abstracts/mixin';
+.backgroundAbout {
+    background-color: $color17;
+    padding: 10% 0;
+}
+.wrapFooter{
+    margin-top: 60px;
+}
+
+@media (max-width: 991px){
+
+    .wrapFooter{
+        margin-top: 30px;
+    }
+    .rowContentItemField {
+        padding: 0;
+    }
+}
+
+@media (max-width: 767px){
+    .blockItemLeft{
+        padding-top: 15px; 
+    }
+    .wrapField .blockItemImg{
+        padding-top: 15px;
+    }
+}
