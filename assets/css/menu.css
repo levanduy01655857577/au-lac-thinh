@@ -16984,6 +16984,7 @@ body {
     white-space: normal;
   }
   .listLinkMenuSubHeaderBottom {
+    font-size: 13px;
     padding: 15px 15px 15px 30px;
   }
   .listItemMenuLanguageMobile {
@@ -17730,7 +17731,7 @@ body {
   text-align: center;
 }
 
-.orderMenuImage {
+.rowMenu:nth-child(even) > div:first-of-type {
   -webkit-box-ordinal-group: 3;
       -ms-flex-order: 2;
           order: 2;

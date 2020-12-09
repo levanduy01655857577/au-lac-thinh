@@ -34,8 +34,10 @@
     text-align: center;
 }
 
-.orderMenuImage{
-    order: 2;
+.rowMenu:nth-child(even){
+    > div:first-of-type{
+        order: 2;
+    }
 }
 
 .food{
