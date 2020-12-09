@@ -108,7 +108,7 @@
 
 .smallListMenuSubHeader{
     display: block !important;
-    padding-left: 30px;
+    padding-left: 15px;
     border-top: 1px solid $color23;
 }
 
@@ -177,8 +177,7 @@
     }
 }
 
-.position {
-    position: absolute;
+.wrapListMenuSubHeaderBottom .wrapListMenuSubHeaderBottom {
     top: 0;
     left: 111%;
 }

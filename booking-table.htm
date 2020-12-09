@@ -124,7 +124,7 @@
                                         </li>
                                         <li class="listItemMenuSubHeaderBottom menuSubHeaderBottom">
                                             <a class="listLinkMenuSubHeaderBottom" href="menu.htm" title="THỰC ĐƠN">Thực đơn</a>
-                                            <div class="wrapListMenuSubHeaderBottom position">
+                                            <div class="wrapListMenuSubHeaderBottom wrapListMenuSubHeaderBottom">
                                                 <ul class="listMenuSubHeaderBottom">
                                                     <li class="listItemMenuSubHeaderBottom">
                                                         <a class="listLinkMenuSubHeaderBottom" href="menu.htm" title="THỰC ĐƠN CHỌN MÓN">Thực đơn chọn món</a>
@@ -140,7 +140,7 @@
                                         </li>
                                         <li class="listItemMenuSubHeaderBottom menuSubHeaderBottom">
                                             <a class="listLinkMenuSubHeaderBottom" href="#" title="BẢNG GIÁ">Bảng giá</a>
-                                            <div class="wrapListMenuSubHeaderBottom position">
+                                            <div class="wrapListMenuSubHeaderBottom wrapListMenuSubHeaderBottom">
                                                 <ul class="listMenuSubHeaderBottom">
                                                     <li class="listItemMenuSubHeaderBottom">
                                                         <a class="listLinkMenuSubHeaderBottom" href="#" title="BẢNG GIÁ NƯỚC">Bảng giá nước</a>
@@ -357,9 +357,16 @@
                 <input type="number" class="form-control formInputBookingTable" id="table-count" value='1'>
             </div>
 
-            <div class="col-lg-4 col-md-12 formBookingTableGroup">
+            <div class="col-lg-4 col-md-6 formBookingTableGroup">
                 <label class="formLabelBookingTable"for="description-input">Ghi chú (*)</label>
                 <input type="text" class="form-control formInputBookingTable" id="description-input">
+            </div>
+            
+            <div class="col-lg-4 col-md-6 frmCaptcha">
+                <label class="formLabelBookingTable"for="description-input">Mã xác nhận (*)</label>
+                <input type="text" class="form-control formInputBookingTable inputCaptcha" id="description-input">
+                <img src="assets/images/captcha.png" class="imageCaptchaContact" alt="captcha">
+                <img src="assets/images/refresh-captcha.png" class="imageRefreshCaptchaContact" alt="refresh-captcha">
             </div>
         </div>
 

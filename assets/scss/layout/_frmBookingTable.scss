@@ -76,6 +76,25 @@
 }
 // end select picker
 
+// captcha
+.frmCaptcha{
+    margin: auto;
+}
+
+.inputCaptcha{
+    width: 150px;
+    display: inline-block;
+}
+
+.imageRefreshCaptchaContact,
+.imageCaptchaContact {
+    height: 25px;
+    width: auto;
+    margin: 0 0 0 15px;
+}
+
+// end captcha
+
 .btnBookingTable{
     padding: 0 25px;
     text-align: center;
@@ -93,6 +112,12 @@
     }
 }
 
+@media (max-width: 1199px){
+    .inputCaptcha{
+        width: 120px;
+    }
+}
+
 @media (max-width: 991px){
 
     .wrapBookingTable{
@@ -102,7 +127,7 @@
 
     .formBookingTable{
         margin: 30px 0 0 0;
-    }    
+    }   
 }
 
 @media (max-width: 767px){
@@ -118,10 +143,14 @@
     }
 
     .descriptionBookingTable2{
-        margin: 0 0 0 5px;
+        margin: 6px 0 0 5px;
     }
 
     .formBookingTableGroup{
+        padding: 0;
+    }
+
+    .frmCaptcha{
         padding: 0;
     }
 }
