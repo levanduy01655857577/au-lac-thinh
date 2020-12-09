@@ -17895,6 +17895,7 @@ body {
   color: rgba(0, 0, 0, 0.8);
   background-color: transparent;
   border-radius: 0;
+  width: auto;
 }
 
 .showSlideTestimonials .btnSlideSlickPrevHome.prev {
