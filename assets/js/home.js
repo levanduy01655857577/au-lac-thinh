@@ -178,8 +178,8 @@ window.addEventListener("load", function(event) {
             fade: true,
             dots: true,
             arrows: true,
-            prevArrow: '<button type="button" class="btnSlideSlickPrevHome prev"><i class="fas fa-chevron-left"></i></button>',
-            nextArrow: '<button type="button" class="btnSlideSlickPrevHome next"><i class="fas fa-chevron-right"></i></button>'
+            prevArrow: '<button type="button" class="btnSlideSlickPrevHome prev" aria-label="Button Previous Slide Main"><i class="fas fa-chevron-left"></i></button>',
+            nextArrow: '<button type="button" class="btnSlideSlickPrevHome next" aria-label="Button Next Slide Main"><i class="fas fa-chevron-right"></i></button>'
         });
     }
     // end start slide main
@@ -194,8 +194,8 @@ window.addEventListener("load", function(event) {
             slidesToShow: 1,
             swipeToSlide: true,
             arrows: true,
-            prevArrow: '<button type="button" class="btnSlideSlickPrevHome prev"><i class="fas fa-chevron-left"></i></button>',
-            nextArrow: '<button type="button" class="btnSlideSlickPrevHome next"><i class="fas fa-chevron-right"></i></button>',
+            prevArrow: '<button type="button" class="btnSlideSlickPrevHome prev" aria-label="Button Previous Slide Cmt"><i class="fas fa-chevron-left"></i></button>',
+            nextArrow: '<button type="button" class="btnSlideSlickPrevHome next" aria-label="Button Next Slide Cmt"><i class="fas fa-chevron-right"></i></button>',
             responsive: [{
                 breakpoint: 992,
                 settings: {

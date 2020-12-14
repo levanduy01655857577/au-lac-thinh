@@ -16984,6 +16984,7 @@ body {
     white-space: normal;
   }
   .listLinkMenuSubHeaderBottom {
+    font-size: 13px;
     padding: 15px 15px 15px 30px;
   }
   .listItemMenuLanguageMobile {
@@ -18547,7 +18548,7 @@ body {
 }
 
 .descriptionBookingTable2 {
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 500;
   color: #333;
 }

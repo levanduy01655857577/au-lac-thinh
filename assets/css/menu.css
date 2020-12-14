@@ -16984,6 +16984,7 @@ body {
     white-space: normal;
   }
   .listLinkMenuSubHeaderBottom {
+    font-size: 13px;
     padding: 15px 15px 15px 30px;
   }
   .listItemMenuLanguageMobile {
@@ -17730,7 +17731,7 @@ body {
   text-align: center;
 }
 
-.orderMenuImage {
+.rowMenu:nth-child(even) > div:first-of-type {
   -webkit-box-ordinal-group: 3;
       -ms-flex-order: 2;
           order: 2;
@@ -17812,11 +17813,6 @@ body {
   .food {
     margin: 30px 0 0;
   }
-  .orderMenuImage {
-    -webkit-box-ordinal-group: 1;
-        -ms-flex-order: 0;
-            order: 0;
-  }
   .rowIntroduce, .rowMenu {
     margin-top: 30px;
   }
@@ -17834,6 +17830,11 @@ body {
   }
   .foodDescription2 {
     margin: 5px 0 0;
+  }
+  .rowMenu:nth-child(even) > div:first-of-type {
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
   }
 }
 
