@@ -17813,11 +17813,6 @@ body {
   .food {
     margin: 30px 0 0;
   }
-  .orderMenuImage {
-    -webkit-box-ordinal-group: 1;
-        -ms-flex-order: 0;
-            order: 0;
-  }
   .rowIntroduce, .rowMenu {
     margin-top: 30px;
   }
@@ -17835,6 +17830,11 @@ body {
   }
   .foodDescription2 {
     margin: 5px 0 0;
+  }
+  .rowMenu:nth-child(even) > div:first-of-type {
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
   }
 }
 
